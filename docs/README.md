@@ -2,4 +2,4 @@
 
 ![DREAM-Logo](/images/dream-sign1.jpg)
 
-The official website for the Open Source DREAM Project.
+A complete system for conducting Robot Enhanced Therapy for children with Autism Spectrum Disorder
