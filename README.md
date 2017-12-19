@@ -47,5 +47,6 @@ Licence
 
 Unless otherwise specified, all software created as Copyright &copy; DREAM is to be regarded as Open Source under the [GPLv3 licence](https://www.gnu.org/licenses/gpl.txt). In this project there are several third party software libraries that are covered under their own licences. Please check the source files for more details.
 
-![GPLv3](https://dream2020.github.io/DREAM/images/gpl3.png)
+![GPLv3](https://dream2020.github.io/DREAM/images/gpl3.png =120x)
+<img src="https://dream2020.github.io/DREAM/images/gpl3.png" alt="GPLv3" style="width: 120px;"/>
 
