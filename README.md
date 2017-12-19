@@ -20,19 +20,16 @@ deliverables).
 News
 ----
 
-<!--The latest draft of the [[Software Rollout Plan]] has been updated with the new 17-component system architecture and there is a new section on Parameter Value Definitions.-->
 There is a new page [Guidelines for Naming Ports] in [Software
 Development Guide].
 
-<!--Based on the responses to the software development questionnaire, the [[Guide to Submitting Software for Integration|Software Integration Guide]] has now been revised, simplified, and streamlined.  Please have a look and let us know if you can see ways to improve it even more.-->
 Software Resources
 ------------------
 
 [Software Development Documentation]
+
 [Nao software]
 
-<!--[[Software Rollout Plan]]-->
-<!-- [[Integration Status]] -->
 Public Documents
 ----------------
 
