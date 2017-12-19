@@ -20,8 +20,7 @@ deliverables).
 News
 ----
 
-There is a new page [Guidelines for Naming Ports] in [Software
-Development Guide].
+There is a new page [Guidelines for Naming Ports] in [Software Development Guide].
 
 Software Resources
 ------------------
@@ -43,3 +42,7 @@ Public Documents
   [Software Development Documentation]: https://github.com/dream2020/DREAM/wiki/Software-Development-Documentation
   [Nao software]: https://github.com/dream2020/DREAM/wiki/Nao-software
   
+Licence
+-------
+
+Unless otherwise specified, all software created as Copyright &copy; DREAM is to be regarded as Open Source under the [GPLv3 licence](https://www.gnu.org/licenses/gpl.txt). In this project there are several third party software libraries that are covered under their own licences. Please check the source files for more details.
