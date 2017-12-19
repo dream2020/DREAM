@@ -42,8 +42,7 @@ Public Documents
   [DREAM Logo]: https://dream2020.github.io/DREAM/images/dream-eu-logo.png
     "DREAM Logo"
   [Guidelines for Naming Ports]: https://github.com/dream2020/DREAM/wiki/Guidelines-for-Naming-Ports
-  [Software
-  [Development Guide]: https://github.com/dream2020/DREAM/wiki/Software-Development-Guide
+  [Software Development Guide]: https://github.com/dream2020/DREAM/wiki/Software-Development-Guide
   [Software Development Documentation]: https://github.com/dream2020/DREAM/wiki/Software-Development-Documentation
   [Nao software]: https://github.com/dream2020/DREAM/wiki/Nao-software
   
