@@ -1,0 +1,22 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+SET(MODULENAME guiUtilities)
+PROJECT(${MODULENAME})
+
+FIND_PACKAGE(DREAM REQUIRED)
+FIND_PACKAGE(YARP)
+SET(CMAKE_MODULE_PATH ${YARP_MODULE_PATH} ${CMAKE_MODULE_PATH})
+
+FILE(GLOB folder_source src/guiUtilities.cpp)
+FILE(GLOB folder_header src/guiUtilities.h)
+
+SOURCE_GROUP("Source Files" FILES ${folder_source})
+SOURCE_GROUP("Header Files" FILES ${folder_header})
+
+INCLUDE_DIRECTORIES(
+    ${GUIUTILITIES_INCLUDE_DIRS}
+)
+
+ADD_LIBRARY(${MODULENAME} ${folder_source} ${folder_header})
+
+INSTALL(TARGETS ${MODULENAME} DESTINATION lib) 

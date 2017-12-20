@@ -1,0 +1,26 @@
+var class_c_blob_result =
+[
+    [ "CBlobResult", "class_c_blob_result.html#aa32d5d4037eff124d5f75084299e3d7a", null ],
+    [ "CBlobResult", "class_c_blob_result.html#ae8f5800b4e0396edb5a7894cce36d9a6", null ],
+    [ "CBlobResult", "class_c_blob_result.html#ab8af371545c6c51c419b7d3028e52e3a", null ],
+    [ "CBlobResult", "class_c_blob_result.html#a231c31a05f42508968da3b9e3df755ce", null ],
+    [ "~CBlobResult", "class_c_blob_result.html#a39e196fa7cd24a0c533391e57bf7a838", null ],
+    [ "AddBlob", "class_c_blob_result.html#ac9da5db13defb3e905532a0f34ea2d58", null ],
+    [ "ClearBlobs", "class_c_blob_result.html#aa926243bae6148e765f8a4055ef42ce0", null ],
+    [ "Filter", "class_c_blob_result.html#aa3124ddd825766b5bf2253cbd6f60b12", null ],
+    [ "Filter", "class_c_blob_result.html#a05a889ab104c56a51ec51b29d16b6f0b", null ],
+    [ "Filter", "class_c_blob_result.html#a543242f58269d6ea9cd7cbd34358fcdc", null ],
+    [ "GetBlob", "class_c_blob_result.html#ab496538c5fa7e90b4bb1f3c751d7d0a7", null ],
+    [ "GetBlob", "class_c_blob_result.html#a10258e9b5258885c3a0b264f43ac263d", null ],
+    [ "GetBlobByID", "class_c_blob_result.html#a19cc7cd2d70e41951174359e9312a19c", null ],
+    [ "GetBlobByID", "class_c_blob_result.html#aca366b1c5382bef1d2c32a6907bffb70", null ],
+    [ "getBlobNearestTo", "class_c_blob_result.html#a8608a8e91023d1cadc75c59a242bdaa1", null ],
+    [ "GetNthBlob", "class_c_blob_result.html#adea8495101ffc2f0f9a27139167736e0", null ],
+    [ "GetNumber", "class_c_blob_result.html#ac284b89cbd10b63b30eaad5dca81f7a9", null ],
+    [ "GetNumBlobs", "class_c_blob_result.html#aa563a89cbc5ce56126c6ce34be902657", null ],
+    [ "GetSTLResult", "class_c_blob_result.html#af4d6fdf4c95de9edff09dc990ec5a0f2", null ],
+    [ "operator+", "class_c_blob_result.html#ac85a8fe33c9cf31b5f64c8c11bcee0b3", null ],
+    [ "operator=", "class_c_blob_result.html#a064fa669df43f3f108dc89174debfd52", null ],
+    [ "PrintBlobs", "class_c_blob_result.html#ae110c5ce4b61b68c61204391671475ab", null ],
+    [ "m_blobs", "class_c_blob_result.html#a3f363e03c43fb01738541b2427577b63", null ]
+];

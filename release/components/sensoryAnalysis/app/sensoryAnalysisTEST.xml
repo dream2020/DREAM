@@ -1,0 +1,164 @@
+<application>
+
+<name>sensoryAnalysis_test</name>
+
+<dependencies>
+</dependencies>
+
+
+
+<module>
+   <name>sensoryAnalysis</name>
+   <parameters>--context components/sensoryAnalysis/config</parameters>
+   <node>dream1</node>
+   <tag>sensoryAnalysis</tag>
+</module>
+
+<module>
+   <name>sensoryInterpretationLogger</name>
+   <parameters>--context components/sensoryAnalysis/config</parameters>
+   <node>dream1</node>
+   <tag>sensoryInterpretationLogger</tag>
+</module>
+
+
+<connection>
+  <from>/sensoryAnalysis/checkMutualGaze:o</from>
+  <to>/sensoryInterpretationLogger/checkMutualGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getArmAngle:o</from>
+  <to>/sensoryInterpretationLogger/getArmAngle:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getBody:o</from>
+  <to>/sensoryInterpretationLogger/getBody:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getBodyPose:o</from>
+  <to>/sensoryInterpretationLogger/getBodyPose:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getEyeGaze:o</from>
+  <to>/sensoryInterpretationLogger/getEyeGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getEyes:o</from>
+  <to>/sensoryInterpretationLogger/getEyes:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getFaces:o</from>
+  <to>/sensoryInterpretationLogger/getFaces:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+  <from>/sensoryAnalysis/getGripLocation:o</from>
+  <to>/sensoryInterpretationLogger/getGripLocation:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getHands:o</from>
+  <to>/sensoryInterpretationLogger/getHands:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getHead:o</from>
+  <to>/sensoryInterpretationLogger/getHead:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getHeadGaze:o</from>
+  <to>/sensoryInterpretationLogger/getHeadGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getObjects:o</from>
+  <to>/sensoryInterpretationLogger/getObjects:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getObjectTableDistance:o</from>
+  <to>/sensoryInterpretationLogger/getObjectTableDistance:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/getSoundDirection:o</from>
+  <to>/sensoryInterpretationLogger/getSoundDirection:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/identifyFace:o</from>
+  <to>/sensoryInterpretationLogger/identifyFace:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/identifyFaceExpression:o</from>
+  <to>/sensoryInterpretationLogger/identifyFaceExpression:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/identifyObject:o</from>
+  <to>/sensoryInterpretationLogger/identifyObject:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/identifyTrajectory:o</from>
+  <to>/sensoryInterpretationLogger/identifyTrajectory:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/identifyVoice:o</from>
+  <to>/sensoryInterpretationLogger/identifyVoice:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/recognizeSpeech:o</from>
+  <to>/sensoryInterpretationLogger/recognizeSpeech:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/trackFace:o</from>
+  <to>/sensoryInterpretationLogger/trackFace:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/trackHand:o</from>
+  <to>/sensoryInterpretationLogger/trackHand:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryAnalysis/trackObject:o</from>
+  <to>/sensoryInterpretationLogger/trackObject:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+</application>

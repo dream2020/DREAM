@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>assessChildEngagementTEST</name>
+
+<module>
+    <name>assessChildEngagement</name>
+    <parameters>--context components/assessChildEngagement/config</parameters>
+    <node>dream1</node>
+    <tag>assessChildEngagement</tag>
+</module>
+
+<module>
+    <name>assessChildEngagementDriver</name>
+    <parameters>--context test/assessChildEngagementDriver/config</parameters>
+    <node>dream1</node>
+    <tag>assessChildEngagementDriver</tag>
+</module>
+
+<connection>
+    <from>/assessChildEngagement/engagementFlag:o</from>
+    <to>/assessChildEngagementDriver/engagementFlag:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildEngagementDriver/getBody:o</from>
+    <to>/assessChildEngagement/getBody:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildEngagementDriver/checkMutualGaze:o</from>
+    <to>/assessChildEngagement/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildEngagementDriver/identifyFaceExpression:o</from>
+    <to>/assessChildEngagement/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>
+

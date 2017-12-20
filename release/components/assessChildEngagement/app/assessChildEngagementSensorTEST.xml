@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>assessChildEngagementSensorTEST</name>
+
+<module>
+    <name>assessChildEngagement</name>
+    <parameters>--context components/assessChildEngagement/config</parameters>
+    <node>dream1</node>
+    <tag>assessChildEngagement</tag>
+</module>
+
+<module>
+   <name>sensoryAnalysis</name>
+   <parameters>--context components/sensoryAnalysis/config</parameters>
+   <node>dream1</node>
+   <tag>sensoryAnalysis</tag>
+</module>
+
+<module>
+   <name>sensoryInterpretationLogger</name>
+   <parameters>--context components/assessChildEngagement/config</parameters>
+   <node>dream1</node>
+   <tag>sensoryInterpretationLogger</tag>
+</module>
+
+<!--
+<module>
+    <name>assessChildEngagementDriver</name>
+    <parameters>--context test/assessChildEngagementDriver/config</parameters>
+    <node>dream1</node>
+    <tag>assessChildEngagementDriver</tag>
+</module>
+-->
+
+<connection>
+    <from>/assessChildEngagement/engagementFlag:o</from>
+    <to>/sensoryInterpretationLogger/engagementFlag:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getBody:o</from>
+    <to>/assessChildEngagement/getBody:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/checkMutualGaze:o</from>
+    <to>/assessChildEngagement/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyFaceExpression:o</from>
+    <to>/assessChildEngagement/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>
+

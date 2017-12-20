@@ -1,0 +1,28 @@
+<application>
+
+<name>imageSource test</name>
+
+<dependencies>
+</dependencies>
+
+<module>
+   <name>imageSource</name>
+   <parameters>--context test/imageSource/config</parameters>
+   <node>dream1</node>
+   <tag>imageSource</tag>
+</module>
+
+<module>
+   <name>yarpview</name>
+   <parameters>--name /leftInputImage --x 000 --y 0 --w 320 --h 318 </parameters>
+   <node>dream1</node>
+   <tag>left_image</tag>
+</module>
+
+<connection>
+  <from>/robot/cam/left</from>
+  <to>/leftInputImage</to>
+  <protocol>tcp</protocol>
+</connection>
+
+</application>

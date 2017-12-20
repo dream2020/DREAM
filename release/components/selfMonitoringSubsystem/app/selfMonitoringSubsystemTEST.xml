@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>selfMonitoringSubsystemTEST</name>
+
+<module>
+    <name>selfMonitoringSubsystem</name>
+    <parameters>--context components/selfMonitoringSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>selfMonitoringSubsystem</tag>
+</module>
+
+<module>
+    <name>selfMonitoringDriver</name>
+    <parameters>--context test/selfMonitoringDriver/config</parameters>
+    <node>dream1</node>
+    <tag>selfMonitoringDriver</tag>
+</module>
+
+<connection>
+    <from>/selfMonitoringSubsystem/selectedAction:o</from>
+    <to>/selfMonitoringDriver/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/userDelib:o</from>
+    <to>/selfMonitoringDriver/userDelib:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/deliberativeFeedback:o</from>
+    <to>/selfMonitoringSubsystem/deliberativeFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/getInterventionStatus:o</from>
+    <to>/selfMonitoringSubsystem/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/sensorySummary:o</from>
+    <to>/selfMonitoringSubsystem/sensorySummary:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/suggestedAction:o</from>
+    <to>/selfMonitoringSubsystem/suggestedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/smsSummary:o</from>
+    <to>/selfMonitoringDriver/smsSummary:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/proposedToSupervisor:o</from>
+    <to>/selfMonitoringDriver/proposedToSupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/selectedBySupervisor:o</from>
+    <to>/selfMonitoringSubsystem/selectedBySupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/engagementFlag:o</from>
+    <to>/selfMonitoringSubsystem/engagementFlag:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/startStop:o</from>
+    <to>/selfMonitoringDriver/startStop:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/updatedData:o</from>
+    <to>/selfMonitoringDriver/updatedData:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/getChildBehaviour:o</from>
+    <to>/selfMonitoringSubsystem/getChildBehaviour:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/getChildPerformance:o</from>
+    <to>/selfMonitoringSubsystem/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/userData:o</from>
+    <to>/selfMonitoringSubsystem/userData:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/attentionSwitchOff:o</from>
+    <to>/selfMonitoringDriver/attentionSwitchOff:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/reactionSwitchOff:o</from>
+    <to>/selfMonitoringDriver/reactionSwitchOff:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/therapistGazeCommand:o</from>
+    <to>/selfMonitoringDriver/therapistGazeCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/affectiveState:o</from>
+    <to>/selfMonitoringDriver/affectiveState:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/fallingInterruption:o</from>
+    <to>/selfMonitoringSubsystem/fallingInterruption:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/selectedAction:o</from>
+    <to>/selfMonitoringDriver/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/therapistCommand:o</from>
+    <to>/selfMonitoringSubsystem/therapistCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/actionFeedback:o</from>
+    <to>/selfMonitoringSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringDriver/interventionCommand:o</from>
+    <to>/selfMonitoringSubsystem/interventionCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+
+</application>

@@ -1,0 +1,54 @@
+<application>
+<name>videoSource test</name>
+
+<dependencies>
+   
+</dependencies>
+
+<module>
+   <name>protoComponent</name>
+   <parameters>--context test/protoComponent/config</parameters>
+   <node>dream1</node>
+   <tag>protoComponent</tag>
+</module>
+
+<module>
+   <name>videoSource</name>
+   <parameters>--context test/videoSource/config</parameters>
+   <node>dream1</node>
+   <tag>videoSource</tag>
+</module>
+
+<module>
+   <name>yarpview</name>
+   <parameters>--name /inputImage --x 000 --y 000 --w 596 --h 400 </parameters>
+   <node>dream1</node>
+   <tag>input_image</tag>
+</module>
+
+<module>
+   <name>yarpview</name>
+   <parameters>--name /binaryImage --x 350 --y 000 --w 596 --h 400 </parameters>
+   <node>dream1</node>
+   <tag>plot_image</tag>
+</module>
+
+<connection>
+  <from>/videoSource/image:o</from>
+  <to>/inputImage</to>
+  <protocol>udp</protocol>
+</connection>
+
+<connection>
+  <from>/videoSource/image:o</from>
+  <to>/protoComponent/image:i</to>
+  <protocol>udp</protocol>
+</connection>
+
+<connection>
+  <from>/protoComponent/image:o</from>
+  <to>/binaryImage</to>
+  <protocol>udp</protocol>
+</connection>
+
+</application>

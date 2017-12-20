@@ -1,0 +1,1557 @@
+{
+   "connections" : [
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[08] /selfMonitoringSubsystem/selectedAction:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[05] /deliberativeSubsystem/selectedAction:i",
+         "uuid" : "6afbda2b-0619-4017-a4b4-269c26d17357"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[06] /sensoryAnalysis/getEyeGaze:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[12] /deliberativeSubsystem/getEyeGaze:i",
+         "uuid" : "c631660d-d3af-4e4e-a0b6-5a03dd54530b"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[08] /actuationSubsystem/pointAt:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[08] /naoInterface/pointAt:i",
+         "uuid" : "43957dc1-796a-41a4-be98-f2bb0d8c41ab"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[10] /sensoryAnalysis/getGripLocation:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[16] /deliberativeSubsystem/getGripLocation:i",
+         "uuid" : "c45c467e-d60b-4f2a-a9da-a5aea7b900cc"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[11] /actuationSubsystem/actionFeedback:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[01] /deliberativeSubsystem/actionFeedback:i",
+         "uuid" : "829b22fb-4886-4cce-89f0-fb772eef711a"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[11] /actuationSubsystem/actionFeedback:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[01] /attentionReactionSubsystem/actionFeedback:i",
+         "uuid" : "dd23fa1b-be04-4a6d-bdb4-8e3c2286b518"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[15] /sensoryAnalysis/getObjects:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[21] /deliberativeSubsystem/getObjects:i",
+         "uuid" : "ed59aab8-de72-4091-a1ab-46ff5476eb0f"
+      },
+      {
+         "from" : "d0f6ac92-d9e0-4781-bacc-603aebfe1172:[01] /sandtrayEvent/sandtrayEvent:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[29] /deliberativeSubsystem/sandtrayEvent:i",
+         "uuid" : "eeb5d248-991d-4b5e-bb5d-b6a4bcce3171"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c4:[01] /userModel/userData:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[11] /selfMonitoringSubsystem/userData:i",
+         "uuid" : "54fb21b1-af7f-413d-bacf-b4dbe284f104"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[09] /sensoryAnalysis/getBody:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[15] /deliberativeSubsystem/getBody:i",
+         "uuid" : "f1195232-bdbc-4bff-905a-e0d4d43b577e"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[07] /selfMonitoringSubsystem/therapistGazeCommand:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[05] /attentionReactionSubsystem/therapistGazeCommand:i",
+         "uuid" : "a34a828f-bc30-449c-b6a8-96c4c46474b4"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[03] /actuationSubsystem/grip:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[03] /naoInterface/grip:i",
+         "uuid" : "0d986d37-541b-46ac-ab9e-53f028374ac8"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[02] /attentionReactionSubsystem/eyeBlinking:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[04] /actuationSubsystem/eyeBlinking:i",
+         "uuid" : "ad84c6a7-9fd7-4d34-89db-23a5ec5c4390"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[04] /actuationSubsystem/moveHand:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[04] /naoInterface/moveHand:i",
+         "uuid" : "a09f2c9c-39ae-43f9-83d6-298dab18091a"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[01] /systemGUI/selectedBySupervisor:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[01] /selfMonitoringSubsystem/selectedBySupervisor:i",
+         "uuid" : "b131cbc7-4755-4b1e-ab5c-4241b3ef604e"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[04] /sensoryAnalysis/identifyFaceExpression:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[10] /attentionReactionSubsystem/identifyFaceExpression:i",
+         "uuid" : "f631f395-3829-439d-ad05-93ba288e95ea"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[05] /sensoryAnalysis/recognizeSpeech:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[11] /deliberativeSubsystem/recognizeSpeech:i",
+         "uuid" : "d0e7b42b-f9c3-416e-ae64-708ad4082494"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[08] /sensoryAnalysis/getArmAngle:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[14] /deliberativeSubsystem/getArmAngle:i",
+         "uuid" : "db8c694f-f986-4b5b-b870-70f7beee0596"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[14] /sensoryAnalysis/getHeadGaze:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[20] /deliberativeSubsystem/getHeadGaze:i",
+         "uuid" : "04989757-e5ab-4622-a8c1-ce936c45d436"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[19] /sensoryAnalysis/identifyTrajectory:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[25] /deliberativeSubsystem/identifyTrajectory:i",
+         "uuid" : "65c2a24e-18df-41ee-9627-11c7af58bc1e"
+      },
+      {
+         "from" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[02] /assessChildPerformance/getChildPerformance:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[04] /selfMonitoringSubsystem/getChildPerformance:i",
+         "uuid" : "b122b58f-3820-4c3a-bd21-3337c35b3d37"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[02] /actuationSubsystem/enableRobot:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[02] /naoInterface/enableRobot:i",
+         "uuid" : "6cf33866-90c1-4528-8d09-b82c4d94b381"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[05] /selfMonitoringSubsystem/attentionSwitchOff:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[03] /attentionReactionSubsystem/attentionSwitchOff:i",
+         "uuid" : "a29dc8f6-699f-469f-be5f-19a7835bc7ed"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[01] /sensoryAnalysis/checkMutualGaze:o",
+         "name" : "",
+         "to" : "1b586ad6-0781-4bd5-8d7d-d9c8fddc1c73:[02] /assessChildEngagement/checkMutualGaze:i",
+         "uuid" : "b49e084b-1fb7-4514-a553-9d6c0a19a874"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[01] /attentionReactionSubsystem/fallingInterruption:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[11] /actuationSubsystem/fallingInterruption:i",
+         "uuid" : "be34ba18-5f70-4d91-93c8-cadddbddadb5"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[08] /attentionReactionSubsystem/elicitedAttention:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[12]  /actuationSubsystem/elicitedAttention:i",
+         "uuid" : "bc2a36bf-46eb-4a9e-af0e-ce66fa8311e3"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[07] /deliberativeSubsystem/attentionBias:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[06] /attentionReactionSubsystem/attentionBias:i",
+         "uuid" : "a0d4f823-463f-44b5-ae8d-5c2fa6e461cb"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[06] /selfMonitoringSubsystem/reactionSwitchOff:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[04] /attentionReactionSubsystem/reactionSwitchOff:i",
+         "uuid" : "eb12b9bc-b29c-4696-8199-552d6a8fe732"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[01] /naoInterface/robotMotorFeedback:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[01] /actuationSubsystem/robotMotorFeedback:i",
+         "uuid" : "a3d1e0b1-1e30-42f6-86fd-ff290a01a68e"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[04] /sensoryAnalysis/identifyFaceExpression:o",
+         "name" : "",
+         "to" : "1b586ad6-0781-4bd5-8d7d-d9c8fddc1c73:[01] /assessChildEngagement/identifyFaceExpression:i",
+         "uuid" : "fc9d602f-093b-4f1b-91bf-c8b7c5c76f21"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[05] /attentionReactionSubsystem/socialReactionSpeech:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[07] /actuationSubsystem/socialFacialExpression:i",
+         "uuid" : "d7d3285c-fb0d-41a1-b3de-1296a664624a"
+      },
+      {
+         "from" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[01] /assessChildPerformance/getChildBehaviour:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[01] /systemGUI/getChildBehaviour:i",
+         "uuid" : "ad390ee2-f104-459e-a6b5-af9c1a3c3b75"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[09] /selfMonitoringSubsystem/userDelib:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[06] /deliberativeSubsystem/userDelib:i",
+         "uuid" : "b42db71b-4677-47d9-aa53-ccbf401332f7"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[04] /selfMonitoringSubsystem/affectiveState:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[02] /attentionReactionSubsystem/affectiveState:i",
+         "uuid" : "d65d200a-5997-4bc8-9b61-55fbaf8f1e31"
+      },
+      {
+         "from" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[01] /assessChildPerformance/getChildBehaviour:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[03] /selfMonitoringSubsystem/getChildBehaviour:i",
+         "uuid" : "25c7f75d-1ccb-486d-8ce4-b8f4be96febb"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[03] /sensoryAnalysis/getSoundDirection:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[09] /deliberativeSubsystem/getSoundDirection:i",
+         "uuid" : "4757a8d0-d587-45ea-9c10-15274da7af10"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[22] /deliberativeSubsystem/sandtrayCommand:o",
+         "name" : "",
+         "to" : "27f855f4-f503-4d13-88a6-0a6c1fa518a2:[01] /sandtrayServer/sandtrayCommand:i",
+         "uuid" : "239fa094-3475-4148-8878-f59601018e29"
+      },
+      {
+         "from" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[02] /assessChildPerformance/getChildPerformance:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[03] /deliberativeSubsystem/getChildPerformance:i",
+         "uuid" : "d13432e4-1c62-409b-9559-7353504a6a59"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[21] /deliberativeSubsystem/interactionEvent:o",
+         "name" : "",
+         "to" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[02] /assessChildPerformance/interactionEvent:i",
+         "uuid" : "803673a1-127a-4bd2-ab09-d86586145d29"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[01] /actuationSubsystem/disableRobot:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[01] /naoInterface/disableRobot:i",
+         "uuid" : "030314c5-f91c-4442-8901-3de7358e981d"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[06] /actuationSubsystem/moveSequence:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[06] /naoInterface/moveSequence:i",
+         "uuid" : "d7fb4e6a-6975-4eeb-a67a-b5fa66928c54"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[03] /selfMonitoringSubsystem/updatedData:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c4:[02] /userModel/updatedData:i",
+         "uuid" : "9691a014-9f2f-4479-8ea4-ea191d4c7b77"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[02] /naoInterface/sensorFeedback:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[02] /actuationSubsystem/sensorFeedback:i",
+         "uuid" : "4b5433e3-31e0-430f-ba67-4e4ecd5c78bb"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[12] /actuationSubsystem/sandtrayCommand:o",
+         "name" : "",
+         "to" : "27f855f4-f503-4d13-88a6-0a6c1fa518a2:[01] /sandtrayServer/sandtrayCommand:i",
+         "uuid" : "7180cb24-a251-43bc-82be-787749f50703"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[06] /attentionReactionSubsystem/socialReaction:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[08] /actuationSubsystem/socialReaction:i",
+         "uuid" : "e8aa97b3-30af-48e9-93d1-12bf97a4b3dd"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[02] /systemGUI/therapistCommand:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[02] /selfMonitoringSubsystem/therapistCommand:i",
+         "uuid" : "002e4675-ea3f-436a-8685-ba129a49746e"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[01] /selfMonitoringSubsystem/proposedToSupervisor:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[03] /systemGUI/proposedToSupervisor:i",
+         "uuid" : "3571f1de-a10c-4eca-b126-a75635065858"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[02] /sensoryAnalysis/getFaces:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[08] /deliberativeSubsystem/getFaces:i",
+         "uuid" : "e701d715-c22a-47e6-b0ec-f436152727c7"
+      },
+      {
+         "from" : "27f855f4-f503-4d13-88a6-0a6c1fa518a2:[01] /sandtrayServer/sandtrayReturn:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[30] /deliberativeSubsystem/sandtrayReturn:i",
+         "uuid" : "1585795a-6915-4b99-81b5-5422c575c57c"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[02] /deliberativeSubsystem/deliberativeFeedback:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[06] /selfMonitoringSubsystem/deliberativeFeedback:i",
+         "uuid" : "b189cd65-2478-4a36-aea5-1c1a64b6918a"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[11] /actuationSubsystem/actionFeedback:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[10] /selfMonitoringSubsystem/actionFeedback:i",
+         "uuid" : "80dccc8d-4b5c-44fd-8bbe-444dfb5e5359"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[04] /attentionReactionSubsystem/fallingReactionSpeech:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[06] /actuationSubsystem/fallingReactionSpeech:i",
+         "uuid" : "914a6437-22ed-42cd-97c3-63ff70195e12"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[03] /deliberativeSubsystem/sensorySummary:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[08] /selfMonitoringSubsystem/sensorySummary:i",
+         "uuid" : "68f96be9-c4bb-4a07-b695-22d8445ffc94"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[09] /sensoryAnalysis/getBody:o",
+         "name" : "",
+         "to" : "1b586ad6-0781-4bd5-8d7d-d9c8fddc1c73:[03] /assessChildEngagement/getBody:i",
+         "uuid" : "b63f89a7-f53a-4c56-9dd2-77dbac58535f"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[19] /sensoryAnalysis/identifyTrajectory:o",
+         "name" : "",
+         "to" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[05] /assessChildPerformance/identifyTrajectory:i",
+         "uuid" : "bee68ef8-927c-434d-82fe-3f84b2b0b3f0"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[08] /selfMonitoringSubsystem/selectedAction:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[03] /actuationSubsystem/selectedAction:i",
+         "uuid" : "b5e6c3ee-3c7a-4a6c-9e2b-a74b017fe679"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[05] /deliberativeSubsystem/suggestedAction:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[09] /selfMonitoringSubsystem/suggestedAction:i",
+         "uuid" : "94d44c0c-bced-4522-8fd2-7ef13051be2b"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[06] /deliberativeSubsystem/getInterventionStatus:o",
+         "name" : "",
+         "to" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[01] /assessChildPerformance/getInterventionStatus:i",
+         "uuid" : "081a7a10-2d20-4102-b94d-e1c6e23dddbf"
+      },
+      {
+         "from" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[02] /assessChildPerformance/getChildPerformance:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[02] /systemGUI/getChildPerformance:i",
+         "uuid" : "784d2315-55da-487a-8863-3e68e9e4fe13"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[03] /sensoryAnalysis/getSoundDirection:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[09] /attentionReactionSubsystem/getSoundDirection:i",
+         "uuid" : "5e60bb73-153a-4d21-8d09-3413443ccc22"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[07] /actuationSubsystem/moveTorso:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[07] /naoInterface/moveTorso:i",
+         "uuid" : "7d5d465f-76ab-4661-9602-eed22d0acdfb"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[20] /sensoryAnalysis/identifyVoice:o",
+         "name" : "",
+         "to" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[06] /assessChildPerformance/identifyVoice:i",
+         "uuid" : "4f55f5f6-0649-4dc8-9b1a-7ff76775b0a1"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[06] /deliberativeSubsystem/getInterventionStatus:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[07] /selfMonitoringSubsystem/getInterventionStatus:i",
+         "uuid" : "3492be57-bd80-44cb-875a-440950e9eccf"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[05] /actuationSubsystem/moveHead:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[05] /naoInterface/moveHead:i",
+         "uuid" : "d1e7f5e9-9246-4bfe-86ac-1a1a07ac1082"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[02] /selfMonitoringSubsystem/smsSummary:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[04] /systemGUI/smsSummary:i",
+         "uuid" : "4aabd3e1-f01f-4813-8963-5a3680d1d4a1"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[06] /sensoryAnalysis/getEyeGaze:o",
+         "name" : "",
+         "to" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[04] /assessChildPerformance/getEyeGaze:i",
+         "uuid" : "4de62331-e316-40a8-991e-2a8641879f8a"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[03] /systemGUI/userID:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c4:[01] /userModel/userID:i",
+         "uuid" : "e70c6511-37bc-438f-89fe-ee09b93b0425"
+      },
+      {
+         "from" : "27f855f4-f503-4d13-88a6-0a6c1fa518a2:[01] /sandtrayServer/sandtrayReturn:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[10] /actuationSubsystem/sandtrayReturn:i",
+         "uuid" : "841f3bdd-83e9-4e5c-b167-2e2cfc4dd9ff"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[09] /actuationSubsystem/release:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[09] /naoInterface/release:i",
+         "uuid" : "0760615f-ef79-4af5-a8e2-ddb07e2fbd79"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[02] /sensoryAnalysis/getFaces:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[08] /attentionReactionSubsystem/getFaces:i ",
+         "uuid" : "bb6db00c-eeaa-45f8-aecb-55b8be76b7a2"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[23] /sensoryAnalysis/trackObject:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[28] /deliberativeSubsystem/trackObject:i",
+         "uuid" : "6a589a11-a549-4847-bfe7-e61cdad4e50a"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[05] /sensoryAnalysis/recognizeSpeech:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[11] /attentionReactionSubsystem/recognizeSpeech:i",
+         "uuid" : "590b69e9-6516-4095-a94f-6f88833bd28e"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[01] /sensoryAnalysis/checkMutualGaze:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[07] /deliberativeSubsystem/checkMutualGaze:i",
+         "uuid" : "fc76e537-8b1f-4909-8780-a72dfbd064da"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[12] /sensoryAnalysis/getHands:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[18] /deliberativeSubsystem/getHands:i",
+         "uuid" : "0bd4de18-92de-48ce-8c68-c37c16ab00f0"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[22] /sensoryAnalysis/trackFace:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[27] /deliberativeSubsystem/trackFace:i",
+         "uuid" : "63eb4ec9-2f60-4922-bdd8-3bffd810651d"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[01] /attentionReactionSubsystem/fallingInterruption:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[12] /selfMonitoringSubsystem/fallingInterruption:i",
+         "uuid" : "730d9158-0999-49f1-8201-a00f4202d340"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[16] /sensoryAnalysis/getObjectTableDistance:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[22] /deliberativeSubsystem/getObjectTableDistance:i",
+         "uuid" : "fe6760ed-0780-4893-a255-c4f619430c35"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[13] /sensoryAnalysis/getHead:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[19] /deliberativeSubsystem/getHead:i",
+         "uuid" : "cebdfec9-436f-4339-8b52-1cd1509c7477"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[10] /actuationSubsystem/say:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7:[10] /naoInterface/say:i",
+         "uuid" : "15c22505-e048-4995-8c29-b2b66ef21517"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[03] /attentionReactionSubsystem/fallingReaction:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[05] /actuationSubsystem/fallingReaction:i",
+         "uuid" : "e64d7433-ab75-45f6-8314-fd5a182c1f02"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[11] /sensoryAnalysis/getBodyPose:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[17] /deliberativeSubsystem/getBodyPose:i",
+         "uuid" : "bd6bb116-9115-4e00-874d-d78a5103fb23"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[07] /attentionReactionSubsystem/socialFacialExpression:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[09] /actuationSubsystem/socialReactionSpeech:i",
+         "uuid" : "11540d67-43c0-4b4c-bbee-645fb4e95585"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[04] /sensoryAnalysis/identifyFaceExpression:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[10] /deliberativeSubsystem/identifyFaceExpression:i",
+         "uuid" : "cb5024ba-4074-41f4-984c-be05c2d22276"
+      },
+      {
+         "from" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[01] /assessChildPerformance/getChildBehaviour:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[02] /deliberativeSubsystem/getChildBehaviour:i",
+         "uuid" : "3754d8f2-10f4-439f-8c09-9e38ed56fcaf"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[13] /actuationSubsystem/robotSensors:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[31] /deliberativeSubsystem/robotSensors:i",
+         "uuid" : "fb311d46-f209-47ed-914b-c2ea8eefddd4"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6:[13] /actuationSubsystem/robotSensors:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[12] /attentionReactionSubsystem/robotSensors:i",
+         "uuid" : "7bb0aed0-5fe0-4952-bdc3-0f891a04bcbf"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[18] /sensoryAnalysis/identifyObject:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[24] /deliberativeSubsystem/identifyObject:i",
+         "uuid" : "c575a4e0-b783-43a1-9a96-eb9ac4596971"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[01] /sensoryAnalysis/checkMutualGaze:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1:[07] /attentionReactionSubsystem/checkMutualGaze:i",
+         "uuid" : "c56eae9f-cbe4-4c5d-a844-cc31df4692a5"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[17] /sensoryAnalysis/identifyFace:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[23] /deliberativeSubsystem/identifyFace:i",
+         "uuid" : "d60947de-5f39-41d1-88f2-b638f0020b93"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[07] /sensoryAnalysis/getEyes:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[13] /deliberativeSubsystem/getEyes:i",
+         "uuid" : "80ff7d0f-5230-475e-8063-7274009b7bab"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[20] /sensoryAnalysis/identifyVoice:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[26] /deliberativeSubsystem/identifyVoice:i",
+         "uuid" : "c5e1b2d3-84ec-41ec-8ec6-4f5f34356613"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[11] /sensoryAnalysis/getBodyPose:o",
+         "name" : "",
+         "to" : "57887a98-7f69-47ba-b164-f0da7a9892f7:[03] /assessChildPerformance/getBodyPose:i",
+         "uuid" : "4d503f7b-4a8b-4df4-a08e-e06a6c4b7b46"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[04] /systemGUI/interventionCommand:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3:[04] /deliberativeSubsystem/interventionCommand:i",
+         "uuid" : "68998974-80ba-4cdf-a6d0-812fb2c91eed"
+      },
+      {
+         "from" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5:[04] /systemGUI/interventionCommand:o",
+         "name" : "",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[13] /selfMonitoringSubsystem/interventionCommand:i",
+         "uuid" : "a04fcd6a-d0b5-4169-82a3-568ac37828b2"
+      },
+      {
+         "from" : "1b586ad6-0781-4bd5-8d7d-d9c8fddc1c73:[01] /assessChildEngagement/engagementFlag:o",
+         "name" : "anonymous",
+         "to" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0:[05] /selfMonitoringSubsystem/engagementFlag:i",
+         "uuid" : "6da8c45f-6ab7-4f4e-bdc7-30b1a479251b"
+      },
+      {
+         "from" : "1b586ad6-0781-4bd5-8d7d-d9c8fddc1c73:[01] /assessChildEngagement/engagementFlag:o",
+         "name" : "anonymous",
+         "to" : "f192891a-02ab-4793-a87b-45be8a8b2f26:[02] /sensoryInterpretationLogger/engagementFlag:i",
+         "uuid" : "1be7ce99-2800-4abc-aa6e-79406651e3a0"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[01] /sensoryAnalysis/checkMutualGaze:o",
+         "name" : "anonymous",
+         "to" : "f192891a-02ab-4793-a87b-45be8a8b2f26:[01] /sensoryInterpretationLogger/checkMutualGaze:i",
+         "uuid" : "4b354b78-a967-4277-98f7-832c93073d23"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[09] /sensoryAnalysis/getBody:o",
+         "name" : "anonymous",
+         "to" : "f192891a-02ab-4793-a87b-45be8a8b2f26:[03] /sensoryInterpretationLogger/getBody:i",
+         "uuid" : "43a839df-ed69-4f8f-9485-716d74ff5e1a"
+      },
+      {
+         "from" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8:[04] /sensoryAnalysis/identifyFaceExpression:o",
+         "name" : "anonymous",
+         "to" : "f192891a-02ab-4793-a87b-45be8a8b2f26:[04] /sensoryInterpretationLogger/identifyFaceExpression:i",
+         "uuid" : "bcc113cd-9932-4ad3-8ef0-78dc983f46ec"
+      }
+   ],
+   "description" : "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>",
+   "encoding_version" : "0.1",
+   "name" : "Dream System Ports",
+   "nodes" : [
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "naoInterface",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "[02] /naoInterface/sensorFeedback:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /naoInterface/moveHand:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[05] /naoInterface/moveHead:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[06] /naoInterface/moveSequence:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /naoInterface/robotMotorFeedback:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /naoInterface/disableRobot:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[03] /naoInterface/grip:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[07] /naoInterface/moveTorso:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[08] /naoInterface/pointAt:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[09] /naoInterface/release:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[10] /naoInterface/say:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /naoInterface/enableRobot:i"
+            }
+         ],
+         "position" : [ 2686.3154687500009, -134.68980468749933 ],
+         "uuid" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c7"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "userModel",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "[02] /userModel/updatedData:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /userModel/userData:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /userModel/userID:i"
+            }
+         ],
+         "position" : [ 1246.3744140624995, -2.0388671875006281 ],
+         "uuid" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c4"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "sandtrayServer",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "[01] /sandtrayServer/sandtrayReturn:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /sandtrayServer/sandtrayCommand:i"
+            }
+         ],
+         "position" : [ 1245.2757290039076, 1575.5024374999991 ],
+         "uuid" : "27f855f4-f503-4d13-88a6-0a6c1fa518a2"
+      },
+      {
+         "cognitive_function" : "Action",
+         "name" : "sensoryAnalysis",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "[07] /sensoryAnalysis/headposeAndGazeGlobal:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[08] /sensoryAnalysis/motions:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[03] /sensoryAnalysis/objects:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[08] /sensoryAnalysis/getArmAngle:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /sensoryAnalysis/bodyJoints:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[17] /sensoryAnalysis/identifyFace:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[09] /sensoryAnalysis/getBody:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[23] /sensoryAnalysis/trackFace:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[19] /sensoryAnalysis/identifyTrajectory:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[06] /sensoryAnalysis/faceAndEyes3D:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[24] /sensoryAnalysis/getHeadGazePoint:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /sensoryAnalysis/checkMutualGaze:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[22] /sensoryAnalysis/identifyTrajectory:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[15] /sensoryAnalysis/getObjects:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[15] /sensoryAnalysis/getGripLocation:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[20] /sensoryAnalysis/identifyVoice:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[02] /sensoryAnalysis/getFaces:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[12] /sensoryAnalysis/faceID:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /sensoryAnalysis/bodyCenter:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[11] /sensoryAnalysis/getBodyPose:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[20] /sensoryAnalysis/identifyFaceExpression:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[12] /sensoryAnalysis/getHands:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[18] /sensoryAnalysis/getObjects:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[18] /sensoryAnalysis/identifyObject:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[05] /sensoryAnalysis/recognizeSpeech:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[21] /sensoryAnalysis/identifyObject:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[22] /sensoryAnalysis/trackFace:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[05] /sensoryAnalysis/soundRelatedInformation:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[23] /sensoryAnalysis/trackObject:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[04] /sensoryAnalysis/identifyFaceExpression:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[03] /sensoryAnalysis/getSoundDirection:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /sensoryAnalysis/armAngle:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[06] /sensoryAnalysis/getEyeGaze:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[14] /sensoryAnalysis/getEyeGaze:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[13] /sensoryAnalysis/getHead:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[14] /sensoryAnalysis/getHeadGaze:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[16] /sensoryAnalysis/getHeadGaze:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[19] /sensoryAnalysis/identifyFace:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[25] /sensoryAnalysis/trackHand:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[09] /sensoryAnalysis/camID:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[24] /sensoryAnalysis/trackObject:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[07] /sensoryAnalysis/getEyes:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[10] /sensoryAnalysis/eyeLocation2D:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[11] /sensoryAnalysis/eyeGazeLocal:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[16] /sensoryAnalysis/getObjectTableDistance:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[10] /sensoryAnalysis/getGripLocation:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[26] /sensoryAnalysis/getSoundDirection:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[17] /sensoryAnalysis/getObjectTableDistance:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[13] /sensoryAnalysis/faceExpression:i"
+            }
+         ],
+         "position" : [ -1086.596093749999, 694.69062500000064 ],
+         "uuid" : "d1edb036-0bbb-4abd-890e-b9a1f87fdbc8"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "attentionReactionSubsystem",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "[01] /attentionReactionSubsystem/fallingInterruption:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[08] /attentionReactionSubsystem/elicitedAttention:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /attentionReactionSubsystem/actionFeedback:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[07] /attentionReactionSubsystem/socialFacialExpression:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[09] /attentionReactionSubsystem/getSoundDirection:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[11] /attentionReactionSubsystem/recognizeSpeech:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[05] /attentionReactionSubsystem/therapistGazeCommand:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[06] /attentionReactionSubsystem/socialReaction:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /attentionReactionSubsystem/affectiveState:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[07] /attentionReactionSubsystem/checkMutualGaze:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[03] /attentionReactionSubsystem/fallingReaction:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[03] /attentionReactionSubsystem/attentionSwitchOff:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[06] /attentionReactionSubsystem/attentionBias:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[02] /attentionReactionSubsystem/eyeBlinking:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[10] /attentionReactionSubsystem/identifyFaceExpression:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[08] /attentionReactionSubsystem/getFaces:i "
+            },
+            {
+               "direction" : "out",
+               "name" : "[04] /attentionReactionSubsystem/fallingReactionSpeech:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /attentionReactionSubsystem/reactionSwitchOff:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[05] /attentionReactionSubsystem/socialReactionSpeech:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[12] /attentionReactionSubsystem/robotSensors:i"
+            }
+         ],
+         "position" : [ 1213.2408203124996, 420.75429687499968 ],
+         "uuid" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c1"
+      },
+      {
+         "cognitive_function" : "Socio-cog.",
+         "name" : "assessChildEngagement",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "[03] /assessChildEngagement/getBody:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /assessChildEngagement/engagementFlag:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /assessChildEngagement/identifyFaceExpression:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /assessChildEngagement/checkMutualGaze:i"
+            }
+         ],
+         "position" : [ -241.0899999999998, 552.90999999999985 ],
+         "uuid" : "1b586ad6-0781-4bd5-8d7d-d9c8fddc1c73"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "systemGUI",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "[04] /systemGUI/interventionCommand:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[03] /systemGUI/userID:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /systemGUI/selectedBySupervisor:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /systemGUI/smsSummary:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /systemGUI/getChildBehaviour:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /systemGUI/getChildPerformance:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[02] /systemGUI/therapistCommand:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[03] /systemGUI/proposedToSupervisor:i"
+            }
+         ],
+         "position" : [ 1187.2718749999972, -239.97437499999978 ],
+         "uuid" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c5"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "selfMonitoringSubsystem",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "[13] /selfMonitoringSubsystem/interventionCommand:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[02] /selfMonitoringSubsystem/smsSummary:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[06] /selfMonitoringSubsystem/deliberativeFeedback:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /selfMonitoringSubsystem/proposedToSupervisor:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[03] /selfMonitoringSubsystem/updatedData:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /selfMonitoringSubsystem/therapistCommand:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[05] /selfMonitoringSubsystem/engagementFlag:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[06] /selfMonitoringSubsystem/reactionSwitchOff:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[04] /selfMonitoringSubsystem/affectiveState:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[03] /selfMonitoringSubsystem/getChildBehaviour:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /selfMonitoringSubsystem/selectedBySupervisor:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[09] /selfMonitoringSubsystem/userDelib:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /selfMonitoringSubsystem/getChildPerformance:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[07] /selfMonitoringSubsystem/therapistGazeCommand:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[08] /selfMonitoringSubsystem/sensorySummary:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[12] /selfMonitoringSubsystem/fallingInterruption:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[08] /selfMonitoringSubsystem/selectedAction:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[10] /selfMonitoringSubsystem/actionFeedback:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[05] /selfMonitoringSubsystem/attentionSwitchOff:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[09] /selfMonitoringSubsystem/suggestedAction:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[11] /selfMonitoringSubsystem/userData:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[07] /selfMonitoringSubsystem/getInterventionStatus:i"
+            }
+         ],
+         "position" : [ 347.90435156250078, -28.14680468749998 ],
+         "uuid" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c0"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "sandtrayEvent",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "[01] /sandtrayEvent/sandtrayEvent:o"
+            }
+         ],
+         "position" : [ 150, 1601 ],
+         "uuid" : "d0f6ac92-d9e0-4781-bacc-603aebfe1172"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "deliberativeSubsystem",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "[06] /deliberativeSubsystem/getInterventionStatus:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[14] /deliberativeSubsystem/identifyFaceExpression:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[17] /deliberativeSubsystem/trackFace:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[24] /deliberativeSubsystem/identifyObject:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /deliberativeSubsystem/commandSuccess:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[07] /deliberativeSubsystem/attentionBias:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[22] /deliberativeSubsystem/getObjectTableDistance:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[21] /deliberativeSubsystem/getObjects:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[17] /deliberativeSubsystem/getBodyPose:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[22] /deliberativeSubsystem/sandtrayCommand:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[14] /deliberativeSubsystem/getArmAngle:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[23] /deliberativeSubsystem/identifyFace:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[09] /deliberativeSubsystem/getGripLocation:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[09] /deliberativeSubsystem/getSoundDirection:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[05] /deliberativeSubsystem/selectedAction:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[29] /deliberativeSubsystem/sandtrayEvent:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[15] /deliberativeSubsystem/identifyObject:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[25] /deliberativeSubsystem/identifyTrajectory:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[19] /deliberativeSubsystem/getHead:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[26] /deliberativeSubsystem/identifyVoice:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /deliberativeSubsystem/actionFeedback:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[21] /deliberativeSubsystem/interactionEvent:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /deliberativeSubsystem/interventionCommand:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[12] /deliberativeSubsystem/getEyeGaze:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[12] /deliberativeSubsystem/getObjects:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[10] /deliberativeSubsystem/getHeadGaze:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[20] /deliberativeSubsystem/getHeadGaze:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[16] /deliberativeSubsystem/getGripLocation:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[03] /deliberativeSubsystem/sensorySummary:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[20] /deliberativeSubsystem/getSoundDirection:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[16] /deliberativeSubsystem/identifyTrajectory:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[19] /deliberativeSubsystem/trackHand:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /deliberativeSubsystem/getChildBehaviour:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[07] /deliberativeSubsystem/checkMutualGaze:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[28] /deliberativeSubsystem/trackObject:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[31] /deliberativeSubsystem/robotSensors:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[02] /deliberativeSubsystem/deliberativeFeedback:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[05] /deliberativeSubsystem/suggestedAction:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[18] /deliberativeSubsystem/getHands:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[30] /deliberativeSubsystem/sandtrayReturn:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[03] /deliberativeSubsystem/getChildPerformance:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[11] /deliberativeSubsystem/recognizeSpeech:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[18] /deliberativeSubsystem/trackObject:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[11] /deliberativeSubsystem/getObjectTableDistance:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[06] /deliberativeSubsystem/userDelib:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[13] /deliberativeSubsystem/getEyes:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[08] /deliberativeSubsystem/getFaces:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[08] /deliberativeSubsystem/getEyeGaze:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[10] /deliberativeSubsystem/identifyFaceExpression:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[13] /deliberativeSubsystem/identifyFace:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[15] /deliberativeSubsystem/getBody:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[27] /deliberativeSubsystem/trackFace:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[04] /deliberativeSubsystem/startStop:o"
+            }
+         ],
+         "position" : [ 441.15217773437735, 820.24429687499992 ],
+         "uuid" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c3"
+      },
+      {
+         "cognitive_function" : "Socio-cog.",
+         "name" : "assessChildPerformance",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "[05] /assessChildPerformance/identifyTrajectory:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /assessChildPerformance/getChildBehaviour:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /assessChildPerformance/getEyeGaze:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[03] /assessChildPerformance/getBodyPose:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[02] /assessChildPerformance/getChildPerformance:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[03] /assessChildPerformance/identifyTrajectory:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[06] /assessChildPerformance/identifyVoice:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /assessChildPerformance/getInterventionStatus:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /assessChildPerformance/interactionEvent:i"
+            }
+         ],
+         "position" : [ -249.0499999999995, 330.99999999999955 ],
+         "uuid" : "57887a98-7f69-47ba-b164-f0da7a9892f7"
+      },
+      {
+         "cognitive_function" : "Reasoning",
+         "name" : "actuationSubsystem",
+         "ports" : [
+            {
+               "direction" : "out",
+               "name" : "[04] /actuationSubsystem/moveHand:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[07] /actuationSubsystem/moveTorso:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /actuationSubsystem/eyeBlinking:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[09] /actuationSubsystem/release:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[12]  /actuationSubsystem/elicitedAttention:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /actuationSubsystem/sensorFeedback:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[08] /actuationSubsystem/pointAt:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[02] /actuationSubsystem/enableRobot:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[03] /actuationSubsystem/grip:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[10] /actuationSubsystem/sandtrayReturn:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[11] /actuationSubsystem/fallingInterruption:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[11] /actuationSubsystem/actionFeedback:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[01] /actuationSubsystem/disableRobot:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[05] /actuationSubsystem/fallingReaction:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[09] /actuationSubsystem/socialReactionSpeech:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[05] /actuationSubsystem/moveHead:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[06] /actuationSubsystem/moveSequence:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[06] /actuationSubsystem/fallingReactionSpeech:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[10] /actuationSubsystem/say:o"
+            },
+            {
+               "direction" : "in",
+               "name" : "[07] /actuationSubsystem/socialFacialExpression:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[08] /actuationSubsystem/socialReaction:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[03] /actuationSubsystem/selectedAction:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /actuationSubsystem/robotMotorFeedback:i"
+            },
+            {
+               "direction" : "out",
+               "name" : "[13] /actuationSubsystem/robotSensors:o"
+            },
+            {
+               "direction" : "out",
+               "name" : "[12] /actuationSubsystem/sandtrayCommand:o"
+            }
+         ],
+         "position" : [ 1974.3403906249991, -71.360625000000709 ],
+         "uuid" : "1acc8787-72d6-4db3-a3d5-3770fbc7b4c6"
+      },
+      {
+         "cognitive_function" : "Socio-cog.",
+         "name" : "sensoryInterpretationLogger",
+         "ports" : [
+            {
+               "direction" : "in",
+               "name" : "[03] /sensoryInterpretationLogger/getBody:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[01] /sensoryInterpretationLogger/checkMutualGaze:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[04] /sensoryInterpretationLogger/identifyFaceExpression:i"
+            },
+            {
+               "direction" : "in",
+               "name" : "[02] /sensoryInterpretationLogger/engagementFlag:i"
+            }
+         ],
+         "position" : [ -68, 782 ],
+         "uuid" : "f192891a-02ab-4793-a87b-45be8a8b2f26"
+      }
+   ],
+   "uuid" : "43cf8ea5-42ed-47f2-a119-831410ae14f9",
+   "version" : "0.1"
+}

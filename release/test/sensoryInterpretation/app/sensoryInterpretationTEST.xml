@@ -1,0 +1,12 @@
+<application>
+
+<name>sensoryInterpretation test</name>
+
+<module>
+   <name>sensoryInterpretation</name>
+   <parameters>--context test/sensoryInterpretation/config </parameters>
+   <node>dream1</node>
+   <tag>sensoryInterpretation</tag>
+</module>
+
+</application>

@@ -1,0 +1,12 @@
+<application>
+
+<name>childBehaviourClassification test</name>
+
+<module>
+   <name>childBehaviourClassification</name>
+   <parameters>--context test/childBehaviourClassification/config </parameters>
+   <node>dream1</node>
+   <tag>childBehaviourClassification</tag>
+</module>
+
+</application>

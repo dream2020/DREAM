@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?> 
+
+<!-- changed yarpview dimensions to have the same aspect ratio as the image resolution specified in the config file (DV 10/10/2016) -->
+
+<application>
+	<name>usbCameraSource_test</name>
+	<module>
+		<name>usbCameraSource</name>
+		<parameters>--context components/usbCameraSource/config </parameters>
+		<node>dream1</node>
+		<tag>usbCameraSource</tag>
+	</module>
+	<module>
+		<name>yarpview</name>
+		<parameters>--name /display --x 000 --y 0 --w 640 --h 480 </parameters>
+		<node>dream1</node>
+		<tag>image</tag>
+	</module>
+
+	<connection>
+		<from>/usbCameraSource/cam:o</from>
+		<to>/display</to>
+		<protocol>tcp</protocol>
+	</connection>
+
+</application>

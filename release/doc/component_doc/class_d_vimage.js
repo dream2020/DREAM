@@ -1,0 +1,28 @@
+var class_d_vimage =
+[
+    [ "DVimage", "class_d_vimage.html#ac49a047bde0f23a9470e9e473ee0533c", null ],
+    [ "~DVimage", "class_d_vimage.html#a629c5a47c9cd58487aa4561a76906746", null ],
+    [ "contrast_stretch", "class_d_vimage.html#a1ff321c7ae617cfd4e318b43fa01d466", null ],
+    [ "get_image_mode", "class_d_vimage.html#a388d351bf1b2d8d2b630bc80ed9d8f56", null ],
+    [ "get_image_type", "class_d_vimage.html#a98f3f008def40f1104ac355413bb8be8", null ],
+    [ "get_pixel", "class_d_vimage.html#ac001ff530da4fa39544083491e5795aa", null ],
+    [ "get_pixel", "class_d_vimage.html#a11f1b29869e4682807811024bfc669dc", null ],
+    [ "get_size", "class_d_vimage.html#ad8e9eb427f58f4252d7ef76a16f36cfe", null ],
+    [ "initialize", "class_d_vimage.html#a199c73c291f4c5fd547eb0f69beb6b0b", null ],
+    [ "put_pixel", "class_d_vimage.html#a05455fe9851ddc24663af81abbe0f211", null ],
+    [ "put_pixel", "class_d_vimage.html#a406eda1ec51c91c0b41297f34352a8ee", null ],
+    [ "read", "class_d_vimage.html#abca6ca28c75c494080ada8c6ffe57645", null ],
+    [ "read", "class_d_vimage.html#adbb134f00f86511f020bac990602af0c", null ],
+    [ "read_annotation", "class_d_vimage.html#a7acfbb89df52f3e4f06e65bf4acf0475", null ],
+    [ "set_image_mode", "class_d_vimage.html#a8064677195d0caa2db5c5dfddfeb297b", null ],
+    [ "write", "class_d_vimage.html#ae7582a3108206ae74241e0c44c45f8b2", null ],
+    [ "write", "class_d_vimage.html#a50e1f192bc72715c0f2b552a2bf43bea", null ],
+    [ "write_annotation", "class_d_vimage.html#aeaa4c6ee128539bda491e2a072b2cab6", null ],
+    [ "annotation", "class_d_vimage.html#a2d2903baabc64ce75ce8a14a68beea74", null ],
+    [ "colour_mode", "class_d_vimage.html#a8262f940468d3f0664d586f757ffeefc", null ],
+    [ "fdata", "class_d_vimage.html#a4e5549f898bb9583a2b80cc397b8969e", null ],
+    [ "height", "class_d_vimage.html#a8e75678c69555fa6612903fd5e92adff", null ],
+    [ "idata", "class_d_vimage.html#a00cefb70e6976ca74b5eca9d35535b6a", null ],
+    [ "image_type", "class_d_vimage.html#ab091955ba40232365d4e1584c4615f55", null ],
+    [ "width", "class_d_vimage.html#a0406509b4cf9e97e4b4ded11a9741916", null ]
+];

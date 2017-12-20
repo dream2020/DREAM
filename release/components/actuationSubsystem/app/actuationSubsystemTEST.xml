@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>actuationSubsystemTEST</name>
+
+<module>
+    <name>actuationSubsystem</name>
+    <parameters>--context components/actuationSubsystem/config </parameters>
+    <node>dream1</node>
+    <tag>actuationSubsystem</tag>
+</module>
+
+<module>
+    <name>actuationDriver</name>
+    <parameters>--context test/actuationDriver/config </parameters>
+    <node>dream1</node>
+    <tag>actuationDriver</tag>
+</module>
+
+<!-------------------------------Connections------------------------------>
+
+<connection>
+    <from>/actuationDriver/eyeBlinking:o</from>
+    <to>/actuationSubsystem/eyeBlinking:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/fallingReaction:o</from>
+    <to>/actuationSubsystem/fallingReaction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/fallingReactionSpeech:o</from>
+    <to>/actuationSubsystem/fallingReactionSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/socialFacialExpression:o</from>
+    <to>/actuationSubsystem/socialFacialExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/socialReaction:o</from>
+    <to>/actuationSubsystem/socialReaction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/socialReactionSpeech:o</from>
+    <to>/actuationSubsystem/socialReactionSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/robotMotorFeedback:o</from>
+    <to>/actuationSubsystem/robotMotorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/selectedAction:o</from>
+    <to>/actuationSubsystem/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/sandtrayReturn:o</from>
+    <to>/actuationSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/sensorFeedback:o</from>
+    <to>/actuationSubsystem/sensorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<!-- <connection>
+    <from>/actuationDriver/guiSupervisor:o</from>
+    <to>/actuationSubsystem/guiSupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection> -->
+
+<connection>
+    <from>/actuationDriver/fallingInterruption:o</from>
+    <to>/actuationSubsystem/fallingInterruption:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/elicitedAttention:o</from>
+    <to>/actuationSubsystem/elicitedAttention:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/disableRobot:o</from>
+    <to>/actuationDriver/disableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/enableRobot:o</from>
+    <to>/actuationDriver/enableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/grip:o</from>
+    <to>/actuationDriver/grip:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHand:o</from>
+    <to>/actuationDriver/moveHand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHead:o</from>
+    <to>/actuationDriver/moveHead:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveSequence:o</from>
+    <to>/actuationDriver/moveSequence:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveTorso:o</from>
+    <to>/actuationDriver/moveTorso:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/pointAt:o</from>
+    <to>/actuationDriver/pointAt:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/release:o</from>
+    <to>/actuationDriver/release:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/say:o</from>
+    <to>/actuationDriver/say:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/sandtrayCommand:o</from>
+    <to>/actuationDriver/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/actuationDriver/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/robotSensors:o</from>
+    <to>/actuationDriver/robotSensors:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/disableRobot:o</from>
+    <to>/actuationDriver/disableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/enableRobot:o</from>
+    <to>/actuationDriver/enableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/grip:o</from>
+    <to>/actuationDriver/grip:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHand:o</from>
+    <to>/actuationDriver/moveHand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHead:o</from>
+    <to>/actuationDriver/moveHead:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveSequence:o</from>
+    <to>/actuationDriver/moveSequence:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveTorso:o</from>
+    <to>/actuationDriver/moveTorso:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/pointAt:o</from>
+    <to>/actuationDriver/pointAt:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/release:o</from>
+    <to>/actuationDriver/release:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/say:o</from>
+    <to>/actuationDriver/say:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/sensorFeedback:o</from>
+    <to>/actuationSubsystem/sensorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/robotMotorFeedback:o</from>
+    <to>/actuationSubsystem/robotMotorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/sandtrayReturn:o</from>
+    <to>/actuationSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/sandtrayCommand:o</from>
+    <to>/actuationDriver/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

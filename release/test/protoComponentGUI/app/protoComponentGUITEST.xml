@@ -1,0 +1,60 @@
+<application>
+<name>protoComponentGUI test</name>
+
+<dependencies>
+   <port>/robot/cam/left</port>
+</dependencies>
+
+<module>
+   <name>protoComponentGUI</name>
+   <parameters>--context test/protoComponentGUI/config </parameters>
+   <node>dream1</node>
+   <tag>protoComponentGUI</tag>
+</module>
+
+<module>
+   <name>protoComponent</name>
+   <parameters>--context test/protoComponent/config </parameters>
+   <node>dream1</node>
+   <tag>protoComponent</tag>
+</module>
+
+<module>
+   <name>imageSource</name> 
+   <parameters>--context test/imageSource/config --width 640 --height 480 </parameters>
+   <node>dream1</node>
+   <tag>imageSource</tag>
+</module>
+
+<connection>
+  <from>/robot/cam/left</from>
+  <to>/protoComponent/image:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/protoComponent/image:o</from>
+  <to>/protoComponentGUI/binaryimage:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/protoComponent/statistics:o</from>
+  <to>/protoComponentGUI/statistics:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/robot/cam/left</from>
+  <to>/protoComponentGUI/colourimage:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/protoComponentGUI/threshold:o</from>
+  <to>/protoComponent/threshold:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+</application>

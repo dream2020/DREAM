@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?> 
+
+<!-- changed yarpview dimensions to have the same aspect ratio as the image resolution specified in the config file (DV 10/10/2016) -->
+
+<application>
+	<name>usbCameraSource_test_3Cameras</name>
+	<module>
+		<name>usbCameraSource</name>
+		<parameters>--context components/usbCameraSource/config/left</parameters>
+		<node>dream1</node>
+		<tag>usbCameraSource</tag>
+	</module>
+
+	<module>
+		<name>usbCameraSource</name>
+		<parameters>--context components/usbCameraSource/config/mid</parameters>
+		<node>dream1</node>
+		<tag>usbCameraSource</tag>
+	</module>
+
+	<module>
+		<name>usbCameraSource</name>
+		<parameters>--context components/usbCameraSource/config/right</parameters>
+		<node>dream1</node>
+		<tag>usbCameraSource</tag>
+	</module>
+
+	<module>
+		<name>yarpview</name>
+		<parameters>--name /cameraL --x 000 --y 0 --w 640 --h 480 </parameters>
+		<node>dream1</node>
+		<tag>image</tag>
+	</module>
+	<module>
+		<name>yarpview</name>
+		<parameters>--name /cameraM --x 660 --y 0 --w 640 --h 480 </parameters>
+		<node>dream1</node>
+		<tag>image</tag>
+	</module>
+	<module>
+		<name>yarpview</name>
+		<parameters>--name /cameraR --x 1320 --y 0 --w 640 --h 480 </parameters>
+		<node>dream1</node>
+		<tag>image</tag>
+	</module>
+
+	<connection>
+		<from>/leftCam/cam:o</from>
+		<to>/cameraL</to>
+		<protocol>tcp</protocol>
+	</connection>
+	<connection>
+		<from>/midCam/cam:o</from>
+		<to>/cameraM</to>
+		<protocol>tcp</protocol>
+	</connection>
+	<connection>
+		<from>/rightCam/cam:o</from>
+		<to>/cameraR</to>
+		<protocol>tcp</protocol>
+	</connection>
+</application>

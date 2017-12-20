@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>WP6TEST</name>
+
+<module>
+    <name>systemGUI</name>
+    <parameters>--context components/systemGUI/config</parameters>
+    <node>dream1</node>
+    <tag>systemGUI</tag>
+</module>
+
+<module>
+    <name>sandtrayServer</name>
+    <parameters>--context components/sandtrayServer/config</parameters>
+    <node>dream1</node>
+    <tag>sandtrayServer</tag>
+</module>
+
+<module>
+    <name>wp3Stub</name>
+    <parameters>--context test/wp3Stub/config</parameters>
+    <node>dream1</node>
+    <tag>wp3Stub</tag>
+</module>
+
+<module>
+    <name>naoInterface</name>
+    <parameters>--context components/naoInterface/config</parameters>
+    <node>dream1</node>
+    <tag>naoInterface</tag>
+</module>
+
+<module>
+    <name>actuationSubsystem</name>
+    <parameters>--context components/actuationSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>actuationSubsystem</tag>
+</module>
+
+<module>
+    <name>scriptManager</name>
+    <parameters>--context components/scriptManager/config</parameters>
+    <node>dream1</node>
+    <tag>scriptManager</tag>
+</module>
+
+<module>
+    <name>selfMonitoringSubsystem</name>
+    <parameters>--context components/selfMonitoringSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>selfMonitoringSubsystem</tag>
+</module>
+
+<module>
+    <name>sandtrayEvent</name>
+    <parameters>--context components/sandtrayEvent/config</parameters>
+    <node>dream1</node>
+    <tag>sandtrayEvent</tag>
+</module>
+
+<module>
+    <name>userModel</name>
+    <parameters>--context components/userModel/config</parameters>
+    <node>dream1</node>
+    <tag>userModel</tag>
+</module>
+
+<module>
+    <name>wp5Stub</name>
+    <parameters>--context test/wp5Stub/config</parameters>
+    <node>dream1</node>
+    <tag>wp5Stub</tag>
+</module>
+
+<module>
+    <name>attentionReactionSubsystem</name>
+    <parameters>--context components/attentionReactionSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>attentionReactionSubsystem</tag>
+</module>
+
+<module>
+    <name>deliberativeSubsystem</name>
+    <parameters>--context components/deliberativeSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>deliberativeSubsystem</tag>
+</module>
+
+<!-------------------------------Connections------------------------------>
+
+<connection>
+    <from>/deliberativeSubsystem/suggestedAction:o</from>
+    <to>/selfMonitoringSubsystem/suggestedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/proposedToSupervisor:o</from>
+    <to>/systemGUI/proposedToSupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/sandtrayInfo:o</from>
+    <to>/systemGUI/sandtrayInfo:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getArmAngle:o</from>
+    <to>/deliberativeSubsystem/getArmAngle:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/updatedData:o</from>
+    <to>/userModel/updatedData:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/deliberativeSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getEyes:o</from>
+    <to>/deliberativeSubsystem/getEyes:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/trackObject:o</from>
+    <to>/deliberativeSubsystem/trackObject:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getObjects:o</from>
+    <to>/deliberativeSubsystem/getObjects:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/identifyObject:o</from>
+    <to>/deliberativeSubsystem/identifyObject:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/therapistCommand:o</from>
+    <to>/selfMonitoringSubsystem/therapistCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/trackObject:o</from>
+    <to>/wp3Stub/trackObject:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/actuationSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/selfMonitoringSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/fallingReaction:o</from>
+    <to>/actuationSubsystem/fallingReaction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp5Stub/getChildBehaviour:o</from>
+    <to>/systemGUI/getChildBehaviour:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp5Stub/getChildPerformance:o</from>
+    <to>/systemGUI/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterface/sensorFeedback:o</from>
+    <to>/actuationSubsystem/sensorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/identifyFaceExpression:o</from>
+    <to>/attentionReactionSubsystem/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getInterventionStatus:o</from>
+    <to>/systemGUI/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/trackHand:o</from>
+    <to>/wp3Stub/trackHand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/attentionReactionSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/affectiveState:o</from>
+    <to>/attentionReactionSubsystem/affectiveState:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/deliberativeSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/userPref:o</from>
+    <to>/systemGUI/userPref:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/systemGUI/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHead:o</from>
+    <to>/naoInterface/moveHead:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/attentionBias:o</from>
+    <to>/attentionReactionSubsystem/attentionBias:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/fallingInterruption:o</from>
+    <to>/selfMonitoringSubsystem/fallingInterruption:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/identifyObject:o</from>
+    <to>/wp3Stub/identifyObject:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/userModel/userData:o</from>
+    <to>/selfMonitoringSubsystem/userData:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getInterventionStatus:o</from>
+    <to>/selfMonitoringSubsystem/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveSequence:o</from>
+    <to>/naoInterface/moveSequence:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getEyeGaze:o</from>
+    <to>/wp3Stub/getEyeGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterface/robotMotorFeedback:o</from>
+    <to>/actuationSubsystem/robotMotorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/enableRobot:o</from>
+    <to>/naoInterface/enableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHand:o</from>
+    <to>/naoInterface/moveHand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getHeadGaze:o</from>
+    <to>/wp3Stub/getHeadGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/identifyFaceExpression:o</from>
+    <to>/wp3Stub/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/deliberativeFeedback:o</from>
+    <to>/selfMonitoringSubsystem/deliberativeFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/pointAt:o</from>
+    <to>/naoInterface/pointAt:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/checkMutualGaze:o</from>
+    <to>/attentionReactionSubsystem/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp5Stub/getChildPerformance:o</from>
+    <to>/deliberativeSubsystem/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/release:o</from>
+    <to>/naoInterface/release:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/sandtraySupervisor:o</from>
+    <to>/actuationSubsystem/sandtraySupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/reactionSwitchOff:o</from>
+    <to>/attentionReactionSubsystem/reactionSwitchOff:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/disableRobot:o</from>
+    <to>/naoInterface/disableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getEyeGaze:o</from>
+    <to>/deliberativeSubsystem/getEyeGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getInterventionStatus:o</from>
+    <to>/wp5Stub/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getGripLocation:o</from>
+    <to>/wp3Stub/getGripLocation:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/checkMutualGaze:o</from>
+    <to>/deliberativeSubsystem/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/selectedAction:o</from>
+    <to>/actuationSubsystem/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/fallingReactionSpeech:o</from>
+    <to>/actuationSubsystem/fallingReactionSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/sensorySummary:o</from>
+    <to>/selfMonitoringSubsystem/sensorySummary:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getObjects:o</from>
+    <to>/wp3Stub/getObjects:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/userID:o</from>
+    <to>/userModel/userID:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getFaces:o</from>
+    <to>/attentionReactionSubsystem/getFaces:i </to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/eyeBlinking:o</from>
+    <to>/actuationSubsystem/eyeBlinking:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/trackFace:o</from>
+    <to>/wp3Stub/trackFace:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/socialReactionSpeech:o</from>
+    <to>/actuationSubsystem/socialReactionSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/recognizeSpeech:o</from>
+    <to>/attentionReactionSubsystem/recognizeSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/startStop:o</from>
+    <to>/scriptManager/startStop:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getFaces:o</from>
+    <to>/deliberativeSubsystem/getFaces:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getObjectTableDistance:o</from>
+    <to>/wp3Stub/getObjectTableDistance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/selectedAction:o</from>
+    <to>/deliberativeSubsystem/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveTorso:o</from>
+    <to>/naoInterface/moveTorso:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/identifyTrajectory:o</from>
+    <to>/wp3Stub/identifyTrajectory:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/socialFacialExpression:o</from>
+    <to>/actuationSubsystem/socialFacialExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp5Stub/getChildPerformance:o</from>
+    <to>/selfMonitoringSubsystem/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/updatedDelib:o</from>
+    <to>/selfMonitoringSubsystem/updatedDelib:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getHeadGaze:o</from>
+    <to>/deliberativeSubsystem/getHeadGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/identifyFace:o</from>
+    <to>/wp3Stub/identifyFace:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/startStop:o</from>
+    <to>/scriptManager/startStop:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/selectedBySupervisor:o</from>
+    <to>/selfMonitoringSubsystem/selectedBySupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/userDelib:o</from>
+    <to>/deliberativeSubsystem/userDelib:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/identifyFace:o</from>
+    <to>/deliberativeSubsystem/identifyFace:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/grip:o</from>
+    <to>/naoInterface/grip:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getBodyPose:o</from>
+    <to>/deliberativeSubsystem/getBodyPose:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/commandSuccess:o</from>
+    <to>/scriptManager/commandSuccess:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getBody:o</from>
+    <to>/deliberativeSubsystem/getBody:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/attentionSwitchOff:o</from>
+    <to>/attentionReactionSubsystem/attentionSwitchOff:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getHands:o</from>
+    <to>/deliberativeSubsystem/getHands:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/trackFace:o</from>
+    <to>/deliberativeSubsystem/trackFace:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/socialReaction:o</from>
+    <to>/actuationSubsystem/socialReaction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp5Stub/getChildBehaviour:o</from>
+    <to>/selfMonitoringSubsystem/getChildBehaviour:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getGripLocation:o</from>
+    <to>/deliberativeSubsystem/getGripLocation:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp5Stub/identifyTrajectory:o</from>
+    <to>/wp3Stub/identifyTrajectory:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/guiSupervisor:o</from>
+    <to>/actuationSubsystem/guiSupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/smsSummary:o</from>
+    <to>/systemGUI/smsSummary:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/recognizeSpeech:o</from>
+    <to>/deliberativeSubsystem/recognizeSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/identifyFaceExpression:o</from>
+    <to>/deliberativeSubsystem/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/identifyVoice:o</from>
+    <to>/deliberativeSubsystem/identifyVoice:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getObjectTableDistance:o</from>
+    <to>/deliberativeSubsystem/getObjectTableDistance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/say:o</from>
+    <to>/naoInterface/say:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getSoundDirection:o</from>
+    <to>/wp3Stub/getSoundDirection:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/scriptManager/interventionCommand:o</from>
+    <to>/deliberativeSubsystem/interventionCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getBodyPose:o</from>
+    <to>/wp5Stub/getBodyPose:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getEyeGaze:o</from>
+    <to>/wp5Stub/getEyeGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/therapistGazeCommand:o</from>
+    <to>/attentionReactionSubsystem/therapistGazeCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/identifyTrajectory:o</from>
+    <to>/wp5Stub/identifyTrajectory:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+    <from>/wp3Stub/getSoundDirection:o</from>
+    <to>/attentionReactionSubsystem/getSoundDirection:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/interactionEvent:o</from>
+    <to>/wp5Stub/interactionEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/identifyTrajectory:o</from>
+    <to>/deliberativeSubsystem/identifyTrajectory:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getSoundDirection:o</from>
+    <to>/deliberativeSubsystem/getSoundDirection:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp5Stub/getChildBehaviour:o</from>
+    <to>/deliberativeSubsystem/getChildBehaviour:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getHead:o</from>
+    <to>/deliberativeSubsystem/getHead:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayEvent/sandtrayEvent:o</from>
+    <to>/deliberativeSubsystem/sandtrayEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/identifyFaceExpression:o</from>
+    <to>/wp5Stub/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/checkMutualGaze:o</from>
+    <to>/wp5Stub/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/wp3Stub/getBody:o</from>
+    <to>/wp5Stub/getBody:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+
+</application>

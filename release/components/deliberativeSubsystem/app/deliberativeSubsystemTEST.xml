@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>deliberativeSubsystemTEST</name>
+
+<module>
+    <name>deliberativeSubsystem</name>
+    <parameters>--context components/deliberativeSubsystem/config </parameters>
+    <node>dream1</node>
+    <tag>deliberativeSubsystem</tag>
+</module>
+
+<module>
+    <name>deliberativeDriver</name>
+    <parameters>--context test/deliberativeDriver/config </parameters>
+    <node>dream1</node>
+    <tag>deliberativeDriver</tag>
+</module>
+
+<!-------------------------------Connections------------------------------>
+
+<connection>
+    <from>/deliberativeDriver/getChildPerformance:o</from>
+    <to>/deliberativeSubsystem/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/checkMutualGaze:o</from>
+    <to>/deliberativeSubsystem/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/interventionCommand:o</from>
+    <to>/deliberativeSubsystem/interventionCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/selectedAction:o</from>
+    <to>/deliberativeSubsystem/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getInterventionStatus:o</from>
+    <to>/deliberativeDriver/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/commandSuccess:o</from>
+    <to>/deliberativeDriver/commandSuccess:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/suggestedAction:o</from>
+    <to>/deliberativeDriver/suggestedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/sandtrayCommand:o</from>
+    <to>/deliberativeDriver/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/actionFeedback:o</from>
+    <to>/deliberativeSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/sandtrayEvent:o</from>
+    <to>/deliberativeSubsystem/sandtrayEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/interactionEvent:o</from>
+    <to>/deliberativeDriver/interactionEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+    <from>/deliberativeDriver/sandtrayReturn:o</from>
+    <to>/deliberativeSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

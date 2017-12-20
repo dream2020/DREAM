@@ -1,0 +1,26 @@
+var class_face_analysis =
+[
+    [ "CrossValidation", "class_face_analysis.html#a5831d38a3b2c1fcda4c0de57a6ee702d", null ],
+    [ "elbp", "class_face_analysis.html#a41a1b7577ce9142de3c5c1c652a8a3a1", null ],
+    [ "elbp", "class_face_analysis.html#a9da3213553e08f060de03e04669a7f14", null ],
+    [ "elbp_", "class_face_analysis.html#af5e87c35d9c48a007952a87061a11de6", null ],
+    [ "FaceDescriptor", "class_face_analysis.html#ac186ae36e7225c206e729f383c9cf58d", null ],
+    [ "FaceDisplay", "class_face_analysis.html#a7e6e2dfbbf62bbebafab4d6a2a6b651d", null ],
+    [ "FacePredict", "class_face_analysis.html#aec9dd5004a23169e0f23cc29521b9306", null ],
+    [ "FacePredict", "class_face_analysis.html#a11948e3b0e6514358028855868108895", null ],
+    [ "FaceRecTrain", "class_face_analysis.html#a31d0024863dd174f9ac36b9cb27d972e", null ],
+    [ "FaceTrainNB", "class_face_analysis.html#a9088131e3e67c4e7d22bc12fa8c67c74", null ],
+    [ "FacialExTrain", "class_face_analysis.html#abd76ca219de382a6b045c9dea3580ee5", null ],
+    [ "GetFace", "class_face_analysis.html#ab5e784ef8a054891302032fc5d697d7e", null ],
+    [ "Hist_Lms", "class_face_analysis.html#a8396785029e20925bc05708c34ead88f", null ],
+    [ "histc", "class_face_analysis.html#a449cf7a894513d1c0dc9d3321c459645", null ],
+    [ "Landmark", "class_face_analysis.html#afd12b94d5eeac69c9089df666cd624b3", null ],
+    [ "LoadFaceConfig", "class_face_analysis.html#a295be6a2709f92424d86a5b2deb542aa", null ],
+    [ "read_csv", "class_face_analysis.html#a3be13ec19b051aa7d36f98f8b82410de", null ],
+    [ "spatial_histogram", "class_face_analysis.html#a27868264ee898bcf30e5023baa5b3641", null ],
+    [ "trainingdata", "class_face_analysis.html#a8c444f325d69a9c0560eb3424edda2be", null ],
+    [ "ex", "class_face_analysis.html#aa5da05948f9de517befd78e4b8bfa439", null ],
+    [ "id", "class_face_analysis.html#a0c7809e7c11b19b5a031676dc7aaff3f", null ],
+    [ "label", "class_face_analysis.html#a61cedb1b20163120fe4500f28c8daf13", null ],
+    [ "trainSample", "class_face_analysis.html#a1a084a434c3d6ad30eaef58f0b8a70a8", null ]
+];

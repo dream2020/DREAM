@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>naoInterfaceTEST</name>
+
+<module>
+    <name>naoInterface</name>
+    <parameters>--context components/naoInterface/config</parameters>
+    <node>dream1</node>
+    <tag>naoInterface</tag>
+</module>
+
+<module>
+    <name>naoInterfaceDriver</name>
+    <parameters>--context test/naoInterfaceDriver/config</parameters>
+    <node>dream1</node>
+    <tag>naoInterfaceDriver</tag>
+</module>
+
+<!-------------------------------Connections------------------------------>
+
+<connection>
+    <from>/naoInterfaceDriver/enableRobot:o</from>
+    <to>/naoInterface/enableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/disableRobot:o</from>
+    <to>/naoInterface/disableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/grip:o</from>
+    <to>/naoInterface/grip:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/moveHand:o</from>
+    <to>/naoInterface/moveHand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/moveTorso:o</from>
+    <to>/naoInterface/moveTorso:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/release:o</from>
+    <to>/naoInterface/release:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/say:o</from>
+    <to>/naoInterface/say:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/moveSequence:o</from>
+    <to>/naoInterface/moveSequence:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/pointAt:o</from>
+    <to>/naoInterface/pointAt:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterfaceDriver/moveHead:o</from>
+    <to>/naoInterface/moveHead:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterface/sensorFeedback:o</from>
+    <to>/naoInterfaceDriver/sensorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterface/robotMotorFeedback:o</from>
+    <to>/naoInterfaceDriver/robotMotorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

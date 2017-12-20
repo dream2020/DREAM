@@ -34,14 +34,12 @@ Public Documents
 
 [Deliverables](https://github.com/dream2020/DREAM/wiki/Deliverables)
 
-  [DREAM]: http://www.dream2020.eu
-  [DREAM Logo]: https://dream2020.github.io/DREAM/images/dream-eu-logo.png
-    "DREAM Logo"
-  [Guidelines for Naming Ports]: https://github.com/dream2020/DREAM/wiki/Guidelines-for-Naming-Ports
-  [Software Development Guide]: https://github.com/dream2020/DREAM/wiki/Software-Development-Guide
-  [Software Development Documentation]: https://github.com/dream2020/DREAM/wiki/Software-Development-Documentation
-  [Nao software]: https://github.com/dream2020/DREAM/wiki/Nao-software
-  
+Documentation
+-------------
+Project documentation can be found in this repository's wiki.
+
+Component documentation can be found in DREAM/release/doc/component_doc/index.html. This documentation has been generated using Doxygen and can be rebuilt to reflect changes made by modifying the included doxygen config file and re-running doxygen.
+ 
 Licence
 -------
 
@@ -49,4 +47,11 @@ Unless otherwise specified, all software created as Copyright &copy; DREAM is to
 
 ![GPLv3](https://dream2020.github.io/DREAM/images/gpl3.png)
 
-
+  [DREAM]: http://www.dream2020.eu
+  [DREAM Logo]: https://dream2020.github.io/DREAM/images/dream-eu-logo.png
+    "DREAM Logo"
+  [Guidelines for Naming Ports]: https://github.com/dream2020/DREAM/wiki/Guidelines-for-Naming-Ports
+  [Software Development Guide]: https://github.com/dream2020/DREAM/wiki/Software-Development-Guide
+  [Software Development Documentation]: https://github.com/dream2020/DREAM/wiki/Software-Development-Documentation
+  [Nao software]: https://github.com/dream2020/DREAM/wiki/Nao-software
+ 

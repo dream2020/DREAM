@@ -1,0 +1,1643 @@
+<Scripts>
+    <Script>
+        <Name>Joint Attention 1</Name>
+        <ID>0</ID>
+        <TypeID>2</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,24</Step>
+            <Step>2,33</Step>
+            <Step>3,2,Acum o să ne jucăm altceva. Eu o să-ți arăt locurile pe unde am fost.</Step>
+            <Step>4,2,Pe acest ecran vor apărea două poze diferite. Eu o să îți spun și arăt locul în care am fost. Fii atent la ce mă uit eu!</Step>
+            <Step>5,1</Step>
+            <Step>6,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>7,18,20</Step>
+            <Step>8,27,0</Step>
+            <Step>9,5,6,-1,10000</Step>
+            <Step>10,33</Step>
+            <Step>11,16</Step>
+            <Step>12,17</Step>
+            <Step>13,1</Step>
+            <Step>14,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>15,18,21</Step>
+            <Step>16,27,1</Step>
+            <Step>17,5,5,-1,10000</Step>
+            <Step>18,33</Step>
+            <Step>19,16</Step>
+            <Step>20,17</Step>
+            <Step>21,1</Step>
+            <Step>22,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>23,18,22</Step>
+            <Step>24,27,1</Step>
+            <Step>25,5,5,-1,10000</Step>
+            <Step>26,33</Step>
+            <Step>27,16</Step>
+            <Step>28,17</Step>
+            <Step>29,1</Step>
+            <Step>30,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>31,18,23</Step>
+            <Step>32,27,0</Step>
+            <Step>33,5,6,-1,10000</Step>
+            <Step>34,33</Step>
+            <Step>35,111</Step>
+            <Step>36,17</Step>
+            <Step>37,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>Joint Attention 2</Name>
+        <ID>1</ID>
+        <TypeID>2</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,24</Step>
+            <Step>2,33</Step>
+            <Step>3,2,Acum o să ne jucăm altceva. Eu o săți arăt obiectele pe care le-am văzut într-un birou.</Step>
+            <Step>4,2,Pe acest ecrran vor apărea două poze diferite. Eu o săți arăt obiectul pe care l-am văzut într-un birou. Fii atent la ce mă uit eu!</Step>
+            <Step>5,1</Step>
+            <Step>6,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>7,18,25</Step>
+            <Step>8,28,0</Step>
+            <Step>9,5,6,-1,10000</Step>
+            <Step>10,33</Step>
+            <Step>11,16</Step>
+            <Step>12,17</Step>
+            <Step>13,1</Step>
+            <Step>14,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>15,18,26</Step>
+            <Step>16,28,0</Step>
+            <Step>17,5,6,-1,10000</Step>
+            <Step>18,33</Step>
+            <Step>19,16</Step>
+            <Step>20,17</Step>
+            <Step>21,1</Step>
+            <Step>22,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>23,18,27</Step>
+            <Step>24,28,1</Step>
+            <Step>25,5,5,-1,10000</Step>
+            <Step>26,33</Step>
+            <Step>27,16</Step>
+            <Step>28,17</Step>
+            <Step>29,1</Step>
+            <Step>30,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>31,18,28</Step>
+            <Step>32,28,1</Step>
+            <Step>33,5,5,-1,10000</Step>
+            <Step>34,33</Step>
+            <Step>35,111</Step>
+            <Step>36,17</Step>
+            <Step>37,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>Joint Attention 3</Name>
+        <ID>2</ID>
+        <TypeID>2</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,24</Step>
+            <Step>2,33</Step>
+            <Step>3,2,Acum o să ne jucăm altceva. Eu o să-ți arăt florile și copacii pe care i-am văzut într-o grădină.</Step>
+            <Step>4,2,Pe acest ecran vor apărea două poze diferite. Eu mă voi uuiita către floarea sau copacul pe care l-am văzut într-o grădină. Fii atent la ce mă uit eu!</Step>
+            <Step>5,1</Step>
+            <Step>6,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>7,18,30</Step>
+            <Step>8,29,1</Step>
+            <Step>9,5,5,-1,10000</Step>
+            <Step>10,33</Step>
+            <Step>11,16</Step>
+            <Step>12,17</Step>
+            <Step>13,1</Step>
+            <Step>14,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>15,18,31</Step>
+            <Step>16,29,0</Step>
+            <Step>17,5,6,-1,10000</Step>
+            <Step>18,33</Step>
+            <Step>19,16</Step>
+            <Step>20,17</Step>
+            <Step>21,1</Step>
+            <Step>22,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>23,18,32</Step>
+            <Step>24,29,0</Step>
+            <Step>25,5,6,-1,10000</Step>
+            <Step>26,33</Step>
+            <Step>27,16</Step>
+            <Step>28,17</Step>
+            <Step>29,1</Step>
+            <Step>30,2,Te rog. fii atent la ce mă uit.</Step>
+            <Step>31,18,33</Step>
+            <Step>32,29,1</Step>
+            <Step>33,5,5,-1,10000</Step>
+            <Step>34,33</Step>
+            <Step>35,111</Step>
+            <Step>36,17</Step>
+            <Step>37,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>TT cat lvl 1</Name>
+        <ID>3</ID>
+        <TypeID>0</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,19</Step>
+            <Step>2,21</Step>
+            <Step>3,24</Step>
+            <Step>4,33</Step>
+            <Step>5,2,Acum ne vom juca ceva nou. Pe acest ecran vor apărea mai multe poze. Noi trebuie să potrivim pozele din mijloc cu una dintre pozele de pe margine; Facem asta pe rând. o dată potrivești tu. apoi potrivesc eu.</Step>
+            <Step>6,1</Step>
+            <Step>7,2,La supermarket putem găsi fructe și legume; Hai să punem legumele într-o parte și fructele în cealaltă parte.</Step>
+            <Step>8,2,Prima dată e rândul tău.</Step>
+            <Step>9,18,10</Step>
+            <Step>10,23</Step>
+            <Step>11,5,1,-1,-1</Step>
+            <Step>12,24</Step>
+            <Step>13,13</Step>
+            <Step>14,1</Step>
+            <Step>15,2,Acum e rândul meu. </Step>
+            <Step>16,5,9,-1,8500,1</Step>
+            <Step>17,25</Step>
+            <Step>18,24</Step>
+            <Step>19,5,9,-1,-1,2</Step>
+            <Step>20,12</Step>
+            <Step>21,1</Step>
+            <Step>22,2,Acum e rândul tău. </Step>
+            <Step>23,23</Step>
+            <Step>24,5,1,-1,-1</Step>
+            <Step>25,24</Step>
+            <Step>26,13</Step>
+            <Step>27,1</Step>
+            <Step>28,2,Acum e rândul meu. </Step>
+            <Step>29,5,9,-1,8500,1</Step>
+            <Step>30,25</Step>
+            <Step>31,24</Step>
+            <Step>32,5,9,-1,-1,2</Step>
+            <Step>33,12</Step>
+            <Step>34,1</Step>
+            <Step>35,2,Acum e rândul tău. </Step>
+            <Step>36,23</Step>
+            <Step>37,5,1,-1,-1</Step>
+            <Step>38,24</Step>
+            <Step>39,13</Step>
+            <Step>40,1</Step>
+            <Step>41,2,Acum e rândul meu. </Step>
+            <Step>42,5,9,-1,8500,1</Step>
+            <Step>43,25</Step>
+            <Step>44,24</Step>
+            <Step>45,5,9,-1,-1,2</Step>
+            <Step>46,12</Step>
+            <Step>47,1</Step>
+            <Step>48,2,Acum e rândul tău. </Step>
+            <Step>49,23</Step>
+            <Step>50,5,1,-1,-1</Step>
+            <Step>51,24</Step>
+            <Step>52,13</Step>
+            <Step>53,1</Step>
+            <Step>54,2,Acum e rândul meu. </Step>
+            <Step>55,5,9,-1,8500,1</Step>
+            <Step>56,25</Step>
+            <Step>57,24</Step>
+            <Step>58,5,9,-1,-1,2</Step>
+            <Step>59,112</Step>
+            <Step>60,17</Step>
+            <Step>61,24</Step>
+            <Step>62,1</Step>
+            <Step>63,2,Când ne mutăm într-o casă nouă trebuie să punem lucrurilor la locul lor; Hai să punem obiectele de bucătărie în bucătărie și obiectele de baie în baie.</Step>
+            <Step>64,2,Prima dată e rândul tău.</Step>
+            <Step>65,18,11</Step>
+            <Step>66,23</Step>
+            <Step>67,5,1,-1,-1</Step>
+            <Step>68,24</Step>
+            <Step>69,13</Step>
+            <Step>70,1</Step>
+            <Step>71,2,Acum e rândul meu. </Step>
+            <Step>72,5,9,-1,8500,1</Step>
+            <Step>73,25</Step>
+            <Step>74,24</Step>
+            <Step>75,5,9,-1,-1,2</Step>
+            <Step>76,12</Step>
+            <Step>77,1</Step>
+            <Step>78,2,Acum e rândul tău. </Step>
+            <Step>79,23</Step>
+            <Step>80,5,1,-1,-1</Step>
+            <Step>81,24</Step>
+            <Step>82,13</Step>
+            <Step>83,1</Step>
+            <Step>84,2,Acum e rândul meu. </Step>
+            <Step>85,5,9,-1,8500,1</Step>
+            <Step>86,25</Step>
+            <Step>87,24</Step>
+            <Step>88,5,9,-1,-1,2</Step>
+            <Step>89,12</Step>
+            <Step>90,1</Step>
+            <Step>91,2,Acum e rândul tău. </Step>
+            <Step>92,23</Step>
+            <Step>93,5,1,-1,-1</Step>
+            <Step>94,24</Step>
+            <Step>95,13</Step>
+            <Step>96,1</Step>
+            <Step>97,2,Acum e rândul meu. </Step>
+            <Step>98,5,9,-1,8500,1</Step>
+            <Step>99,25</Step>
+            <Step>100,24</Step>
+            <Step>101,5,9,-1,-1,2</Step>
+            <Step>102,12</Step>
+            <Step>103,1</Step>
+            <Step>104,2,Acum e rândul tău. </Step>
+            <Step>105,23</Step>
+            <Step>106,5,1,-1,-1</Step>
+            <Step>107,24</Step>
+            <Step>108,13</Step>
+            <Step>109,1</Step>
+            <Step>110,2,Acum e rândul meu. </Step>
+            <Step>111,5,9,-1,8500,1</Step>
+            <Step>112,25</Step>
+            <Step>113,24</Step>
+            <Step>114,5,9,-1,-1,2</Step>
+            <Step>115,112</Step>
+            <Step>116,17</Step>
+            <Step>117,24</Step>
+            <Step>118,1</Step>
+            <Step>119,2,Într-o cameră dezordonată există jucării și haine pe jos; Hai să punem jucăriiile în cutia cu jucării și hainele în coșul cu haine.</Step>
+            <Step>120,2,Prima dată e rândul tău.</Step>
+            <Step>121,18,12</Step>
+            <Step>122,23</Step>
+            <Step>123,5,1,-1,-1</Step>
+            <Step>124,24</Step>
+            <Step>125,13</Step>
+            <Step>126,1</Step>
+            <Step>127,2,Acum e rândul meu. </Step>
+            <Step>128,5,9,-1,8500,1</Step>
+            <Step>129,25</Step>
+            <Step>130,24</Step>
+            <Step>131,5,9,-1,-1,2</Step>
+            <Step>132,12</Step>
+            <Step>133,1</Step>
+            <Step>134,2,Acum e rândul tău. </Step>
+            <Step>135,23</Step>
+            <Step>136,5,1,-1,-1</Step>
+            <Step>137,24</Step>
+            <Step>138,13</Step>
+            <Step>139,1</Step>
+            <Step>140,2,Acum e rândul meu. </Step>
+            <Step>141,5,9,-1,8500,1</Step>
+            <Step>142,25</Step>
+            <Step>143,24</Step>
+            <Step>144,5,9,-1,-1,2</Step>
+            <Step>145,12</Step>
+            <Step>146,1</Step>
+            <Step>147,2,Acum e rândul tău. </Step>
+            <Step>148,23</Step>
+            <Step>149,5,1,-1,-1</Step>
+            <Step>150,24</Step>
+            <Step>151,13</Step>
+            <Step>152,1</Step>
+            <Step>153,2,Acum e rândul meu. </Step>
+            <Step>154,5,9,-1,8500,1</Step>
+            <Step>155,25</Step>
+            <Step>156,24</Step>
+            <Step>157,5,9,-1,-1,2</Step>
+            <Step>158,12</Step>
+            <Step>159,1</Step>
+            <Step>160,2,Acum e rândul tău. </Step>
+            <Step>161,23</Step>
+            <Step>162,5,1,-1,-1</Step>
+            <Step>163,24</Step>
+            <Step>164,13</Step>
+            <Step>165,1</Step>
+            <Step>166,2,Acum e rândul meu. </Step>
+            <Step>167,5,9,-1,8500,1</Step>
+            <Step>168,25</Step>
+            <Step>169,24</Step>
+            <Step>170,5,9,-1,-1,2</Step>
+            <Step>171,112</Step>
+            <Step>172,17</Step>
+            <Step>173,24</Step>
+            <Step>174,1</Step>
+            <Step>175,2,Cântăreții și medicii folosesc instrumente diferite; Hai să punem instrumentele muzicale într-o parte și instrumentele medicale în cealaltă parte.</Step>
+            <Step>176,2,Prima dată e rândul tău.</Step>
+            <Step>177,18,13</Step>
+            <Step>178,23</Step>
+            <Step>179,5,1,-1,-1</Step>
+            <Step>180,24</Step>
+            <Step>181,13</Step>
+            <Step>182,1</Step>
+            <Step>183,2,Acum e rândul meu. </Step>
+            <Step>184,5,9,-1,8500,1</Step>
+            <Step>185,25</Step>
+            <Step>186,24</Step>
+            <Step>187,5,9,-1,-1,2</Step>
+            <Step>188,12</Step>
+            <Step>189,1</Step>
+            <Step>190,2,Acum e rândul tău. </Step>
+            <Step>191,23</Step>
+            <Step>192,5,1,-1,-1</Step>
+            <Step>193,24</Step>
+            <Step>194,13</Step>
+            <Step>195,1</Step>
+            <Step>196,2,Acum e rândul meu. </Step>
+            <Step>197,5,9,-1,8500,1</Step>
+            <Step>198,25</Step>
+            <Step>199,24</Step>
+            <Step>200,5,9,-1,-1,2</Step>
+            <Step>201,12</Step>
+            <Step>202,1</Step>
+            <Step>203,2,Acum e rândul tău. </Step>
+            <Step>204,23</Step>
+            <Step>205,5,1,-1,-1</Step>
+            <Step>206,24</Step>
+            <Step>207,13</Step>
+            <Step>208,1</Step>
+            <Step>209,2,Acum e rândul meu. </Step>
+            <Step>210,5,9,-1,8500,1</Step>
+            <Step>211,25</Step>
+            <Step>212,24</Step>
+            <Step>213,5,9,-1,-1,2</Step>
+            <Step>214,12</Step>
+            <Step>215,1</Step>
+            <Step>216,2,Acum e rândul tău. </Step>
+            <Step>217,23</Step>
+            <Step>218,5,1,-1,-1</Step>
+            <Step>219,24</Step>
+            <Step>220,13</Step>
+            <Step>221,1</Step>
+            <Step>222,2,Acum e rândul meu. </Step>
+            <Step>223,5,9,-1,8500,1</Step>
+            <Step>224,25</Step>
+            <Step>225,24</Step>
+            <Step>226,5,9,-1,-1,2</Step>
+            <Step>227,112</Step>
+            <Step>228,17</Step>
+            <Step>229,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>TT cat lvl 2</Name>
+        <ID>4</ID>
+        <TypeID>0</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,20</Step>
+            <Step>2,21</Step>
+            <Step>3,24</Step>
+            <Step>4,33</Step>
+            <Step>5,2,Acum ne vom juca ceva nou. Pe acest ecran vor apărea mai multe poze. Noi trebuie să potrivim pozele din mijloc cu una dintre pozele de pe margine; Facem asta pe rând. o dată potrivești tu. apoi potrivesc eu.</Step>
+            <Step>6,1</Step>
+            <Step>7,2,Există diferite tipuri de mijloace de transport: unele merg pe pământ și altele merg pe apă; Hai să punem mijloacele de transport care merg pe pământ într-o parte; iar cele care merg pe apă în cealaltă parte.</Step>
+            <Step>8,2,Prima dată e rândul tău.</Step>
+            <Step>9,18,15</Step>
+            <Step>10,23</Step>
+            <Step>11,5,1,-1,-1</Step>
+            <Step>12,24</Step>
+            <Step>13,13</Step>
+            <Step>14,1</Step>
+            <Step>15,2,Acum e rândul meu. </Step>
+            <Step>16,5,9,-1,8500,1</Step>
+            <Step>17,25</Step>
+            <Step>18,24</Step>
+            <Step>19,5,9,-1,-1,2</Step>
+            <Step>20,12</Step>
+            <Step>21,1</Step>
+            <Step>22,2,Acum e rândul tău. </Step>
+            <Step>23,23</Step>
+            <Step>24,5,1,-1,-1</Step>
+            <Step>25,24</Step>
+            <Step>26,13</Step>
+            <Step>27,1</Step>
+            <Step>28,2,Acum e rândul meu. </Step>
+            <Step>29,5,9,-1,8500,1</Step>
+            <Step>30,25</Step>
+            <Step>31,24</Step>
+            <Step>32,5,9,-1,-1,2</Step>
+            <Step>33,12</Step>
+            <Step>34,1</Step>
+            <Step>35,2,Acum e rândul tău. </Step>
+            <Step>36,23</Step>
+            <Step>37,5,1,-1,-1</Step>
+            <Step>38,24</Step>
+            <Step>39,13</Step>
+            <Step>40,1</Step>
+            <Step>41,2,Acum e rândul meu. </Step>
+            <Step>42,5,9,-1,8500,1</Step>
+            <Step>43,25</Step>
+            <Step>44,24</Step>
+            <Step>45,5,9,-1,-1,2</Step>
+            <Step>46,12</Step>
+            <Step>47,1</Step>
+            <Step>48,2,Acum e rândul tău. </Step>
+            <Step>49,23</Step>
+            <Step>50,5,1,-1,-1</Step>
+            <Step>51,24</Step>
+            <Step>52,13</Step>
+            <Step>53,1</Step>
+            <Step>54,2,Acum e rândul meu. </Step>
+            <Step>55,5,9,-1,8500,1</Step>
+            <Step>56,25</Step>
+            <Step>57,24</Step>
+            <Step>58,5,9,-1,-1,2</Step>
+            <Step>59,112</Step>
+            <Step>60,17</Step>
+            <Step>61,24</Step>
+            <Step>62,1</Step>
+            <Step>63,2,Putem vedea o mulțime de animale la fermă. Aceste animale sunt diferite de cele pe care le putem vedea în sălbăticie; Hai să punem anymalele care trăiesc la fermă într-o parte și animalele sălbatice în cealaltă parte.</Step>
+            <Step>64,2,Prima dată e rândul tău.</Step>
+            <Step>65,18,16</Step>
+            <Step>66,23</Step>
+            <Step>67,5,1,-1,-1</Step>
+            <Step>68,24</Step>
+            <Step>69,13</Step>
+            <Step>70,1</Step>
+            <Step>71,2,Acum e rândul meu. </Step>
+            <Step>72,5,9,-1,8500,1</Step>
+            <Step>73,25</Step>
+            <Step>74,24</Step>
+            <Step>75,5,9,-1,-1,2</Step>
+            <Step>76,12</Step>
+            <Step>77,1</Step>
+            <Step>78,2,Acum e rândul tău. </Step>
+            <Step>79,23</Step>
+            <Step>80,5,1,-1,-1</Step>
+            <Step>81,24</Step>
+            <Step>82,13</Step>
+            <Step>83,1</Step>
+            <Step>84,2,Acum e rândul meu. </Step>
+            <Step>85,5,9,-1,8500,1</Step>
+            <Step>86,25</Step>
+            <Step>87,24</Step>
+            <Step>88,5,9,-1,-1,2</Step>
+            <Step>89,12</Step>
+            <Step>90,1</Step>
+            <Step>91,2,Acum e rândul tău. </Step>
+            <Step>92,23</Step>
+            <Step>93,5,1,-1,-1</Step>
+            <Step>94,24</Step>
+            <Step>95,13</Step>
+            <Step>96,1</Step>
+            <Step>97,2,Acum e rândul meu. </Step>
+            <Step>98,5,9,-1,8500,1</Step>
+            <Step>99,25</Step>
+            <Step>100,24</Step>
+            <Step>101,5,9,-1,-1,2</Step>
+            <Step>102,12</Step>
+            <Step>103,1</Step>
+            <Step>104,2,Acum e rândul tău. </Step>
+            <Step>105,23</Step>
+            <Step>106,5,1,-1,-1</Step>
+            <Step>107,24</Step>
+            <Step>108,13</Step>
+            <Step>109,1</Step>
+            <Step>110,2,Acum e rândul meu. </Step>
+            <Step>111,5,9,-1,8500,1</Step>
+            <Step>112,25</Step>
+            <Step>113,24</Step>
+            <Step>114,5,9,-1,-1,2</Step>
+            <Step>115,112</Step>
+            <Step>116,17</Step>
+            <Step>117,24</Step>
+            <Step>118,1</Step>
+            <Step>119,2,Întrun an avem patru anotimpuri: primăvara. vara. toamna și iarna. Noi purtăm haine și încălțăminte diferite în funcție de anotimp; Hai să punem încălțămintea și hainele de vară într-o parte și cele de iarna în cealaltă parte.</Step>
+            <Step>120,2,Prima dată e rândul tău.</Step>
+            <Step>121,18,17</Step>
+            <Step>122,23</Step>
+            <Step>123,5,1,-1,-1</Step>
+            <Step>124,24</Step>
+            <Step>125,13</Step>
+            <Step>126,1</Step>
+            <Step>127,2,Acum e rândul meu. </Step>
+            <Step>128,5,9,-1,8500,1</Step>
+            <Step>129,25</Step>
+            <Step>130,24</Step>
+            <Step>131,5,9,-1,-1,2</Step>
+            <Step>132,12</Step>
+            <Step>133,1</Step>
+            <Step>134,2,Acum e rândul tău. </Step>
+            <Step>135,23</Step>
+            <Step>136,5,1,-1,-1</Step>
+            <Step>137,24</Step>
+            <Step>138,13</Step>
+            <Step>139,1</Step>
+            <Step>140,2,Acum e rândul meu. </Step>
+            <Step>141,5,9,-1,8500,1</Step>
+            <Step>142,25</Step>
+            <Step>143,24</Step>
+            <Step>144,5,9,-1,-1,2</Step>
+            <Step>145,12</Step>
+            <Step>146,1</Step>
+            <Step>147,2,Acum e rândul tău. </Step>
+            <Step>148,23</Step>
+            <Step>149,5,1,-1,-1</Step>
+            <Step>150,24</Step>
+            <Step>151,13</Step>
+            <Step>152,1</Step>
+            <Step>153,2,Acum e rândul meu. </Step>
+            <Step>154,5,9,-1,8500,1</Step>
+            <Step>155,25</Step>
+            <Step>156,24</Step>
+            <Step>157,5,9,-1,-1,2</Step>
+            <Step>158,12</Step>
+            <Step>159,1</Step>
+            <Step>160,2,Acum e rândul tău. </Step>
+            <Step>161,23</Step>
+            <Step>162,5,1,-1,-1</Step>
+            <Step>163,24</Step>
+            <Step>164,13</Step>
+            <Step>165,1</Step>
+            <Step>166,2,Acum e rândul meu. </Step>
+            <Step>167,5,9,-1,8500,1</Step>
+            <Step>168,25</Step>
+            <Step>169,24</Step>
+            <Step>170,5,9,-1,-1,2</Step>
+            <Step>171,112</Step>
+            <Step>172,17</Step>
+            <Step>173,24</Step>
+            <Step>174,1</Step>
+            <Step>175,2,Oamenii utilizează diferite obiecte pentru a face curățenie; Hai să punem obiectele pentru curățat în casă într-o parte și cele pentru curățat grădina în cealaltă parte.</Step>
+            <Step>176,2,Prima dată e rândul tău.</Step>
+            <Step>177,18,18</Step>
+            <Step>178,23</Step>
+            <Step>179,5,1,-1,-1</Step>
+            <Step>180,24</Step>
+            <Step>181,13</Step>
+            <Step>182,1</Step>
+            <Step>183,2,Acum e rândul meu. </Step>
+            <Step>184,5,9,-1,8500,1</Step>
+            <Step>185,25</Step>
+            <Step>186,24</Step>
+            <Step>187,5,9,-1,-1,2</Step>
+            <Step>188,12</Step>
+            <Step>189,1</Step>
+            <Step>190,2,Acum e rândul tău. </Step>
+            <Step>191,23</Step>
+            <Step>192,5,1,-1,-1</Step>
+            <Step>193,24</Step>
+            <Step>194,13</Step>
+            <Step>195,1</Step>
+            <Step>196,2,Acum e rândul meu. </Step>
+            <Step>197,5,9,-1,8500,1</Step>
+            <Step>198,25</Step>
+            <Step>199,24</Step>
+            <Step>200,5,9,-1,-1,2</Step>
+            <Step>201,12</Step>
+            <Step>202,1</Step>
+            <Step>203,2,Acum e rândul tău. </Step>
+            <Step>204,23</Step>
+            <Step>205,5,1,-1,-1</Step>
+            <Step>206,24</Step>
+            <Step>207,13</Step>
+            <Step>208,1</Step>
+            <Step>209,2,Acum e rândul meu. </Step>
+            <Step>210,5,9,-1,8500,1</Step>
+            <Step>211,25</Step>
+            <Step>212,24</Step>
+            <Step>213,5,9,-1,-1,2</Step>
+            <Step>214,12</Step>
+            <Step>215,1</Step>
+            <Step>216,2,Acum e rândul tău. </Step>
+            <Step>217,23</Step>
+            <Step>218,5,1,-1,-1</Step>
+            <Step>219,24</Step>
+            <Step>220,13</Step>
+            <Step>221,1</Step>
+            <Step>222,2,Acum e rândul meu. </Step>
+            <Step>223,5,9,-1,8500,1</Step>
+            <Step>224,25</Step>
+            <Step>225,24</Step>
+            <Step>226,5,9,-1,-1,2</Step>
+            <Step>227,112</Step>
+            <Step>228,17</Step>
+            <Step>229,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>Info sharing</Name>
+        <ID>5</ID>
+        <TypeID>4</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,33</Step>
+            <Step>2,2,Acum o să vorbim despre ce ne place cel mai mult; Pe acest ecran vor apărea ciinci poze; Noi trebuie să alegem poza care arată ce ne place cel mai mult; O dată alegi tu. apoi aleg eu</Step>
+            <Step>3,1</Step>
+            <Step>4,2,Prima dată e rândul tău; Care sunt dulciurile care-ți plac cel mai mult?</Step>
+            <Step>5,18,35</Step>
+            <Step>6,23</Step>
+            <Step>7,5,2,-1,15000</Step>
+            <Step>8,24</Step>
+            <Step>9,14</Step>
+            <Step>10,17</Step>
+            <Step>11,1</Step>
+            <Step>12,2,Acum e rândul meu.</Step>
+            <Step>13,18,35</Step>
+            <Step>14,5,9,-1,17000,1</Step>
+            <Step>15,26,4</Step>
+            <Step>16,2,Mie îmi place cel mai mult înghețata.</Step>
+            <Step>17,33</Step>
+            <Step>18,5,9,-1,-1,2</Step>
+            <Step>19,112</Step>
+            <Step>20,17</Step>
+            <Step>21,1</Step>
+            <Step>22,2,Prima dată e rândul tău; ; Care este mâncarea care-ți place cel mai mult ?</Step>
+            <Step>23,18,36</Step>
+            <Step>24,23</Step>
+            <Step>25,5,2,-1,15000</Step>
+            <Step>26,24</Step>
+            <Step>27,14</Step>
+            <Step>28,17</Step>
+            <Step>29,1</Step>
+            <Step>30,2,Acum e rândul meu.</Step>
+            <Step>31,18,36</Step>
+            <Step>32,5,9,-1,17000,1</Step>
+            <Step>33,26,5</Step>
+            <Step>34,2,Mie îmi place cel mai mult supa.</Step>
+            <Step>35,33</Step>
+            <Step>36,5,9,-1,-1,2</Step>
+            <Step>37,112</Step>
+            <Step>38,17</Step>
+            <Step>39,1</Step>
+            <Step>40,2,Prima dată e rândul tău; Cu ce-ți place să te joci în casă cel mai mult?</Step>
+            <Step>41,18,37</Step>
+            <Step>42,23</Step>
+            <Step>43,5,2,-1,15000</Step>
+            <Step>44,24</Step>
+            <Step>45,14</Step>
+            <Step>46,17</Step>
+            <Step>47,1</Step>
+            <Step>48,2,Acum e rândul meu.</Step>
+            <Step>49,18,37</Step>
+            <Step>50,5,9,-1,17000,1</Step>
+            <Step>51,26,2</Step>
+            <Step>52,2,Mie îmi place cel mai mult să desenez.</Step>
+            <Step>53,33</Step>
+            <Step>54,5,9,-1,-1,2</Step>
+            <Step>55,112</Step>
+            <Step>56,17</Step>
+            <Step>57,1</Step>
+            <Step>58,2,Prima dată e rândul tău; Cu ce-ți place să te joci afară cel mai mult?</Step>
+            <Step>59,18,38</Step>
+            <Step>60,23</Step>
+            <Step>61,5,2,-1,15000</Step>
+            <Step>62,24</Step>
+            <Step>63,14</Step>
+            <Step>64,17</Step>
+            <Step>65,1</Step>
+            <Step>66,2,Acum e rândul meu.</Step>
+            <Step>67,18,38</Step>
+            <Step>68,5,9,-1,17000,1</Step>
+            <Step>69,26,3</Step>
+            <Step>70,2,Mie îmi place cel mai mult să sar coarda.</Step>
+            <Step>71,33</Step>
+            <Step>72,5,9,-1,-1,2</Step>
+            <Step>73,112</Step>
+            <Step>74,17</Step>
+            <Step>75,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>Info sharing 2</Name>
+        <ID>6</ID>
+        <TypeID>4</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,33</Step>
+            <Step>2,2,Acum o să vorbim despre ce ne place cel mai mult; Pe acest ecran vor apărea ciinci poze; Noi trebuie să alegem poza care arată ce ne place cel mai mult; O dată alegi tu. apoi aleg eu</Step>
+            <Step>3,1</Step>
+            <Step>4,2,Prima dată e rândul tău; Ce culoare -ți place cel mai mult?</Step>
+            <Step>5,18,39</Step>
+            <Step>6,23</Step>
+            <Step>7,5,2,-1,15000</Step>
+            <Step>8,24</Step>
+            <Step>9,14</Step>
+            <Step>10,17</Step>
+            <Step>11,1</Step>
+            <Step>12,2,Acum e rândul meu.</Step>
+            <Step>13,18,39</Step>
+            <Step>14,5,9,-1,17000,1</Step>
+            <Step>15,26,1</Step>
+            <Step>16,2,Mie îmi place cel mai mult culoarea galbenă.</Step>
+            <Step>17,33</Step>
+            <Step>18,5,9,-1,-1,2</Step>
+            <Step>19,112</Step>
+            <Step>20,17</Step>
+            <Step>21,1</Step>
+            <Step>22,2,Prima dată e rândul tău.Ce formă îți place cel mai mult?</Step>
+            <Step>23,18,40</Step>
+            <Step>24,23</Step>
+            <Step>25,5,2,-1,15000</Step>
+            <Step>26,24</Step>
+            <Step>27,14</Step>
+            <Step>28,17</Step>
+            <Step>29,1</Step>
+            <Step>30,2,Acum e rândul meu.</Step>
+            <Step>31,18,40</Step>
+            <Step>32,5,9,-1,17000,1</Step>
+            <Step>33,26,1</Step>
+            <Step>34,2,Mie îmi place cel mai mult ceerrcul.</Step>
+            <Step>35,33</Step>
+            <Step>36,5,9,-1,-1,2</Step>
+            <Step>37,112</Step>
+            <Step>38,17</Step>
+            <Step>39,1</Step>
+            <Step>40,2,Prima dată e rândul tău; Ce animal de casă îți place cel mai mult?</Step>
+            <Step>41,18,41</Step>
+            <Step>42,23</Step>
+            <Step>43,5,2,-1,15000</Step>
+            <Step>44,24</Step>
+            <Step>45,14</Step>
+            <Step>46,17</Step>
+            <Step>47,1</Step>
+            <Step>48,2,Acum e rândul meu.</Step>
+            <Step>49,18,41</Step>
+            <Step>50,5,9,-1,17000,1</Step>
+            <Step>51,26,4</Step>
+            <Step>52,2,Mie îmi place cel mai mult pisica.</Step>
+            <Step>53,33</Step>
+            <Step>54,5,9,-1,-1,2</Step>
+            <Step>55,112</Step>
+            <Step>56,17</Step>
+            <Step>57,1</Step>
+            <Step>58,2,Prima dată e rândul tău; Ce animal sălbatic îți place cel mai mult?</Step>
+            <Step>59,18,42</Step>
+            <Step>60,23</Step>
+            <Step>61,5,2,-1,15000</Step>
+            <Step>62,24</Step>
+            <Step>63,14</Step>
+            <Step>64,17</Step>
+            <Step>65,1</Step>
+            <Step>66,2,Acum e rândul meu.</Step>
+            <Step>67,18,42</Step>
+            <Step>68,5,9,-1,17000,1</Step>
+            <Step>69,26,2</Step>
+            <Step>70,2,Mie îmi place cel mai mult rinocerul.</Step>
+            <Step>71,33</Step>
+            <Step>72,5,9,-1,-1,2</Step>
+            <Step>73,112</Step>
+            <Step>74,17</Step>
+            <Step>75,1</Step>
+            <Step>76,2,Prima dată e rândul tău; Care anotimp îți place cel mai mult?</Step>
+            <Step>77,18,43</Step>
+            <Step>78,23</Step>
+            <Step>79,5,2,-1,15000</Step>
+            <Step>80,24</Step>
+            <Step>81,14</Step>
+            <Step>82,17</Step>
+            <Step>83,1</Step>
+            <Step>84,2,Acum e rândul meu.</Step>
+            <Step>85,18,43</Step>
+            <Step>86,5,9,-1,17000,1</Step>
+            <Step>87,26,3</Step>
+            <Step>88,2,Mie îmi place cel mai mult toamna.</Step>
+            <Step>89,33</Step>
+            <Step>90,5,9,-1,-1,2</Step>
+            <Step>91,112</Step>
+            <Step>92,17</Step>
+            <Step>93,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>Imitation object</Name>
+        <ID>7</ID>
+        <TypeID>1</TypeID>
+        <Steps>
+            <Step>0,33</Step>
+            <Step>1,2,Hai să ne jucăm împreună. Eu o să fac niște mișcări cu câteva jucăriii; Fă și tu ca mine.</Step>
+            <Step>2,1</Step>
+            <Step>3,2,Poți să faci aceleași mișcări ca și mine? ; Prima dată vom lua o mașinuță</Step>
+            <Step>4,2,Fă și tu ca mine!</Step>
+            <Step>5,6</Step>
+            <Step>6,5,15,-1,15000,1</Step>
+            <Step>7,3,4</Step>
+            <Step>8,33</Step>
+            <Step>9,5,15,-1,-1,2</Step>
+            <Step>10,8</Step>
+            <Step>11,1</Step>
+            <Step>12,34,Fă și tu ca mine!</Step>
+            <Step>13,6</Step>
+            <Step>14,5,15,-1,15000,1</Step>
+            <Step>15,3,4</Step>
+            <Step>16,33</Step>
+            <Step>17,5,15,-1,-1,2</Step>
+            <Step>18,8</Step>
+            <Step>19,1</Step>
+            <Step>20,34,Fă și tu ca mine!</Step>
+            <Step>21,6</Step>
+            <Step>22,5,15,-1,15000,1</Step>
+            <Step>23,3,4</Step>
+            <Step>24,33</Step>
+            <Step>25,5,15,-1,-1,2</Step>
+            <Step>26,9</Step>
+            <Step>27,7</Step>
+            <Step>28,1</Step>
+            <Step>29,2,Acum vom lua o cană.</Step>
+            <Step>30,2,Fă și tu ca mine!</Step>
+            <Step>31,6</Step>
+            <Step>32,5,16,-1,15000,1</Step>
+            <Step>33,3,6</Step>
+            <Step>34,33</Step>
+            <Step>35,5,16,-1,-1,2</Step>
+            <Step>36,8</Step>
+            <Step>37,1</Step>
+            <Step>38,34,Fă și tu ca mine!</Step>
+            <Step>39,6</Step>
+            <Step>40,5,16,-1,15000,1</Step>
+            <Step>41,3,6</Step>
+            <Step>42,33</Step>
+            <Step>43,5,16,-1,-1,2</Step>
+            <Step>44,8</Step>
+            <Step>45,1</Step>
+            <Step>46,34,Fă și tu ca mine!</Step>
+            <Step>47,6</Step>
+            <Step>48,5,16,-1,15000,1</Step>
+            <Step>49,3,6</Step>
+            <Step>50,33</Step>
+            <Step>51,5,16,-1,-1,2</Step>
+            <Step>52,9</Step>
+            <Step>53,7</Step>
+            <Step>54,1</Step>
+            <Step>55,2,Acum vom lua un avion.</Step>
+            <Step>56,2,Fă și tu ca mine!</Step>
+            <Step>57,6</Step>
+            <Step>58,5,15,-1,15000,1</Step>
+            <Step>59,3,5</Step>
+            <Step>60,33</Step>
+            <Step>61,5,15,-1,-1,2</Step>
+            <Step>62,8</Step>
+            <Step>63,1</Step>
+            <Step>64,34,Fă și tu ca mine!</Step>
+            <Step>65,6</Step>
+            <Step>66,5,15,-1,15000,1</Step>
+            <Step>67,3,5</Step>
+            <Step>68,33</Step>
+            <Step>69,5,15,-1,-1,2</Step>
+            <Step>70,8</Step>
+            <Step>71,1</Step>
+            <Step>72,34,Fă și tu ca mine!</Step>
+            <Step>73,6</Step>
+            <Step>74,5,15,-1,15000,1</Step>
+            <Step>75,3,5</Step>
+            <Step>76,33</Step>
+            <Step>77,5,15,-1,-1,2</Step>
+            <Step>78,9</Step>
+            <Step>79,7</Step>
+            <Step>80,1</Step>
+            <Step>81,2,Acum vom lua o floare.</Step>
+            <Step>82,2,Fă și tu ca mine!</Step>
+            <Step>83,6</Step>
+            <Step>84,5,16,-1,15000,1</Step>
+            <Step>85,3,7</Step>
+            <Step>86,33</Step>
+            <Step>87,5,16,-1,-1,2</Step>
+            <Step>88,8</Step>
+            <Step>89,1</Step>
+            <Step>90,34,Fă și tu ca mine!</Step>
+            <Step>91,6</Step>
+            <Step>92,5,16,-1,15000,1</Step>
+            <Step>93,3,7</Step>
+            <Step>94,33</Step>
+            <Step>95,5,16,-1,-1,2</Step>
+            <Step>96,8</Step>
+            <Step>97,1</Step>
+            <Step>98,34,Fă și tu ca mine!</Step>
+            <Step>99,6</Step>
+            <Step>100,5,16,-1,15000,1</Step>
+            <Step>101,3,7</Step>
+            <Step>102,33</Step>
+            <Step>103,5,16,-1,-1,2</Step>
+            <Step>104,9</Step>
+            <Step>105,7</Step>
+            <Step>106,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>imitation move lvl 1</Name>
+        <ID>8</ID>
+        <TypeID>1</TypeID>
+        <Steps>
+            <Step>0,33</Step>
+            <Step>1,2,Acum o să fac alte mișcări fără jucăriii; Fă și tu ca mine.</Step>
+            <Step>2,1</Step>
+            <Step>3,2,Fă și tu ca mine!</Step>
+            <Step>4,5,21,-1,15000,1</Step>
+            <Step>5,3,16</Step>
+            <Step>6,33</Step>
+            <Step>7,5,21,-1,-1,2</Step>
+            <Step>8,10</Step>
+            <Step>9,1</Step>
+            <Step>10,34,Fă și tu ca mine!</Step>
+            <Step>11,5,21,-1,15000,1</Step>
+            <Step>12,3,16</Step>
+            <Step>13,33</Step>
+            <Step>14,5,21,-1,-1,2</Step>
+            <Step>15,10</Step>
+            <Step>16,1</Step>
+            <Step>17,34,Fă și tu ca mine!</Step>
+            <Step>18,5,21,-1,15000,1</Step>
+            <Step>19,3,16</Step>
+            <Step>20,33</Step>
+            <Step>21,5,21,-1,-1,2</Step>
+            <Step>22,11</Step>
+            <Step>23,1</Step>
+            <Step>24,2,Fă și tu ca mine!</Step>
+            <Step>25,5,14,-1,15000,1</Step>
+            <Step>26,3,3</Step>
+            <Step>27,33</Step>
+            <Step>28,5,14,-1,-1,2</Step>
+            <Step>29,10</Step>
+            <Step>30,1</Step>
+            <Step>31,34,Fă și tu ca mine!</Step>
+            <Step>32,5,14,-1,15000,1</Step>
+            <Step>33,3,3</Step>
+            <Step>34,33</Step>
+            <Step>35,5,14,-1,-1,2</Step>
+            <Step>36,10</Step>
+            <Step>37,1</Step>
+            <Step>38,34,Fă și tu ca mine!</Step>
+            <Step>39,5,14,-1,15000,1</Step>
+            <Step>40,3,3</Step>
+            <Step>41,33</Step>
+            <Step>42,5,14,-1,-1,2</Step>
+            <Step>43,11</Step>
+            <Step>44,1</Step>
+            <Step>45,2,Fă și tu ca mine!</Step>
+            <Step>46,5,12,-1,15000,1</Step>
+            <Step>47,3,1</Step>
+            <Step>48,33</Step>
+            <Step>49,5,12,-1,-1,2</Step>
+            <Step>50,10</Step>
+            <Step>51,1</Step>
+            <Step>52,34,Fă și tu ca mine!</Step>
+            <Step>53,5,12,-1,15000,1</Step>
+            <Step>54,3,1</Step>
+            <Step>55,33</Step>
+            <Step>56,5,12,-1,-1,2</Step>
+            <Step>57,10</Step>
+            <Step>58,1</Step>
+            <Step>59,34,Fă și tu ca mine!</Step>
+            <Step>60,5,12,-1,15000,1</Step>
+            <Step>61,3,1</Step>
+            <Step>62,33</Step>
+            <Step>63,5,12,-1,-1,2</Step>
+            <Step>64,11</Step>
+            <Step>65,1</Step>
+            <Step>66,2,Fă și tu ca mine!</Step>
+            <Step>67,5,11,-1,15000,1</Step>
+            <Step>68,3,0</Step>
+            <Step>69,33</Step>
+            <Step>70,5,11,-1,-1,2</Step>
+            <Step>71,10</Step>
+            <Step>72,1</Step>
+            <Step>73,34,Fă și tu ca mine!</Step>
+            <Step>74,5,11,-1,15000,1</Step>
+            <Step>75,3,0</Step>
+            <Step>76,33</Step>
+            <Step>77,5,11,-1,-1,2</Step>
+            <Step>78,10</Step>
+            <Step>79,1</Step>
+            <Step>80,34,Fă și tu ca mine!</Step>
+            <Step>81,5,11,-1,15000,1</Step>
+            <Step>82,3,0</Step>
+            <Step>83,33</Step>
+            <Step>84,5,11,-1,-1,2</Step>
+            <Step>85,11</Step>
+            <Step>86,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>imitation move lvl 2</Name>
+        <ID>9</ID>
+        <TypeID>1</TypeID>
+        <Steps>
+            <Step>0,33</Step>
+            <Step>1,2,Acum o să fac alte mișcări fără jucăriii; Fă și tu ca mine.</Step>
+            <Step>2,1</Step>
+            <Step>3,2,Fă și tu ca mine!</Step>
+            <Step>4,5,17,-1,15000,1</Step>
+            <Step>5,3,8</Step>
+            <Step>6,33</Step>
+            <Step>7,5,17,-1,-1,2</Step>
+            <Step>8,10</Step>
+            <Step>9,1</Step>
+            <Step>10,34,Fă și tu ca mine!</Step>
+            <Step>11,5,17,-1,15000,1</Step>
+            <Step>12,3,8</Step>
+            <Step>13,33</Step>
+            <Step>14,5,17,-1,-1,2</Step>
+            <Step>15,10</Step>
+            <Step>16,1</Step>
+            <Step>17,34,Fă și tu ca mine!</Step>
+            <Step>18,5,17,-1,15000,1</Step>
+            <Step>19,3,8</Step>
+            <Step>20,33</Step>
+            <Step>21,5,17,-1,-1,2</Step>
+            <Step>22,11</Step>
+            <Step>23,1</Step>
+            <Step>24,2,Fă și tu ca mine!</Step>
+            <Step>25,5,18,-1,15000,1</Step>
+            <Step>26,3,9</Step>
+            <Step>27,33</Step>
+            <Step>28,5,18,-1,-1,2</Step>
+            <Step>29,10</Step>
+            <Step>30,1</Step>
+            <Step>31,34,Fă și tu ca mine!</Step>
+            <Step>32,5,18,-1,15000,1</Step>
+            <Step>33,3,9</Step>
+            <Step>34,33</Step>
+            <Step>35,5,18,-1,-1,2</Step>
+            <Step>36,10</Step>
+            <Step>37,1</Step>
+            <Step>38,34,Fă și tu ca mine!</Step>
+            <Step>39,5,18,-1,15000,1</Step>
+            <Step>40,3,9</Step>
+            <Step>41,33</Step>
+            <Step>42,5,18,-1,-1,2</Step>
+            <Step>43,11</Step>
+            <Step>44,1</Step>
+            <Step>45,2,Fă și tu ca mine!</Step>
+            <Step>46,5,19,-1,15000,1</Step>
+            <Step>47,3,10</Step>
+            <Step>48,33</Step>
+            <Step>49,5,19,-1,-1,2</Step>
+            <Step>50,10</Step>
+            <Step>51,1</Step>
+            <Step>52,34,Fă și tu ca mine!</Step>
+            <Step>53,5,19,-1,15000,1</Step>
+            <Step>54,3,10</Step>
+            <Step>55,33</Step>
+            <Step>56,5,19,-1,-1,2</Step>
+            <Step>57,10</Step>
+            <Step>58,1</Step>
+            <Step>59,34,Fă și tu ca mine!</Step>
+            <Step>60,5,19,-1,15000,1</Step>
+            <Step>61,3,10</Step>
+            <Step>62,33</Step>
+            <Step>63,5,19,-1,-1,2</Step>
+            <Step>64,11</Step>
+            <Step>65,1</Step>
+            <Step>66,2,Fă și tu ca mine!</Step>
+            <Step>67,5,20,-1,15000,1</Step>
+            <Step>68,3,11</Step>
+            <Step>69,33</Step>
+            <Step>70,5,11,-1,-1,2</Step>
+            <Step>71,10</Step>
+            <Step>72,1</Step>
+            <Step>73,34,Fă și tu ca mine!</Step>
+            <Step>74,5,20,-1,15000,1</Step>
+            <Step>75,3,11</Step>
+            <Step>76,33</Step>
+            <Step>77,5,20,-1,-1,2</Step>
+            <Step>78,10</Step>
+            <Step>79,1</Step>
+            <Step>80,34,Fă și tu ca mine!</Step>
+            <Step>81,5,20,-1,15000,1</Step>
+            <Step>82,3,11</Step>
+            <Step>83,33</Step>
+            <Step>84,5,20,-1,-1,2</Step>
+            <Step>85,11</Step>
+            <Step>86,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>Pattern lvl 1</Name>
+        <ID>10</ID>
+        <TypeID>3</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,33</Step>
+            <Step>2,21</Step>
+            <Step>3,20</Step>
+            <Step>4,2,Acum o să ne jucăm ceva nou. Pe acest ecran este un șir de forme. Noi trebuie să continuăm șirul de forme. folosind pozele din mijloc; Facem asta pe rând. o dată potrivești tu. apoi potrivesc eu.</Step>
+            <Step>5,1</Step>
+            <Step>6,2,Hai să continuăm șirul!</Step>
+            <Step>7,2,Prima dată e rândul tău.</Step>
+            <Step>8,18,10</Step>
+            <Step>9,23</Step>
+            <Step>10,5,1,-1,-1</Step>
+            <Step>11,24</Step>
+            <Step>12,15</Step>
+            <Step>13,18,11</Step>
+            <Step>14,1</Step>
+            <Step>15,2,Acum e rândul meu.</Step>
+            <Step>16,5,9,-1,8500,1</Step>
+            <Step>17,25</Step>
+            <Step>18,24</Step>
+            <Step>19,18,12</Step>
+            <Step>16,5,9,-1,-1,2</Step>
+            <Step>20,12</Step>
+            <Step>21,2,Acum e rândul tău. </Step>
+            <Step>22,23</Step>
+            <Step>23,5,1,-1,-1</Step>
+            <Step>24,24</Step>
+            <Step>25,15</Step>
+            <Step>26,18,13</Step>
+            <Step>27,1</Step>
+            <Step>28,2,Acum e rândul meu.</Step>
+            <Step>29,5,9,-1,8500,1</Step>
+            <Step>30,25</Step>
+            <Step>31,24</Step>
+            <Step>32,18,14</Step>
+            <Step>29,5,9,-1,-1,2</Step>
+            <Step>33,12</Step>
+            <Step>34,2,Acum e rândul tău. </Step>
+            <Step>35,23</Step>
+            <Step>36,5,1,-1,-1</Step>
+            <Step>37,24</Step>
+            <Step>38,15</Step>
+            <Step>39,18,15</Step>
+            <Step>40,1</Step>
+            <Step>41,2,Acum e rândul meu.</Step>
+            <Step>42,5,9,-1,8500,1</Step>
+            <Step>43,25</Step>
+            <Step>44,24</Step>
+            <Step>45,18,16</Step>
+            <Step>42,5,9,-1,-1,2</Step>
+            <Step>46,12</Step>
+            <Step>47,2,Acum e rândul tău. </Step>
+            <Step>48,23</Step>
+            <Step>49,5,1,-1,-1</Step>
+            <Step>50,24</Step>
+            <Step>51,15</Step>
+            <Step>52,18,17</Step>
+            <Step>53,1</Step>
+            <Step>54,2,Acum e rândul meu.</Step>
+            <Step>55,5,9,-1,8500,1</Step>
+            <Step>56,25</Step>
+            <Step>57,24</Step>
+            <Step>58,18,18</Step>
+            <Step>55,5,9,-1,-1,2</Step>
+            <Step>59,112</Step>
+            <Step>60,17</Step>
+            <Step>61,1</Step>
+            <Step>62,2,Hai să continuăm șirul!</Step>
+            <Step>63,2,Prima dată e rândul tău.</Step>
+            <Step>64,18,20</Step>
+            <Step>65,23</Step>
+            <Step>66,5,1,-1,-1</Step>
+            <Step>67,24</Step>
+            <Step>68,15</Step>
+            <Step>69,18,21</Step>
+            <Step>70,1</Step>
+            <Step>71,2,Acum e rândul meu.</Step>
+            <Step>72,5,9,-1,8500,1</Step>
+            <Step>73,25</Step>
+            <Step>74,24</Step>
+            <Step>75,18,22</Step>
+            <Step>72,5,9,-1,-1,2</Step>
+            <Step>76,12</Step>
+            <Step>77,2,Acum e rândul tău. </Step>
+            <Step>78,23</Step>
+            <Step>79,5,1,-1,-1</Step>
+            <Step>80,24</Step>
+            <Step>81,15</Step>
+            <Step>82,18,23</Step>
+            <Step>83,1</Step>
+            <Step>84,2,Acum e rândul meu.</Step>
+            <Step>85,5,9,-1,8500,1</Step>
+            <Step>86,25</Step>
+            <Step>87,24</Step>
+            <Step>88,18,24</Step>
+            <Step>85,5,9,-1,-1,2</Step>
+            <Step>89,12</Step>
+            <Step>90,2,Acum e rândul tău. </Step>
+            <Step>91,23</Step>
+            <Step>92,5,1,-1,-1</Step>
+            <Step>93,24</Step>
+            <Step>94,15</Step>
+            <Step>95,18,25</Step>
+            <Step>96,1</Step>
+            <Step>97,2,Acum e rândul meu.</Step>
+            <Step>98,5,9,-1,8500,1</Step>
+            <Step>99,25</Step>
+            <Step>100,24</Step>
+            <Step>101,18,26</Step>
+            <Step>98,5,9,-1,-1,2</Step>
+            <Step>102,12</Step>
+            <Step>103,2,Acum e rândul tău. </Step>
+            <Step>104,23</Step>
+            <Step>105,5,1,-1,-1</Step>
+            <Step>106,24</Step>
+            <Step>107,15</Step>
+            <Step>108,18,27</Step>
+            <Step>109,1</Step>
+            <Step>110,2,Acum e rândul meu.</Step>
+            <Step>111,5,9,-1,8500,1</Step>
+            <Step>112,25</Step>
+            <Step>113,24</Step>
+            <Step>114,18,28</Step>
+            <Step>111,5,9,-1,-1,2</Step>
+            <Step>115,112</Step>
+            <Step>116,17</Step>
+            <Step>117,1</Step>
+            <Step>118,2,Hai să continuăm șirul!</Step>
+            <Step>119,2,Prima dată e rândul tău.</Step>
+            <Step>120,18,30</Step>
+            <Step>121,23</Step>
+            <Step>122,5,1,-1,-1</Step>
+            <Step>123,24</Step>
+            <Step>124,15</Step>
+            <Step>125,18,31</Step>
+            <Step>126,1</Step>
+            <Step>127,2,Acum e rândul meu.</Step>
+            <Step>128,5,9,-1,8500,1</Step>
+            <Step>129,25</Step>
+            <Step>130,24</Step>
+            <Step>131,18,32</Step>
+            <Step>128,5,9,-1,-1,2</Step>
+            <Step>132,12</Step>
+            <Step>133,2,Acum e rândul tău. </Step>
+            <Step>134,23</Step>
+            <Step>135,5,1,-1,-1</Step>
+            <Step>136,24</Step>
+            <Step>137,15</Step>
+            <Step>138,18,33</Step>
+            <Step>139,1</Step>
+            <Step>140,2,Acum e rândul meu.</Step>
+            <Step>141,5,9,-1,8500,1</Step>
+            <Step>142,25</Step>
+            <Step>143,24</Step>
+            <Step>144,18,34</Step>
+            <Step>141,5,9,-1,-1,2</Step>
+            <Step>145,12</Step>
+            <Step>146,2,Acum e rândul tău. </Step>
+            <Step>147,23</Step>
+            <Step>148,5,1,-1,-1</Step>
+            <Step>149,24</Step>
+            <Step>150,15</Step>
+            <Step>151,18,35</Step>
+            <Step>152,1</Step>
+            <Step>153,2,Acum e rândul meu.</Step>
+            <Step>154,5,9,-1,8500,1</Step>
+            <Step>155,25</Step>
+            <Step>156,24</Step>
+            <Step>157,18,36</Step>
+            <Step>154,5,9,-1,-1,2</Step>
+            <Step>158,12</Step>
+            <Step>159,2,Acum e rândul tău. </Step>
+            <Step>160,23</Step>
+            <Step>161,5,1,-1,-1</Step>
+            <Step>162,24</Step>
+            <Step>163,15</Step>
+            <Step>164,18,37</Step>
+            <Step>165,1</Step>
+            <Step>166,2,Acum e rândul meu.</Step>
+            <Step>167,5,9,-1,8500,1</Step>
+            <Step>168,25</Step>
+            <Step>169,24</Step>
+            <Step>170,18,38</Step>
+            <Step>167,5,9,-1,-1,2</Step>
+            <Step>171,112</Step>
+            <Step>172,17</Step>
+            <Step>173,1</Step>
+            <Step>174,2,Hai să continuăm șirul!</Step>
+            <Step>175,2,Prima dată e rândul tău.</Step>
+            <Step>176,18,40</Step>
+            <Step>177,23</Step>
+            <Step>178,5,1,-1,-1</Step>
+            <Step>179,24</Step>
+            <Step>180,15</Step>
+            <Step>181,18,41</Step>
+            <Step>182,1</Step>
+            <Step>183,2,Acum e rândul meu.</Step>
+            <Step>184,5,9,-1,8500,1</Step>
+            <Step>185,25</Step>
+            <Step>186,24</Step>
+            <Step>187,18,42</Step>
+            <Step>184,5,9,-1,-1,2</Step>
+            <Step>188,12</Step>
+            <Step>189,2,Acum e rândul tău. </Step>
+            <Step>190,23</Step>
+            <Step>191,5,1,-1,-1</Step>
+            <Step>192,24</Step>
+            <Step>193,15</Step>
+            <Step>194,18,43</Step>
+            <Step>195,1</Step>
+            <Step>196,2,Acum e rândul meu.</Step>
+            <Step>197,5,9,-1,8500,1</Step>
+            <Step>198,25</Step>
+            <Step>199,24</Step>
+            <Step>200,18,44</Step>
+            <Step>197,5,9,-1,-1,2</Step>
+            <Step>201,12</Step>
+            <Step>202,2,Acum e rândul tău. </Step>
+            <Step>203,23</Step>
+            <Step>204,5,1,-1,-1</Step>
+            <Step>205,24</Step>
+            <Step>206,15</Step>
+            <Step>207,18,45</Step>
+            <Step>208,1</Step>
+            <Step>209,2,Acum e rândul meu.</Step>
+            <Step>210,5,9,-1,8500,1</Step>
+            <Step>211,25</Step>
+            <Step>212,24</Step>
+            <Step>213,18,46</Step>
+            <Step>210,5,9,-1,-1,2</Step>
+            <Step>214,12</Step>
+            <Step>215,2,Acum e rândul tău. </Step>
+            <Step>216,23</Step>
+            <Step>217,5,1,-1,-1</Step>
+            <Step>218,24</Step>
+            <Step>219,15</Step>
+            <Step>220,18,47</Step>
+            <Step>221,1</Step>
+            <Step>222,2,Acum e rândul meu.</Step>
+            <Step>223,5,9,-1,8500,1</Step>
+            <Step>224,25</Step>
+            <Step>225,24</Step>
+            <Step>226,18,48</Step>
+            <Step>223,5,9,-1,-1,2</Step>
+            <Step>227,112</Step>
+            <Step>228,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>Pattern lvl 2</Name>
+        <ID>11</ID>
+        <TypeID>3</TypeID>
+        <Steps>
+            <Step>0,17</Step>
+            <Step>1,33</Step>
+            <Step>2,21</Step>
+            <Step>3,20</Step>
+            <Step>4,2,Acum o să ne jucăm ceva nou. Pe acest ecran este un șir de forme. Noi trebuie să continuăm șirul de forme. folosind pozele din mijloc; Facem asta pe rând. o dată potrivești tu. apoi potrivesc eu.</Step>
+            <Step>5,1</Step>
+            <Step>6,2,Hai să continuăm șirul!</Step>
+            <Step>7,2,Prima dată e rândul tău.</Step>
+            <Step>8,18,60</Step>
+            <Step>9,23</Step>
+            <Step>10,5,1,-1,-1</Step>
+            <Step>11,24</Step>
+            <Step>12,15</Step>
+            <Step>13,18,61</Step>
+            <Step>14,1</Step>
+            <Step>15,2,Acum e rândul meu.</Step>
+            <Step>16,5,9,-1,8500,1</Step>
+            <Step>17,25</Step>
+            <Step>18,24</Step>
+            <Step>19,18,62</Step>
+            <Step>20,5,9,-1,-1,2</Step>
+            <Step>21,12</Step>
+            <Step>22,2,Acum e rândul tău. </Step>
+            <Step>23,23</Step>
+            <Step>24,5,1,-1,-1</Step>
+            <Step>25,24</Step>
+            <Step>26,15</Step>
+            <Step>27,18,63</Step>
+            <Step>28,1</Step>
+            <Step>29,2,Acum e rândul meu.</Step>
+            <Step>30,5,9,-1,8500,1</Step>
+            <Step>31,25</Step>
+            <Step>32,24</Step>
+            <Step>33,18,64</Step>
+            <Step>34,5,9,-1,-1,2</Step>
+            <Step>35,12</Step>
+            <Step>36,2,Acum e rândul tău. </Step>
+            <Step>37,23</Step>
+            <Step>38,5,1,-1,-1</Step>
+            <Step>39,24</Step>
+            <Step>40,15</Step>
+            <Step>41,18,65</Step>
+            <Step>42,1</Step>
+            <Step>43,2,Acum e rândul meu.</Step>
+            <Step>44,5,9,-1,8500,1</Step>
+            <Step>45,25</Step>
+            <Step>46,24</Step>
+            <Step>47,18,66</Step>
+            <Step>48,5,9,-1,-1,2</Step>
+            <Step>49,12</Step>
+            <Step>50,2,Acum e rândul tău. </Step>
+            <Step>51,23</Step>
+            <Step>52,5,1,-1,-1</Step>
+            <Step>53,24</Step>
+            <Step>54,15</Step>
+            <Step>55,18,67</Step>
+            <Step>56,1</Step>
+            <Step>57,2,Acum e rândul meu.</Step>
+            <Step>58,5,9,-1,8500,1</Step>
+            <Step>59,25</Step>
+            <Step>60,24</Step>
+            <Step>61,18,68</Step>
+            <Step>62,5,9,-1,-1,2</Step>
+            <Step>63,112</Step>
+            <Step>64,17</Step>
+            <Step>65,1</Step>
+            <Step>66,2,Hai să continuăm șirul!</Step>
+            <Step>67,2,Prima dată e rândul tău.</Step>
+            <Step>68,18,70</Step>
+            <Step>69,23</Step>
+            <Step>70,5,1,-1,-1</Step>
+            <Step>71,24</Step>
+            <Step>72,15</Step>
+            <Step>73,18,71</Step>
+            <Step>74,1</Step>
+            <Step>75,2,Acum e rândul meu.</Step>
+            <Step>76,5,9,-1,8500,1</Step>
+            <Step>77,25</Step>
+            <Step>78,24</Step>
+            <Step>79,18,72</Step>
+            <Step>80,5,9,-1,-1,2</Step>
+            <Step>81,12</Step>
+            <Step>82,2,Acum e rândul tău. </Step>
+            <Step>83,23</Step>
+            <Step>84,5,1,-1,-1</Step>
+            <Step>85,24</Step>
+            <Step>86,15</Step>
+            <Step>87,18,73</Step>
+            <Step>88,1</Step>
+            <Step>89,2,Acum e rândul meu.</Step>
+            <Step>90,5,9,-1,8500,1</Step>
+            <Step>91,25</Step>
+            <Step>92,24</Step>
+            <Step>93,18,74</Step>
+            <Step>94,5,9,-1,-1,2</Step>
+            <Step>95,12</Step>
+            <Step>96,2,Acum e rândul tău. </Step>
+            <Step>97,23</Step>
+            <Step>98,5,1,-1,-1</Step>
+            <Step>99,24</Step>
+            <Step>100,15</Step>
+            <Step>101,18,75</Step>
+            <Step>102,1</Step>
+            <Step>103,2,Acum e rândul meu.</Step>
+            <Step>104,5,9,-1,8500,1</Step>
+            <Step>105,25</Step>
+            <Step>106,24</Step>
+            <Step>107,18,76</Step>
+            <Step>108,5,9,-1,-1,2</Step>
+            <Step>109,12</Step>
+            <Step>110,2,Acum e rândul tău. </Step>
+            <Step>111,23</Step>
+            <Step>112,5,1,-1,-1</Step>
+            <Step>113,24</Step>
+            <Step>114,15</Step>
+            <Step>115,18,77</Step>
+            <Step>116,1</Step>
+            <Step>117,2,Acum e rândul meu.</Step>
+            <Step>118,5,9,-1,8500,1</Step>
+            <Step>119,25</Step>
+            <Step>120,24</Step>
+            <Step>121,18,78</Step>
+            <Step>122,5,9,-1,-1,2</Step>
+            <Step>123,112</Step>
+            <Step>124,17</Step>
+            <Step>125,1</Step>
+            <Step>126,2,Hai să continuăm șirul!</Step>
+            <Step>127,2,Prima dată e rândul tău.</Step>
+            <Step>128,18,80</Step>
+            <Step>129,23</Step>
+            <Step>130,5,1,-1,-1</Step>
+            <Step>131,24</Step>
+            <Step>132,15</Step>
+            <Step>133,18,81</Step>
+            <Step>134,1</Step>
+            <Step>135,2,Acum e rândul meu.</Step>
+            <Step>136,5,9,-1,8500,1</Step>
+            <Step>137,25</Step>
+            <Step>138,24</Step>
+            <Step>139,18,82</Step>
+            <Step>140,5,9,-1,-1,2</Step>
+            <Step>141,12</Step>
+            <Step>142,2,Acum e rândul tău. </Step>
+            <Step>143,23</Step>
+            <Step>144,5,1,-1,-1</Step>
+            <Step>145,24</Step>
+            <Step>146,15</Step>
+            <Step>147,18,83</Step>
+            <Step>148,1</Step>
+            <Step>149,2,Acum e rândul meu.</Step>
+            <Step>150,5,9,-1,8500,1</Step>
+            <Step>151,25</Step>
+            <Step>152,24</Step>
+            <Step>153,18,84</Step>
+            <Step>154,5,9,-1,-1,2</Step>
+            <Step>155,12</Step>
+            <Step>156,2,Acum e rândul tău. </Step>
+            <Step>157,23</Step>
+            <Step>158,5,1,-1,-1</Step>
+            <Step>159,24</Step>
+            <Step>160,15</Step>
+            <Step>161,18,85</Step>
+            <Step>162,1</Step>
+            <Step>163,2,Acum e rândul meu.</Step>
+            <Step>164,5,9,-1,8500,1</Step>
+            <Step>165,25</Step>
+            <Step>166,24</Step>
+            <Step>167,18,86</Step>
+            <Step>168,5,9,-1,-1,2</Step>
+            <Step>169,12</Step>
+            <Step>170,2,Acum e rândul tău. </Step>
+            <Step>171,23</Step>
+            <Step>172,5,1,-1,-1</Step>
+            <Step>173,24</Step>
+            <Step>174,15</Step>
+            <Step>175,18,87</Step>
+            <Step>176,1</Step>
+            <Step>177,2,Acum e rândul meu.</Step>
+            <Step>178,5,9,-1,8500,1</Step>
+            <Step>179,25</Step>
+            <Step>180,24</Step>
+            <Step>181,18,88</Step>
+            <Step>182,5,9,-1,-1,2</Step>
+            <Step>183,112</Step>
+            <Step>184,17</Step>
+            <Step>185,1</Step>
+            <Step>186,2,Hai să continuăm șirul!</Step>
+            <Step>187,2,Prima dată e rândul tău.</Step>
+            <Step>188,18,90</Step>
+            <Step>189,23</Step>
+            <Step>190,5,1,-1,-1</Step>
+            <Step>191,24</Step>
+            <Step>192,15</Step>
+            <Step>193,18,91</Step>
+            <Step>194,1</Step>
+            <Step>195,2,Acum e rândul meu.</Step>
+            <Step>196,5,9,-1,8500,1</Step>
+            <Step>197,25</Step>
+            <Step>198,24</Step>
+            <Step>199,18,92</Step>
+            <Step>200,5,9,-1,-1,2</Step>
+            <Step>201,12</Step>
+            <Step>202,2,Acum e rândul tău. </Step>
+            <Step>203,23</Step>
+            <Step>204,5,1,-1,-1</Step>
+            <Step>205,24</Step>
+            <Step>206,15</Step>
+            <Step>207,18,93</Step>
+            <Step>208,1</Step>
+            <Step>209,2,Acum e rândul meu.</Step>
+            <Step>210,5,9,-1,8500,1</Step>
+            <Step>211,25</Step>
+            <Step>212,24</Step>
+            <Step>213,18,94</Step>
+            <Step>214,5,9,-1,-1,2</Step>
+            <Step>215,12</Step>
+            <Step>216,2,Acum e rândul tău. </Step>
+            <Step>217,23</Step>
+            <Step>218,5,1,-1,-1</Step>
+            <Step>219,24</Step>
+            <Step>220,15</Step>
+            <Step>221,18,95</Step>
+            <Step>222,1</Step>
+            <Step>223,2,Acum e rândul meu.</Step>
+            <Step>224,5,9,-1,8500,1</Step>
+            <Step>225,25</Step>
+            <Step>226,24</Step>
+            <Step>227,18,96</Step>
+            <Step>228,5,9,-1,-1,2</Step>
+            <Step>229,12</Step>
+            <Step>230,2,Acum e rândul tău. </Step>
+            <Step>231,23</Step>
+            <Step>232,5,1,-1,-1</Step>
+            <Step>233,24</Step>
+            <Step>234,15</Step>
+            <Step>235,18,97</Step>
+            <Step>236,1</Step>
+            <Step>237,2,Acum e rândul meu.</Step>
+            <Step>238,5,9,-1,8500,1</Step>
+            <Step>239,25</Step>
+            <Step>240,24</Step>
+            <Step>241,18,98</Step>
+            <Step>242,5,9,-1,-1,2</Step>
+            <Step>243,112</Step>
+            <Step>244,100</Step>
+        </Steps>
+    </Script>
+    <Script>
+        <Name>JA 3 - systemGUI unit test</Name>
+        <ID>99</ID>
+        <TypeID>2</TypeID>
+        <Steps>
+            <Step>0,2,Now we will play another game. In this game I will show you the flowers and trees I have seen in a garden.</Step>
+            <Step>1,2,On this screen will appear two different pictures. I am going to look at the flowers and trees I have seen in a garden. You have to pay attention to what am I looking.</Step>
+            <Step>2,17</Step>
+            <Step>3,1</Step>
+            <Step>4,31</Step>
+            <Step>5,18,4</Step>
+            <Step>6,2,Please pay attention to what am I looking.</Step>
+            <Step>7,18,5</Step>
+            <Step>8,29,0</Step>
+            <Step>9,23</Step>
+            <Step>10,5,5,0,10000</Step>
+            <Step>11,24</Step>
+            <Step>12,29,2</Step>
+            <Step>13,16</Step>
+            <Step>14,17</Step>
+            <Step>15,1</Step>
+            <Step>16,2,Please pay attention to what am I looking.</Step>
+            <Step>17,18,6</Step>
+            <Step>18,29,0</Step>
+            <Step>19,23</Step>
+            <Step>20,5,5,0,10000</Step>
+            <Step>21,24</Step>
+            <Step>22,29,2</Step>
+            <Step>23,16</Step>
+            <Step>24,17</Step>
+            <Step>25,1</Step>
+            <Step>26,2,Please pay attention to what am I looking.</Step>
+            <Step>27,18,7</Step>
+            <Step>28,29,1</Step>
+            <Step>29,23</Step>
+            <Step>30,5,6,0,10000</Step>
+            <Step>31,24</Step>
+            <Step>32,29,2</Step>
+            <Step>33,16</Step>
+            <Step>34,100</Step>
+        </Steps>
+    </Script>
+</Scripts>

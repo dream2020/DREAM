@@ -1,0 +1,1957 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<GUIButtons>
+    <Fixed>
+        <Button>
+            <Label>previous step</Label>
+            <Icon>backward_icon.png</Icon>
+            <Color>223</Color>
+            <Action/>
+        </Button>
+        <Button>
+            <Label>next step</Label>
+            <Icon>fast_forward_icon.png</Icon>
+            <Color>223</Color>
+            <Action/>
+        </Button>
+    </Fixed>
+    <AlwaysOn>
+        <Button>
+            <Label>Good perf</Label>
+            <Icon>tick_icon.png</Icon>
+            <Color>2</Color>
+            <Action>301,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad perf</Label>
+            <Icon>cross_icon.png</Icon>
+            <Color>88</Color>
+            <Action>301,0</Action>
+        </Button>
+        <Button>
+            <Label>Gaze</Label>
+            <Icon>gaze.png</Icon>
+            <Color>6</Color>
+            <Action>300,1</Action>
+        </Button>
+        <Button>
+            <Label>Emergency</Label>
+            <Icon>emergency.png</Icon>
+            <Color>3</Color>
+            <Action>901</Action>
+        </Button>
+    </AlwaysOn>
+    <BetweenScripts>
+        <Button>
+            <Label>Perform Dance 1</Label>
+            <Icon>dance_icon.png</Icon>
+            <Color>10</Color>
+            <Action>3,12</Action>
+        </Button>
+        <Button>
+            <Label>Perform Dance 2</Label>
+            <Icon>dance_icon.png</Icon>
+            <Color>10</Color>
+            <Action>3,13</Action>
+        </Button>
+        <Button>
+            <Label>Perform Dance 3</Label>
+            <Icon>dance_icon.png</Icon>
+            <Color>10</Color>
+            <Action>3,14</Action>
+        </Button>
+        <Button>
+            <Label>Perform Dance 4</Label>
+            <Icon>dance_icon.png</Icon>
+            <Color>10</Color>
+            <Action>3,15</Action>
+        </Button>
+    </BetweenScripts>
+    <EnableRobot>
+        <Button>
+            <Label>Wake up robot</Label>
+            <Icon>sun_icon.png</Icon>
+            <Color>88</Color>
+            <Action>31</Action>
+        </Button>
+        <Button>
+            <Label>Sleep robot</Label>
+            <Icon>sleep_icon.png</Icon>
+            <Color>6</Color>
+            <Action>32</Action>
+        </Button>
+        <Button>
+            <Label>Emergency</Label>
+            <Icon>emergency.png</Icon>
+            <Color>3</Color>
+            <Action>901</Action>
+        </Button>
+    </EnableRobot>
+    <Scenario id="Joint Attention 1">
+        <Button>
+            <Label>Acum o să ne ju...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să ne jucăm altceva. Eu o să-ți arăt locurile pe unde am fost.</Action>
+        </Button>
+        <Button>
+            <Label>Pe acest ecran ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Pe acest ecran vor apărea două poze diferite. Eu o să îți spun și arăt locul în care am fost. Fii atent la ce mă uit eu!</Action>
+        </Button>
+        <Button>
+            <Label>Te rog. fii ate...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Te rog. fii atent la ce mă uit.</Action>
+        </Button>
+        <Button>
+            <Label>Good JA</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>22,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad JA</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>23,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 20</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,20</Action>
+        </Button>
+        <Button>
+            <Label>Load library 21</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,21</Action>
+        </Button>
+        <Button>
+            <Label>Load library 22</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,22</Action>
+        </Button>
+        <Button>
+            <Label>Load library 23</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,23</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Look Point Say left</Label>
+            <Icon>look_left.png</Icon>
+            <Color>254</Color>
+            <Action>26,0</Action>
+        </Button>
+        <Button>
+            <Label>Look Point Say right</Label>
+            <Icon>look_right.png</Icon>
+            <Color>254</Color>
+            <Action>26,1</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="Joint Attention 2">
+        <Button>
+            <Label>Acum o să ne ju...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să ne jucăm altceva. Eu o săți arăt obiectele pe care le-am văzut într-un birou.</Action>
+        </Button>
+        <Button>
+            <Label>Pe acest ecrran...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Pe acest ecrran vor apărea două poze diferite. Eu o săți arăt obiectul pe care l-am văzut într-un birou. Fii atent la ce mă uit eu!</Action>
+        </Button>
+        <Button>
+            <Label>Te rog. fii ate...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Te rog. fii atent la ce mă uit.</Action>
+        </Button>
+        <Button>
+            <Label>Good JA</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>22,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad JA</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>23,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 25</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,25</Action>
+        </Button>
+        <Button>
+            <Label>Load library 26</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,26</Action>
+        </Button>
+        <Button>
+            <Label>Load library 27</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,27</Action>
+        </Button>
+        <Button>
+            <Label>Load library 28</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,28</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Look Point left</Label>
+            <Icon>look_left.png</Icon>
+            <Color>254</Color>
+            <Action>27,0</Action>
+        </Button>
+        <Button>
+            <Label>Look Point right</Label>
+            <Icon>look_right.png</Icon>
+            <Color>254</Color>
+            <Action>27,1</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="Joint Attention 3">
+        <Button>
+            <Label>Acum o să ne ju...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să ne jucăm altceva. Eu o să-ți arăt florile și copacii pe care i-am văzut într-o grădină.</Action>
+        </Button>
+        <Button>
+            <Label>Pe acest ecran ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Pe acest ecran vor apărea două poze diferite. Eu mă voi uuiita către floarea sau copacul pe care l-am văzut într-o grădină. Fii atent la ce mă uit eu!</Action>
+        </Button>
+        <Button>
+            <Label>Te rog. fii ate...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Te rog. fii atent la ce mă uit.</Action>
+        </Button>
+        <Button>
+            <Label>Good JA</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>22,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad JA</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>23,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 30</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,30</Action>
+        </Button>
+        <Button>
+            <Label>Load library 31</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,31</Action>
+        </Button>
+        <Button>
+            <Label>Load library 32</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,32</Action>
+        </Button>
+        <Button>
+            <Label>Load library 33</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,33</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Look left</Label>
+            <Icon>look_left.png</Icon>
+            <Color>254</Color>
+            <Action>28,0</Action>
+        </Button>
+        <Button>
+            <Label>Look right</Label>
+            <Icon>look_right.png</Icon>
+            <Color>254</Color>
+            <Action>28,1</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="TT cat lvl 1">
+        <Button>
+            <Label>Acum ne vom juc...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum ne vom juca ceva nou. Pe acest ecran vor apărea mai multe poze. Noi trebuie să potrivim pozele din mijloc cu una dintre pozele de pe margine; Facem asta pe rând. o dată potrivești tu. apoi potrivesc eu.</Action>
+        </Button>
+        <Button>
+            <Label>La supermarket ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,La supermarket putem găsi fructe și legume; Hai să punem legumele într-o parte și fructele în cealaltă parte.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău.</Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul m...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul meu. </Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul t...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul tău. </Action>
+        </Button>
+        <Button>
+            <Label>Când ne mutăm î...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Când ne mutăm într-o casă nouă trebuie să punem lucrurilor la locul lor; Hai să punem obiectele de bucătărie în bucătărie și obiectele de baie în baie.</Action>
+        </Button>
+        <Button>
+            <Label>Într-o cameră d...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Într-o cameră dezordonată există jucării și haine pe jos; Hai să punem jucăriiile în cutia cu jucării și hainele în coșul cu haine.</Action>
+        </Button>
+        <Button>
+            <Label>Cântăreții și m...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Cântăreții și medicii folosesc instrumente diferite; Hai să punem instrumentele muzicale într-o parte și instrumentele medicale în cealaltă parte.</Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>15,1</Action>
+        </Button>
+        <Button>
+            <Label>Good Sorting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>16,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Sorting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>17,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 10</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,10</Action>
+        </Button>
+        <Button>
+            <Label>Load library 11</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,11</Action>
+        </Button>
+        <Button>
+            <Label>Load library 12</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,12</Action>
+        </Button>
+        <Button>
+            <Label>Load library 13</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,13</Action>
+        </Button>
+        <Button>
+            <Label>Set images one by one</Label>
+            <Icon>image_one_by_one.png</Icon>
+            <Color>254</Color>
+            <Action>108,1</Action>
+        </Button>
+        <Button>
+            <Label>Enable Feedback</Label>
+            <Icon>good_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>106,1</Action>
+        </Button>
+        <Button>
+            <Label>Enable Touch</Label>
+            <Icon>enable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,1</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Robot Good Move</Label>
+            <Icon>move_icon.png</Icon>
+            <Color>254</Color>
+            <Action>24</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Last Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>99,1</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="TT cat lvl 2">
+        <Button>
+            <Label>Acum ne vom juc...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum ne vom juca ceva nou. Pe acest ecran vor apărea mai multe poze. Noi trebuie să potrivim pozele din mijloc cu una dintre pozele de pe margine; Facem asta pe rând. o dată potrivești tu. apoi potrivesc eu.</Action>
+        </Button>
+        <Button>
+            <Label>Există diferite...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Există diferite tipuri de mijloace de transport: unele merg pe pământ și altele merg pe apă; Hai să punem mijloacele de transport care merg pe pământ într-o parte; iar cele care merg pe apă în cealaltă parte.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău.</Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul m...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul meu. </Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul t...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul tău. </Action>
+        </Button>
+        <Button>
+            <Label>Putem vedea o m...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Putem vedea o mulțime de animale la fermă. Aceste animale sunt diferite de cele pe care le putem vedea în sălbăticie; Hai să punem anymalele care trăiesc la fermă într-o parte și animalele sălbatice în cealaltă parte.</Action>
+        </Button>
+        <Button>
+            <Label>Întrun an avem ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Întrun an avem patru anotimpuri: primăvara. vara. toamna și iarna. Noi purtăm haine și încălțăminte diferite în funcție de anotimp; Hai să punem încălțămintea și hainele de vară într-o parte și cele de iarna în cealaltă parte.</Action>
+        </Button>
+        <Button>
+            <Label>Oamenii utilize...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Oamenii utilizează diferite obiecte pentru a face curățenie; Hai să punem obiectele pentru curățat în casă într-o parte și cele pentru curățat grădina în cealaltă parte.</Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>15,1</Action>
+        </Button>
+        <Button>
+            <Label>Good Sorting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>16,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Sorting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>17,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 15</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,15</Action>
+        </Button>
+        <Button>
+            <Label>Load library 16</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,16</Action>
+        </Button>
+        <Button>
+            <Label>Load library 17</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,17</Action>
+        </Button>
+        <Button>
+            <Label>Load library 18</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,18</Action>
+        </Button>
+        <Button>
+            <Label>Set images all</Label>
+            <Icon>image_all.png</Icon>
+            <Color>254</Color>
+            <Action>108,0</Action>
+        </Button>
+        <Button>
+            <Label>Enable Feedback</Label>
+            <Icon>good_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>106,1</Action>
+        </Button>
+        <Button>
+            <Label>Enable Touch</Label>
+            <Icon>enable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,1</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Robot Good Move</Label>
+            <Icon>move_icon.png</Icon>
+            <Color>254</Color>
+            <Action>24</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Last Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>99,1</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="Info sharing">
+        <Button>
+            <Label>Acum o să vorbi...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să vorbim despre ce ne place cel mai mult; Pe acest ecran vor apărea ciinci poze; Noi trebuie să alegem poza care arată ce ne place cel mai mult; O dată alegi tu. apoi aleg eu</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău; Care sunt dulciurile care-ți plac cel mai mult?</Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul meu.</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul meu.</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult înghețata.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău; ; Care este mâncarea care-ți place cel mai mult ?</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult supa.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău; Cu ce-ți place să te joci în casă cel mai mult?</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult să desenez.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău; Cu ce-ți place să te joci afară cel mai mult?</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult să sar coarda.</Action>
+        </Button>
+        <Button>
+            <Label>Good Choice</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>18,1</Action>
+        </Button>
+        <Button>
+            <Label>No Choice - No action</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>98,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 35</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,35</Action>
+        </Button>
+        <Button>
+            <Label>Load library 36</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,36</Action>
+        </Button>
+        <Button>
+            <Label>Load library 37</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,37</Action>
+        </Button>
+        <Button>
+            <Label>Load library 38</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,38</Action>
+        </Button>
+        <Button>
+            <Label>Enable Touch</Label>
+            <Icon>enable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,1</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Point Image 2</Label>
+            <Icon>pointing.png</Icon>
+            <Color>254</Color>
+            <Action>25,2</Action>
+        </Button>
+        <Button>
+            <Label>Point Image 3</Label>
+            <Icon>pointing.png</Icon>
+            <Color>254</Color>
+            <Action>25,3</Action>
+        </Button>
+        <Button>
+            <Label>Point Image 4</Label>
+            <Icon>pointing.png</Icon>
+            <Color>254</Color>
+            <Action>25,4</Action>
+        </Button>
+        <Button>
+            <Label>Point Image 5</Label>
+            <Icon>pointing.png</Icon>
+            <Color>254</Color>
+            <Action>25,5</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Last Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>99,1</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="Info sharing 2">
+        <Button>
+            <Label>Acum o să vorbi...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să vorbim despre ce ne place cel mai mult; Pe acest ecran vor apărea ciinci poze; Noi trebuie să alegem poza care arată ce ne place cel mai mult; O dată alegi tu. apoi aleg eu</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău; Ce culoare -ți place cel mai mult?</Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul meu.</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul meu.</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult culoarea galbenă.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău.Ce formă îți place cel mai mult?</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult ceerrcul.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău; Ce animal de casă îți place cel mai mult?</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult pisica.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău; Ce animal sălbatic îți place cel mai mult?</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult rinocerul.</Action>
+        </Button>
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău; Care anotimp îți place cel mai mult?</Action>
+        </Button>
+        <Button>
+            <Label>Mie îmi place c...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Mie îmi place cel mai mult toamna.</Action>
+        </Button>
+        <Button>
+            <Label>Good Choice</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>18,1</Action>
+        </Button>
+        <Button>
+            <Label>No Choice - No action</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>98,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 39</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,39</Action>
+        </Button>
+        <Button>
+            <Label>Load library 40</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,40</Action>
+        </Button>
+        <Button>
+            <Label>Load library 41</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,41</Action>
+        </Button>
+        <Button>
+            <Label>Load library 42</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,42</Action>
+        </Button>
+        <Button>
+            <Label>Load library 43</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,43</Action>
+        </Button>
+        <Button>
+            <Label>Enable Touch</Label>
+            <Icon>enable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,1</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Point Image 1</Label>
+            <Icon>pointing.png</Icon>
+            <Color>254</Color>
+            <Action>25,1</Action>
+        </Button>
+        <Button>
+            <Label>Point Image 2</Label>
+            <Icon>pointing.png</Icon>
+            <Color>254</Color>
+            <Action>25,2</Action>
+        </Button>
+        <Button>
+            <Label>Point Image 3</Label>
+            <Icon>pointing.png</Icon>
+            <Color>254</Color>
+            <Action>25,3</Action>
+        </Button>
+        <Button>
+            <Label>Point Image 4</Label>
+            <Icon>pointing.png</Icon>
+            <Color>254</Color>
+            <Action>25,4</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Last Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>99,1</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="Imitation object">
+        <Button>
+            <Label>Hai să ne jucăm...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Hai să ne jucăm împreună. Eu o să fac niște mișcări cu câteva jucăriii; Fă și tu ca mine.</Action>
+        </Button>
+        <Button>
+            <Label>Poți să faci ac...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Poți să faci aceleași mișcări ca și mine? ; Prima dată vom lua o mașinuță</Action>
+        </Button>
+        <Button>
+            <Label>Fă și tu ca mine!</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Fă și tu ca mine!</Action>
+        </Button>
+        <Button>
+            <Label>Acum vom lua o ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum vom lua o cană.</Action>
+        </Button>
+        <Button>
+            <Label>Acum vom lua un...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum vom lua un avion.</Action>
+        </Button>
+        <Button>
+            <Label>Acum vom lua o ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum vom lua o floare.</Action>
+        </Button>
+        <Button>
+            <Label>Make move 4</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,4</Action>
+        </Button>
+        <Button>
+            <Label>Make move 5</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,5</Action>
+        </Button>
+        <Button>
+            <Label>Make move 6</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,6</Action>
+        </Button>
+        <Button>
+            <Label>Make move 7</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,7</Action>
+        </Button>
+        <Button>
+            <Label>Grab</Label>
+            <Icon>arm_up.png</Icon>
+            <Color>254</Color>
+            <Action>4</Action>
+        </Button>
+        <Button>
+            <Label>Drop</Label>
+            <Icon>arm_up.png</Icon>
+            <Color>254</Color>
+            <Action>5</Action>
+        </Button>
+        <Button>
+            <Label>Give hand</Label>
+            <Icon>arm_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,110</Action>
+        </Button>
+        <Button>
+            <Label>Open hand</Label>
+            <Icon>hand_icon.png</Icon>
+            <Color>254</Color>
+            <Action>40,0</Action>
+        </Button>
+        <Button>
+            <Label>Close hand</Label>
+            <Icon>close_hand.png</Icon>
+            <Color>254</Color>
+            <Action>39,0</Action>
+        </Button>
+        <Button>
+            <Label>Good Imitation Obj</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>6,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Imitation Obj</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>7,1</Action>
+        </Button>
+        <Button>
+            <Label>Clapping</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>3,209</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="imitation move lvl 1">
+        <Button>
+            <Label>Acum o să fac a...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să fac alte mișcări fără jucăriii; Fă și tu ca mine.</Action>
+        </Button>
+        <Button>
+            <Label>Fă și tu ca mine!</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Fă și tu ca mine!</Action>
+        </Button>
+        <Button>
+            <Label>Make move 0</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,0</Action>
+        </Button>
+        <Button>
+            <Label>Make move 1</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,1</Action>
+        </Button>
+        <Button>
+            <Label>Make move 3</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,3</Action>
+        </Button>
+        <Button>
+            <Label>Make move 16</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,16</Action>
+        </Button>
+        <Button>
+            <Label>Good Imitation Move</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>10,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Imitation Move</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>11,1</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="imitation move lvl 2">
+        <Button>
+            <Label>Acum o să fac a...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să fac alte mișcări fără jucăriii; Fă și tu ca mine.</Action>
+        </Button>
+        <Button>
+            <Label>Fă și tu ca mine!</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Fă și tu ca mine!</Action>
+        </Button>
+        <Button>
+            <Label>Make move 8</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,8</Action>
+        </Button>
+        <Button>
+            <Label>Make move 9</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,9</Action>
+        </Button>
+        <Button>
+            <Label>Make move 10</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,10</Action>
+        </Button>
+        <Button>
+            <Label>Make move 11</Label>
+            <Icon>arms_up.png</Icon>
+            <Color>254</Color>
+            <Action>3,11</Action>
+        </Button>
+        <Button>
+            <Label>Good Imitation Move</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>10,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Imitation Move</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>11,1</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="Pattern lvl 1">
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău.</Action>
+        </Button>
+        <Button>
+            <Label>Acum o să ne ju...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să ne jucăm ceva nou. Pe acest ecran este un șir de forme. Noi trebuie să continuăm șirul de forme. folosind pozele din mijloc; Facem asta pe rând. o dată potrivești tu. apoi potrivesc eu.</Action>
+        </Button>
+        <Button>
+            <Label>Hai să continuă...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Hai să continuăm șirul!</Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul meu.</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul meu.</Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul t...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul tău. </Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>15,1</Action>
+        </Button>
+        <Button>
+            <Label>Good Pattern</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>20,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Pattern</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>21,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 10</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,10</Action>
+        </Button>
+        <Button>
+            <Label>Load library 11</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,11</Action>
+        </Button>
+        <Button>
+            <Label>Load library 12</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,12</Action>
+        </Button>
+        <Button>
+            <Label>Load library 13</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,13</Action>
+        </Button>
+        <Button>
+            <Label>Load library 14</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,14</Action>
+        </Button>
+        <Button>
+            <Label>Load library 15</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,15</Action>
+        </Button>
+        <Button>
+            <Label>Load library 16</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,16</Action>
+        </Button>
+        <Button>
+            <Label>Load library 17</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,17</Action>
+        </Button>
+        <Button>
+            <Label>Load library 18</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,18</Action>
+        </Button>
+        <Button>
+            <Label>Load library 20</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,20</Action>
+        </Button>
+        <Button>
+            <Label>Load library 21</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,21</Action>
+        </Button>
+        <Button>
+            <Label>Load library 22</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,22</Action>
+        </Button>
+        <Button>
+            <Label>Load library 23</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,23</Action>
+        </Button>
+        <Button>
+            <Label>Load library 24</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,24</Action>
+        </Button>
+        <Button>
+            <Label>Load library 25</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,25</Action>
+        </Button>
+        <Button>
+            <Label>Load library 26</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,26</Action>
+        </Button>
+        <Button>
+            <Label>Load library 27</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,27</Action>
+        </Button>
+        <Button>
+            <Label>Load library 28</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,28</Action>
+        </Button>
+        <Button>
+            <Label>Load library 30</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,30</Action>
+        </Button>
+        <Button>
+            <Label>Load library 31</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,31</Action>
+        </Button>
+        <Button>
+            <Label>Load library 32</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,32</Action>
+        </Button>
+        <Button>
+            <Label>Load library 33</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,33</Action>
+        </Button>
+        <Button>
+            <Label>Load library 34</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,34</Action>
+        </Button>
+        <Button>
+            <Label>Load library 35</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,35</Action>
+        </Button>
+        <Button>
+            <Label>Load library 36</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,36</Action>
+        </Button>
+        <Button>
+            <Label>Load library 37</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,37</Action>
+        </Button>
+        <Button>
+            <Label>Load library 38</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,38</Action>
+        </Button>
+        <Button>
+            <Label>Load library 40</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,40</Action>
+        </Button>
+        <Button>
+            <Label>Load library 41</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,41</Action>
+        </Button>
+        <Button>
+            <Label>Load library 42</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,42</Action>
+        </Button>
+        <Button>
+            <Label>Load library 43</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,43</Action>
+        </Button>
+        <Button>
+            <Label>Load library 44</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,44</Action>
+        </Button>
+        <Button>
+            <Label>Load library 45</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,45</Action>
+        </Button>
+        <Button>
+            <Label>Load library 46</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,46</Action>
+        </Button>
+        <Button>
+            <Label>Load library 47</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,47</Action>
+        </Button>
+        <Button>
+            <Label>Load library 48</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,48</Action>
+        </Button>
+        <Button>
+            <Label>Set images all</Label>
+            <Icon>image_all.png</Icon>
+            <Color>254</Color>
+            <Action>108,0</Action>
+        </Button>
+        <Button>
+            <Label>Enable Feedback</Label>
+            <Icon>good_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>106,1</Action>
+        </Button>
+        <Button>
+            <Label>Enable Touch</Label>
+            <Icon>enable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,1</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Robot Good Move</Label>
+            <Icon>move_icon.png</Icon>
+            <Color>254</Color>
+            <Action>24</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Last Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>99,1</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="Pattern lvl 2">
+        <Button>
+            <Label>Prima dată e râ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Prima dată e rândul tău.</Action>
+        </Button>
+        <Button>
+            <Label>Acum o să ne ju...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum o să ne jucăm ceva nou. Pe acest ecran este un șir de forme. Noi trebuie să continuăm șirul de forme. folosind pozele din mijloc; Facem asta pe rând. o dată potrivești tu. apoi potrivesc eu.</Action>
+        </Button>
+        <Button>
+            <Label>Hai să continuă...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Hai să continuăm șirul!</Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul meu.</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul meu.</Action>
+        </Button>
+        <Button>
+            <Label>Acum e rândul t...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Acum e rândul tău. </Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>15,1</Action>
+        </Button>
+        <Button>
+            <Label>Good Pattern</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>20,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Pattern</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>21,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 60</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,60</Action>
+        </Button>
+        <Button>
+            <Label>Load library 61</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,61</Action>
+        </Button>
+        <Button>
+            <Label>Load library 62</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,62</Action>
+        </Button>
+        <Button>
+            <Label>Load library 63</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,63</Action>
+        </Button>
+        <Button>
+            <Label>Load library 64</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,64</Action>
+        </Button>
+        <Button>
+            <Label>Load library 65</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,65</Action>
+        </Button>
+        <Button>
+            <Label>Load library 66</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,66</Action>
+        </Button>
+        <Button>
+            <Label>Load library 67</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,67</Action>
+        </Button>
+        <Button>
+            <Label>Load library 68</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,68</Action>
+        </Button>
+        <Button>
+            <Label>Load library 70</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,70</Action>
+        </Button>
+        <Button>
+            <Label>Load library 71</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,71</Action>
+        </Button>
+        <Button>
+            <Label>Load library 72</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,72</Action>
+        </Button>
+        <Button>
+            <Label>Load library 73</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,73</Action>
+        </Button>
+        <Button>
+            <Label>Load library 74</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,74</Action>
+        </Button>
+        <Button>
+            <Label>Load library 75</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,75</Action>
+        </Button>
+        <Button>
+            <Label>Load library 76</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,76</Action>
+        </Button>
+        <Button>
+            <Label>Load library 77</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,77</Action>
+        </Button>
+        <Button>
+            <Label>Load library 78</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,78</Action>
+        </Button>
+        <Button>
+            <Label>Load library 80</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,80</Action>
+        </Button>
+        <Button>
+            <Label>Load library 81</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,81</Action>
+        </Button>
+        <Button>
+            <Label>Load library 82</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,82</Action>
+        </Button>
+        <Button>
+            <Label>Load library 83</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,83</Action>
+        </Button>
+        <Button>
+            <Label>Load library 84</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,84</Action>
+        </Button>
+        <Button>
+            <Label>Load library 85</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,85</Action>
+        </Button>
+        <Button>
+            <Label>Load library 86</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,86</Action>
+        </Button>
+        <Button>
+            <Label>Load library 87</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,87</Action>
+        </Button>
+        <Button>
+            <Label>Load library 88</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,88</Action>
+        </Button>
+        <Button>
+            <Label>Load library 90</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,90</Action>
+        </Button>
+        <Button>
+            <Label>Load library 91</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,91</Action>
+        </Button>
+        <Button>
+            <Label>Load library 92</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,92</Action>
+        </Button>
+        <Button>
+            <Label>Load library 93</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,93</Action>
+        </Button>
+        <Button>
+            <Label>Load library 94</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,94</Action>
+        </Button>
+        <Button>
+            <Label>Load library 95</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,95</Action>
+        </Button>
+        <Button>
+            <Label>Load library 96</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,96</Action>
+        </Button>
+        <Button>
+            <Label>Load library 97</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,97</Action>
+        </Button>
+        <Button>
+            <Label>Load library 98</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,98</Action>
+        </Button>
+        <Button>
+            <Label>Set images all</Label>
+            <Icon>image_all.png</Icon>
+            <Color>254</Color>
+            <Action>108,0</Action>
+        </Button>
+        <Button>
+            <Label>Enable Feedback</Label>
+            <Icon>good_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>106,1</Action>
+        </Button>
+        <Button>
+            <Label>Enable Touch</Label>
+            <Icon>enable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,1</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Robot Good Move</Label>
+            <Icon>move_icon.png</Icon>
+            <Color>254</Color>
+            <Action>24</Action>
+        </Button>
+        <Button>
+            <Label>Stand</Label>
+            <Icon>arms_down.png</Icon>
+            <Color>254</Color>
+            <Action>41</Action>
+        </Button>
+        <Button>
+            <Label>Good Waiting</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>14,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad Last Waiting</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>99,1</Action>
+        </Button>
+    </Scenario>
+    <Scenario id="JA 3 - systemGUI unit test">
+        <Button>
+            <Label>Now we will pla...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Now we will play another game. In this game I will show you the flowers and trees I have seen in a garden.</Action>
+        </Button>
+        <Button>
+            <Label>On this screen ...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,On this screen will appear two different pictures. I am going to look at the flowers and trees I have seen in a garden. You have to pay attention to what am I looking.</Action>
+        </Button>
+        <Button>
+            <Label>Please pay atte...</Label>
+            <Icon>speech.png</Icon>
+            <Color>254</Color>
+            <Action>2,Please pay attention to what am I looking.</Action>
+        </Button>
+        <Button>
+            <Label>Good JA</Label>
+            <Icon>enable_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>22,1</Action>
+        </Button>
+        <Button>
+            <Label>Bad JA</Label>
+            <Icon>bad_feedback.png</Icon>
+            <Color>254</Color>
+            <Action>23,1</Action>
+        </Button>
+        <Button>
+            <Label>Display white</Label>
+            <Icon>sandtray_white.png</Icon>
+            <Color>254</Color>
+            <Action>105,0</Action>
+        </Button>
+        <Button>
+            <Label>Load library 4</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,4</Action>
+        </Button>
+        <Button>
+            <Label>Load library 5</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,5</Action>
+        </Button>
+        <Button>
+            <Label>Load library 6</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,6</Action>
+        </Button>
+        <Button>
+            <Label>Load library 7</Label>
+            <Icon>load_library.png</Icon>
+            <Color>254</Color>
+            <Action>105,7</Action>
+        </Button>
+        <Button>
+            <Label>Enable Touch</Label>
+            <Icon>enable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,1</Action>
+        </Button>
+        <Button>
+            <Label>Disable Touch</Label>
+            <Icon>disable_touch.png</Icon>
+            <Color>254</Color>
+            <Action>107,0</Action>
+        </Button>
+        <Button>
+            <Label>Look left</Label>
+            <Icon>look_left.png</Icon>
+            <Color>254</Color>
+            <Action>28,0</Action>
+        </Button>
+        <Button>
+            <Label>Look right</Label>
+            <Icon>look_right.png</Icon>
+            <Color>254</Color>
+            <Action>28,1</Action>
+        </Button>
+        <Button>
+            <Label>Look right</Label>
+            <Icon>look_right.png</Icon>
+            <Color>254</Color>
+            <Action>28,2</Action>
+        </Button>
+    </Scenario>
+</GUIButtons>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<DeviceType>Camera</DeviceType>
+<DeviceID>0</DeviceID>
+<RMat type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    1.00000 -6.276726358551880e-05
+    0.003342719614721 8.304169375397039e-05
+    1.00000 -0.006065456639908
+    -0.003342277401581 0.006065700325941
+    1.00000</data></RMat>
+<tMat type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    -27.699523644650 3.239707525475
+    0.5117225599535431</data></tMat>
+<RotationAboutZ_FirstMove>-3.7780611438551581e-001</RotationAboutZ_FirstMove>
+<RotationAboutX_SecondMove>2.1326168536239429e-001</RotationAboutX_SecondMove>
+<RotationAboutZAgain_ThirdMove>3.8149958793583161e-001</RotationAboutZAgain_ThirdMove>
+</opencv_storage>

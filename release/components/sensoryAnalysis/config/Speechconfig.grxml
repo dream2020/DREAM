@@ -1,0 +1,105 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <tag>Broom,broom</tag>
+        <one-of>
+          <item> broomm </item>
+          <item> broomm broomm </item>             
+        </one-of>
+      </item>
+      
+      <item>
+        <tag>Veshi</tag>
+        <one-of>
+          <item> ves </item>
+          <item> veshi </item>
+          <item> shi </item>
+          <item> visi </item>
+          <item> vishi </item>    
+        </one-of>
+      </item>
+      
+      <item>
+        <tag>gela</tag>
+        <one-of>
+          <item>gala</item>
+	     <item>gela</item>
+          <item>colour</item>
+          <item>la</item>
+        </one-of>
+      </item>
+
+
+      <item>
+        <tag>ha</tag>
+        <one-of>
+          <item>ha</item>
+           </one-of>
+      </item>
+      
+      
+      <item>
+        <tag>wiwi</tag>
+        <one-of>
+          <item> wee wee </item>
+          <item> we </item>
+        </one-of>
+      </item>
+    
+      <item>
+        <tag>veshi, plane sound</tag>
+        <one-of>
+          <item> veshi</item>
+            </one-of>
+      </item>
+      
+      <item>
+        <tag>coocoo -hide ourselves</tag>
+        <one-of>
+          <item>coocoo -hide ourselves</item>
+          <item> hide ourselves </item>
+          <item>coocoo </item>
+          <item> coo  </item>
+        </one-of>
+      </item>
+      
+      <item>
+        <tag>Bye bye</tag>
+        <one-of>
+          <item>bye bye </item>
+          <item>bye</item>
+          <item>buy</item>
+        </one-of>
+      </item>
+      
+      <item>
+        <tag>youhuu</tag>
+        <one-of>
+          <item> youhou</item>
+          <item> you hou</item>
+          <item> you</item> 
+        </one-of>
+      </item>
+      
+      <item>
+        <tag>ho</tag>
+        <one-of>
+          <item> ho</item>
+          <item> hu</item>
+          <item> who</item>       
+        </one-of>
+      </item>
+      
+      <item>
+        <tag>hmm, hmm</tag>
+        <one-of>
+          <item> hmm hmm </item>
+          <item> hmm</item>
+          <item> hen  </item>
+          <item> heng  </item>       
+        </one-of>
+      </item>     
+    </one-of>
+  </rule>
+</grammar>

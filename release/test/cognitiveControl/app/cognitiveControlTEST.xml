@@ -1,0 +1,12 @@
+<application>
+
+<name>cognitiveControl test</name>
+
+<module>
+   <name>cognitiveControl</name>
+   <parameters>--context test/cognitiveControl/config </parameters>
+   <node>dream1</node>
+   <tag>cognitiveControl</tag>
+</module>
+
+</application>

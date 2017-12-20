@@ -1,0 +1,11 @@
+<application>
+<name>actuationSimulator test</name>
+
+<module>
+   <name>actuationSimulator</name>
+   <parameters>--context test/actuationSimulator/config </parameters>
+   <node>dream1</node>
+   <tag>actuationSimulator</tag>
+</module>
+
+</application>

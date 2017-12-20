@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>userModelTEST</name>
+
+<module>
+    <name>userModel</name>
+    <parameters>--context components/userModel/config</parameters>
+    <node>dream1</node>
+    <tag>userModel</tag>
+</module>
+
+<module>
+    <name>userModelDriver</name>
+    <parameters>--context test/userModelDriver/config</parameters>
+    <node>dream1</node>
+    <tag>userModelDriver</tag>
+</module>
+
+<connection>
+    <from>/userModelDriver/userID:o</from>
+    <to>/userModel/userID:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/userModel/userData:o</from>
+    <to>/userModelDriver/userData:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/userModelDriver/updatedData:o</from>
+    <to>/userModel/updatedData:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

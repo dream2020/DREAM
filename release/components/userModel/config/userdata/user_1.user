@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserData>
+    <User>
+        <Name>testname</Name>
+        <ID>1</ID>
+        <Sex>testsex</Sex>
+        <Psychiatric_Diagnosis>testdiagnosis</Psychiatric_Diagnosis>
+        <ADOS_Total>testADOStotal</ADOS_Total>
+        <ADOS_Communication>testADOSComm</ADOS_Communication>
+        <ADOS_Social_Interaction>testADOSSocial</ADOS_Social_Interaction>
+        <ADOS_Play>testADOSPlay</ADOS_Play>
+        <ADOS_Stereotyped_Behaviors>testADOSStereo</ADOS_Stereotyped_Behaviors>
+        <ADOS_Diagnosis>testADOSDiag</ADOS_Diagnosis>
+        <ADOS_Severity>testADOSSev</ADOS_Severity>
+        <Stereotyped_Behavior_1_Name>testStereo1</Stereotyped_Behavior_1_Name>
+        <Stereotyped_Behavior_2_Name>testStereo2</Stereotyped_Behavior_2_Name>
+        <IQ>testIQ</IQ>
+    </User>
+    <Interaction>
+        <ID>1</ID>
+        <ScriptID>1</ScriptID>
+        <SessionID>1</SessionID>
+        <SessionName>1st Pre-Test</SessionName>
+        <SessionPartner>Robot</SessionPartner>
+        <Performance>1,1,0,0</Performance>
+        <Engagement>0,1,0,1</Engagement>
+        <TurnTake>1,0,0,0</TurnTake>
+    </Interaction>
+</UserData>

@@ -1,0 +1,12 @@
+<application>
+
+<name>reactiveSystemGUI test</name>
+
+<module>
+   <name>reactiveSystemGUI</name>
+   <parameters>--context test/reactiveSystemGUI/config </parameters>
+   <node>dream1</node>
+   <tag>reactiveSystemGUI</tag>
+</module>
+
+</application>

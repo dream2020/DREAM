@@ -1,0 +1,22 @@
+FileTime: 20160412_132942
+FilePath: 
+D:\DreamRecordings\baseline2\
+
+
+FileTime: 20170906_095335
+FilePath: 
+D:\DreamRecordings\TEST 1\
+
+
+
+FileTime: 20160412_131052
+FilePath: 
+D:\DreamProject\Video\Data2\Leo\Imitation\baseline 1\
+
+
+//ONLY THE FIRST THREE LINE MATTERS
+
+
+FileTime: 20170720_140919
+FilePath: 
+E:\data\IM\

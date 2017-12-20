@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>delibSubWP6TEST</name>
+
+<module>
+    <name>actuationSubsystem</name>
+    <parameters>--context components/actuationSubsystem/config </parameters>
+    <node>dream1</node>
+    <tag>actuationSubsystem</tag>
+</module>
+
+<module>
+    <name>deliberativeDriver</name>
+    <parameters>--context test/deliberativeDriver/config </parameters>
+    <node>dream1</node>
+    <tag>deliberativeDriver</tag>
+</module>
+
+<module>
+    <name>deliberativeSubsystem</name>
+    <parameters>--context deliberativeSubsystem/config </parameters>
+    <node>dream1</node>
+    <tag>deliberativeSubsystem</tag>
+</module>
+
+<module>
+    <name>naoInterface</name>
+    <parameters>--context components/naoInterface/config </parameters>
+    <node>dream1</node>
+    <tag>naoInterface</tag>
+</module>
+
+<module>
+    <name>sandtrayServer</name>
+    <parameters>--context components/sandtrayServer/config </parameters>
+    <node>dream1</node>
+    <tag>sandtrayServer</tag>
+</module>
+
+<module>
+    <name>actuationDriver</name>
+    <parameters>--context components/actuationDriver/config </parameters>
+    <node>dream1</node>
+    <tag>actuationSubsystem</tag>
+</module>
+
+<module>
+    <name>sandtrayEvent</name>
+    <parameters>--context components/sandtrayEvent/config </parameters>
+    <node>dream1</node>
+    <tag>sandtrayEvent</tag>
+</module>
+
+<!-------------------Connections Delib Driver------------------------------->
+<connection>
+    <from>/deliberativeDriver/getChildPerformance:o</from>
+    <to>/deliberativeSubsystem/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/checkMutualGaze:o</from>
+    <to>/deliberativeSubsystem/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/interventionCommand:o</from>
+    <to>/deliberativeSubsystem/interventionCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getInterventionStatus:o</from>
+    <to>/deliberativeDriver/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/commandSuccess:o</from>
+    <to>/deliberativeDriver/commandSuccess:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/suggestedAction:o</from>
+    <to>/deliberativeDriver/suggestedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/selectedAction:o</from>
+    <to>/deliberativeSubsystem/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/sandtrayEvent:o</from>
+    <to>/deliberativeSubsystem/sandtrayEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/interactionEvent:o</from>
+    <to>/deliberativeDriver/interactionEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<!-------------------Connections with Actuation------------------------------->
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/deliberativeSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeDriver/selectedAction:o</from>
+    <to>/actuationSubsystem/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationDriver/sensorFeedback:o</from>
+    <to>/actuationSubsystem/sensorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<!-------------------Connections with NaoInterface---------------------------->
+
+<connection>
+    <from>/actuationSubsystem/disableRobot:o</from>
+    <to>/naoInterface/disableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/enableRobot:o</from>
+    <to>/naoInterface/enableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/grip:o</from>
+    <to>/naoInterface/grip:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHand:o</from>
+    <to>/naoInterface/moveHand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHead:o</from>
+    <to>/naoInterface/moveHead:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveSequence:o</from>
+    <to>/naoInterface/moveSequence:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveTorso:o</from>
+    <to>/naoInterface/moveTorso:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/pointAt:o</from>
+    <to>/naoInterface/pointAt:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/release:o</from>
+    <to>/naoInterface/release:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/say:o</from>
+    <to>/naoInterface/say:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterface/sensorFeedback:o</from>
+    <to>/actuationSubsystem/sensorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterface/robotMotorFeedback:o</from>
+    <to>/actuationSubsystem/robotMotorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+
+<!-------------------Connections with SandtrayServer--------------------------->
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/actuationSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/deliberativeSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<!-------------------Connections with SandtrayEvent---------------------------->
+
+<connection>
+    <from>/sandtrayEvent/sandtrayEvent:o</from>
+    <to>/deliberativeSubsystem/sandtrayEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

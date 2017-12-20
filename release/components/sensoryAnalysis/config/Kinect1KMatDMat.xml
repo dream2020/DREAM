@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<DeviceID>0</DeviceID>
+<KMat type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+   524.0830 0   313.6683
+                   0   525.9072 250.9422
+                   0                   0  1</data></KMat>
+<DistortionCoeffMat type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    -0.03359
+    -0.17977
+	-0.00150
+	0.00723</data></DistortionCoeffMat>
+</opencv_storage>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>assessChildPerformanceTEST</name>
+
+<module>
+    <name>assessChildPerformance</name>
+    <parameters>--context components/assessChildPerformance/config</parameters>
+    <node>dream1</node>
+    <tag>assessChildPerformance</tag>
+</module>
+
+<module>
+    <name>assessChildPerformanceDriver</name>
+    <parameters>--context test/assessChildPerformanceDriver/config</parameters>
+    <node>dream1</node>
+    <tag>assessChildPerformanceDriver</tag>
+</module>
+
+<connection>
+    <from>/assessChildPerformanceDriver/identifyVoice:o</from>
+    <to>/assessChildPerformance/identifyVoice:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformanceDriver/getEyeGaze:o</from>
+    <to>/assessChildPerformance/getEyeGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformanceDriver/getBodyPose:o</from>
+    <to>/assessChildPerformance/getBodyPose:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformanceDriver/identifyTrajectory:o</from>
+    <to>/assessChildPerformance/identifyTrajectory:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformanceDriver/getInterventionStatus:o</from>
+    <to>/assessChildPerformance/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+<connection>
+    <from>/assessChildPerformanceDriver/interactionEvent:o</from>
+    <to>/assessChildPerformance/interactionEvent:i </to>
+    <protocol>tcp</protocol>
+</connection>
+<connection>
+    <from>/assessChildPerformance/identifyTrajectory:o</from>
+    <to>/assessChildPerformanceDriver/identifyTrajectory:i</to>
+    <protocol>tcp</protocol>
+</connection>
+<connection>
+    <from>/assessChildPerformance/getChildPerformance:o</from>
+    <to>/assessChildPerformanceDriver/getChildPerformance:i </to>
+    <protocol>tcp</protocol>
+</connection>
+
+
+</application>
+ 

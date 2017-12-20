@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>Test of synced video playback</name>
+
+<module>
+   <name>heartBeat</name>
+   <parameters>--context ../working/HIS/sensoryInterpretation/components/heartbeat/config</parameters>
+   <node>dream1</node>
+   <tag>heartbeat</tag>
+</module>
+
+<module>
+   <name>videoSource</name>
+   <parameters>--name cam0 --context ../working/HIS/sensoryInterpretation/components/videoSource/config --heartbeatPlayback true</parameters>
+   <node>dream1</node>
+   <tag>cam0</tag>
+</module>
+
+<!--
+<module>
+   <name>videoSource</name>
+   <parameters>--name /cam1 --context ../working/HIS/sensoryInterpretation/components/videoSource/config --imageFile "E:/Wizard of Ozz data/camera1_20150713_151954.avi"</parameters>
+   <node>dream1</node>
+   <tag>cam1</tag>
+</module>
+
+<module>
+   <name>videoSource</name>
+   <parameters>--name /cam2 --context ../working/HIS/sensoryInterpretation/components/videoSource/config --imageFile "E:/Wizard of Ozz data/camera2_20150713_151954.avi"</parameters>
+   <node>dream1</node>
+   <tag>cam2</tag>
+</module>
+
+<module>
+   <name>cameraSelection</name>
+   <parameters>--context ../working/PORT/sensoryInterpretation/components/cameraSelection/config</parameters>
+   <node>dream1</node>
+   <tag>CameraSelection</tag>
+</module>
+
+<module>
+   <name>sensoryInterpretationLogger</name>
+   <parameters>--context ../working/HIS/childBehaviourClassification/components/sensoryInterpretationLogger/config </parameters>
+   <node>dream1</node>
+   <tag>sensoryInterpretationLogger</tag>
+</module>
+
+-->
+
+<!-- YARP DISPLAYS -->
+
+<module>
+   <name>yarpview</name>
+   <parameters>--name /cam0Display --x 000 --y 000 --w 320 --h 318 </parameters>
+   <node>dream1</node>
+   <tag>cam0_display</tag>
+</module>
+
+<!--
+<module>
+   <name>yarpview</name>
+   <parameters>--name /cam1Display --x 335 --y 000 --w 320 --h 318 </parameters>
+   <node>dream1</node>
+   <tag>cam1_display</tag>
+</module>
+
+<module>
+   <name>yarpview</name>
+   <parameters>--name /cam2Display --x 670 --y 000 --w 320 --h 318 </parameters>
+   <node>dream1</node>
+   <tag>cam2_display</tag>
+</module>
+
+<module>
+   <name>yarpview</name>
+   <parameters>--name /gazeDisplay --x 670 --y 335 --w 320 --h 318 </parameters>
+   <node>dream1</node>
+   <tag>gaze_display</tag>
+</module>
+
+-->
+
+<connection>
+  <from>/cam0/image:o</from>
+  <to>/cam0Display</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/heartbeat/heartbeat:o</from>
+  <to>/cam0/heartbeat:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+
+<!--
+
+<connection>
+  <from>/cam1/image:o</from>
+  <to>/cam1Display</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cam2/image:o</from>
+  <to>/cam2Display</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cam0/image:o</from>
+  <to>/cameraSelection/camRight</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cam1/image:o</from>
+  <to>/cameraSelection/camLeft</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cam2/image:o</from>
+  <to>/cameraSelection/camMid</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cameraSelection/cam</from>
+  <to>/gazeDisplay</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cameraSelection/eyeGazeLocal</from>
+  <to>/childBehaviourClassification/sensoryInterpretationLogger/getEyeGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cameraSelection/eyeLocation2D</from>
+  <to>/childBehaviourClassification/sensoryInterpretationLogger/getEyes:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cameraSelection/headpostLocal</from>
+  <to>/childBehaviourClassification/sensoryInterpretationLogger/getHead:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cam2/frameNumber:o</from>
+  <to>/childBehaviourClassification/sensoryInterpretationLogger/frameNumber:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+-->
+
+</application>

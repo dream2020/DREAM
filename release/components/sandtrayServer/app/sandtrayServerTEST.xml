@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>sandtrayServerTEST</name>
+
+<module>
+    <name>sandtrayServerDriver</name>
+    <parameters>--context test/sandtrayServerDriver/config </parameters>
+    <node>dream1</node>
+    <tag>sandtrayServerDriver</tag>
+</module>
+
+<module>
+    <name>sandtrayServer</name>
+    <parameters>--context components/sandtrayServer/config </parameters>
+    <node>dream1</node>
+    <tag>sandtrayServer</tag>
+</module>
+
+<module>
+    <name>sandtrayEvent</name>
+    <parameters>--context components/sandtrayEvent/config </parameters>
+    <node>dream1</node>
+    <tag>sandtrayEvent</tag>
+</module>
+
+<connection>
+    <from>/sandtrayEvent/sandtrayEvent:o</from>
+    <to>/sandtrayServerDriver/sandtrayEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/sandtrayServerDriver/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServerDriver/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

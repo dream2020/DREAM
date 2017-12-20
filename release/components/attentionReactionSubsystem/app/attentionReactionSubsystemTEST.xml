@@ -1,0 +1,226 @@
+<application>
+<name>attentionReactionSubsystem test</name>
+
+<dependencies>
+</dependencies>
+
+<!-- attentionReactionSystemGUI       -->
+
+<module>
+   <name>attentionReactionSystemGUI</name>
+   <parameters>--context components/attentionReactionSystemGUI/config </parameters>
+   <node>dream1</node>
+   <tag>attentionReactionSystemGUI</tag>
+</module>
+
+<!-- attentionReactionSubsystem -->
+
+<module>
+   <name>attentionReactionSubsystem</name>
+   <parameters>--context components/attentionReactionSubsystem/config </parameters>
+   <node>dream1</node>
+   <tag>attentionReactionSubsystem</tag>
+</module>
+
+<!-- actuationSubsystem -->
+
+<module>
+   <name>actuationSubsystem</name>
+   <parameters>--context components/actuationSubsystem/config </parameters>
+   <node>dream1</node>
+   <tag>actuationSubsystem</tag>
+</module>
+
+<!-- naoInterface -->
+
+<module>
+   <name>naoInterface</name>
+   <parameters>--context components/naoInterface/config </parameters>
+   <node>dream1</node>
+   <tag>naoInterface</tag>
+</module>
+
+<!-- Port connections -->
+<!-- ################ -->
+
+<!-- From naoInterface -->
+<!-- ===================== -->
+
+<connection>
+  <from>/naoInterface/robotMotorFeedback:o</from>
+  <to>/actuationSubsystem/robotMotorFeedback:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/naoInterface/sensorFeedback:o</from>
+  <to>/actuationSubsystem/sensorFeedback:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- From actuationSubsystem -->
+<!-- ===================== -->
+
+<connection>
+  <from>/actuationSubsystem/say:o</from>
+  <to>/naoInterface/say:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/actuationSubsystem/moveSequence:o</from>
+  <to>/naoInterface/moveSequence:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+  <from>/actuationSubsystem/moveHead:o</from>
+  <to>/naoInterface/moveHead:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+  <from>/actuationSubsystem/actionFeedback:o</from>
+  <to>/attentionReactionSubsystem/actionFeedback:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- From attentionReactionSubsystem -->
+<!-- ===================== -->
+
+<connection>
+  <from>/attentionReactionSubsystem/fallingInterruption:o</from>
+  <to>/attentionReactionSystemGUI/fallingInterruption:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSubsystem/fallingInterruption:o</from>
+  <to>/actuationSubsystem/fallingInterruption:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+  <from>/attentionReactionSubsystem/elicitedAttention:o</from>
+  <to>/actuationSubsystem/elicitedAttention:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSubsystem/eyeBlinking:o</from>
+  <to>/actuationSubsystem/eyeBlinking:i</to>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <from>/attentionReactionSubsystem/fallingReaction:o</from>
+  <to>/actuationSubsystem/fallingReaction:i</to>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <from>/attentionReactionSubsystem/fallingReactionSpeech:o</from>
+  <to>/actuationSubsystem/fallingReactionSpeech:i</to>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <from>/attentionReactionSubsystem/socialReaction:o</from>
+  <to>/actuationSubsystem/socialReaction:i</to>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <from>/attentionReactionSubsystem/socialReactionSpeech:o</from>
+  <to>/actuationSubsystem/socialReactionSpeech:i</to>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <from>/attentionReactionSubsystem/socialFacialExpression:o</from>
+  <to>/actuationSubsystem/socialFacialExpression:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+
+
+<!-- From attentionReactionSystemGUI       -->
+<!-- ===================== -->
+
+<connection>
+  <from>/attentionReactionSystemGUI/getSoundDirection:o</from>
+  <to>/attentionReactionSubsystem/getSoundDirection:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSystemGUI/getFaces:o</from>
+  <to>/attentionReactionSubsystem/getFaces:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSystemGUI/attentionSwitchOff:o</from>
+  <to>/attentionReactionSubsystem/attentionSwitchOff:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSystemGUI/reactionSwitchOff:o</from>
+  <to>/attentionReactionSubsystem/reactionSwitchOff:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSystemGUI/therapistGazeCommand:o</from>
+  <to>/attentionReactionSubsystem/therapistGazeCommand:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSystemGUI/attentionBias:o</from>
+  <to>/attentionReactionSubsystem/attentionBias:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+  <from>/attentionReactionSystemGUI/identifyFaceExpression:o</from>
+  <to>/attentionReactionSubsystem/identifyFaceExpression:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSystemGUI/robotSensors:o</from>
+  <to>/attentionReactionSubsystem/robotSensors:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/actuationSubsystem/robotSensors:o</from>
+  <to>/attentionReactionSubsystem/robotSensors:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+  <from>/attentionReactionSystemGUI/checkMutualGaze:o</from>
+  <to>/attentionReactionSubsystem/checkMutualGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSystemGUI/recognizeSpeech:o</from>
+  <to>/attentionReactionSubsystem/recognizeSpeech:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/attentionReactionSystemGUI/affectiveState:o</from>
+  <to>/attentionReactionSubsystem/affectiveState:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+</application>

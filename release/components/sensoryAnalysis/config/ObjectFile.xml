@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<ROIRect>
+  143 245 358 228</ROIRect>
+<ObjectThreshold>50</ObjectThreshold>
+<DeskWorld_R_mat type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    1. 0. 0. -2.5429635479719898e-002 8.8109957898914060e-001
+    -4.7224661517529970e-001 0. 4.7224661517529970e-001
+    8.8109957898914060e-001</data></DeskWorld_R_mat>
+<DeskWorld_T_mat type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    0. 0. 0.</data></DeskWorld_T_mat>
+<Point_C>
+  1.0333450965515521e+001 -7.0990049947956993e+002
+  6.4881700346275454e+002</Point_C>
+<RobotHead>
+  0. -140. 130.</RobotHead>
+<ShowRobotHeadFlag>0</ShowRobotHeadFlag>
+<GazeRadius>200</GazeRadius>
+<FaceSize>250</FaceSize>
+<MiddleCameraID>2</MiddleCameraID>
+<LeftCameraID>1</LeftCameraID>
+<RightCameraID>0</RightCameraID>
+<UseCamMutualGazeFlag>1</UseCamMutualGazeFlag>
+<MutualGazeMaxX>70</MutualGazeMaxX>
+<MutualGazeMinX>-180</MutualGazeMinX>
+<MutualGazeMaxY>450</MutualGazeMaxY>
+<MutualGazeMinY>-50</MutualGazeMinY>
+</opencv_storage>

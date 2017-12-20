@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>sensoryInterpretationLogger test</name>
+
+<dependencies>
+</dependencies>
+
+<!-- sensoryInterpretation        -->
+
+<module>
+   <name>sensoryInterpretation</name>
+   <parameters>--context test/sensoryInterpretation/config </parameters>
+   <node>dream1</node>
+   <tag>sensoryInterpretation</tag>
+</module>
+
+<!-- sensoryInterpretationLogger -->
+<module>
+   <name>sensoryInterpretationLogger</name>
+   <parameters>--context test/sensoryInterpretationLogger/config </parameters>
+   <node>dream1</node>
+   <tag>sensoryInterpretationLogger</tag>
+</module>
+
+<!-- childBehaviourClassification -->
+
+<module>
+   <name>childBehaviourClassification</name>
+   <parameters>--context test/childBehaviourClassification/config </parameters>
+   <node>dream1</node>
+   <tag>childBehaviourClassification</tag>
+</module>
+
+<!-- cognitiveControl            -->
+
+<module>
+   <name>cognitiveControl</name>
+   <parameters>--context test/cognitiveControl/config </parameters>
+   <node>dream1</node>
+   <tag>cognitiveControl</tag>
+</module>
+
+<!-- systemArchitectureGUI       -->
+
+<module>
+   <name>systemArchitectureGUI</name>
+   <parameters>--context test/systemArchitectureGUI/config </parameters>
+   <node>dream1</node>
+   <tag>systemArchitectureGUI</tag>
+</module>
+
+
+<!-- Port connections -->
+<!-- ################ -->
+
+<!-- From systemArchitectureGUI -->
+<!-- ========================== -->
+ 
+<connection>
+  <from>/systemArchitectureGUI/sensoryInterpretation:o</from>
+  <to>/sensoryInterpretation</to>
+  <protocol>tcp</protocol>
+</connection>
+ 
+<connection>
+  <from>/systemArchitectureGUI/childBehaviourClassification:o</from>
+  <to>/childBehaviourClassification</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/systemArchitectureGUI/cognitiveControl:o</from>
+  <to>/cognitiveControl</to>
+  <protocol>tcp</protocol>
+</connection>
+ 
+<connection>
+  <from>/systemArchitectureGUI/grip:o</from>
+  <to>/cognitiveControl/grip:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/systemArchitectureGUI/moveHand:o</from>
+  <to>/cognitiveControl/moveHand:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/systemArchitectureGUI/moveHead:o</from>
+  <to>/cognitiveControl/moveHead:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/systemArchitectureGUI/moveSequence:o</from>
+  <to>/cognitiveControl/moveSequence:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/systemArchitectureGUI/moveTorso:o</from>
+  <to>/cognitiveControl/moveTorso:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/systemArchitectureGUI/say:o</from>
+  <to>/cognitiveControl/say:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/systemArchitectureGUI/enableRobot:o</from>
+  <to>/cognitiveControl/enableRobot:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- From sensoryInterpretation -->
+<!-- ========================== -->
+
+
+<!-- checkMutualGaze        -->
+
+<connection>
+  <from>/sensoryInterpretation/checkMutualGaze:o</from>
+  <to>/childBehaviourClassification/checkMutualGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/checkMutualGaze:o</from>
+  <to>/cognitiveControl/checkMutualGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/checkMutualGaze:o</from>
+  <to>/sensoryInterpretationLogger/checkMutualGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- getArmAngle            -->
+
+<connection>
+  <from>/sensoryInterpretation/getArmAngle:o</from>
+  <to>/childBehaviourClassification/getArmAngle:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getArmAngle:o</from>
+  <to>/cognitiveControl/getArmAngle:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getArmAngle:o</from>
+  <to>/sensoryInterpretationLogger/getArmAngle:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getBody                -->
+
+<connection>
+  <from>/sensoryInterpretation/getBody:o</from>
+  <to>/childBehaviourClassification/getBody:i</to>
+  <protocol>tcp</protocol>
+</connection>
+ 
+<connection>
+  <from>/sensoryInterpretation/getBody:o</from>
+  <to>/cognitiveControl/getBody:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getBody:o</from>
+  <to>/sensoryInterpretationLogger/getBody:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getBodyPose            -->
+
+<connection>
+  <from>/sensoryInterpretation/getBodyPose:o</from>
+  <to>/childBehaviourClassification/getBodyPose:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getBodyPose:o</from>
+  <to>/cognitiveControl/getBodyPose:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getBodyPose:o</from>
+  <to>/sensoryInterpretationLogger/getBodyPose:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getEyeGaze             -->
+
+<connection>
+  <from>/sensoryInterpretation/getEyeGaze:o</from>
+  <to>/childBehaviourClassification/getEyeGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getEyeGaze:o</from>
+  <to>/cognitiveControl/getEyeGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getEyeGaze:o</from>
+  <to>/sensoryInterpretationLogger/getEyeGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getEyes                -->
+
+<connection>
+  <from>/sensoryInterpretation/getEyes:o</from>
+  <to>/childBehaviourClassification/getEyes:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getEyes:o</from>
+  <to>/cognitiveControl/getEyes:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getEyes:o</from>
+  <to>/sensoryInterpretationLogger/getEyes:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getFaces               -->
+
+<connection>
+  <from>/sensoryInterpretation/getFaces:o</from>
+  <to>/childBehaviourClassification/getFaces:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getFaces:o</from>
+  <to>/cognitiveControl/getFaces:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getFaces:o</from>
+  <to>/sensoryInterpretationLogger/getFaces:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- getGripLocation        -->
+
+<connection>
+  <from>/sensoryInterpretation/getGripLocation:o</from>
+  <to>/childBehaviourClassification/getGripLocation:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getGripLocation:o</from>
+  <to>/cognitiveControl/getGripLocation:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getFaces:o</from>
+  <to>/sensoryInterpretationLogger/getFaces:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getHands               -->
+
+<connection>
+  <from>/sensoryInterpretation/getHands:o</from>
+  <to>/childBehaviourClassification/getHands:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getHands:o</from>
+  <to>/cognitiveControl/getHands:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getHands:o</from>
+  <to>/sensoryInterpretationLogger/getHands:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getHead                -->
+
+<connection>
+  <from>/sensoryInterpretation/getHead:o</from>
+  <to>/childBehaviourClassification/getHead:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getHead:o</from>
+  <to>/cognitiveControl/getHead:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getHead:o</from>
+  <to>/sensoryInterpretationLogger/getHead:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getHeadGaze            -->
+
+<connection>
+  <from>/sensoryInterpretation/getHeadGaze:o</from>
+  <to>/childBehaviourClassification/getHeadGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getHeadGaze:o</from>
+  <to>/cognitiveControl/getHeadGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getHeadGaze:o</from>
+  <to>/sensoryInterpretationLogger/getHeadGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getObjects             -->
+
+<connection>
+  <from>/sensoryInterpretation/getObjects:o</from>
+  <to>/childBehaviourClassification/getObjects:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getObjects:o</from>
+  <to>/cognitiveControl/getObjects:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getObjects:o</from>
+  <to>/sensoryInterpretationLogger/getObjects:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- getObjectTableDistance -->
+
+<connection>
+  <from>/sensoryInterpretation/getObjectTableDistance:o</from>
+  <to>/childBehaviourClassification/getObjectTableDistance:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getObjectTableDistance:o</from>
+  <to>/cognitiveControl/getObjectTableDistance:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getObjectTableDistance:o</from>
+  <to>/sensoryInterpretationLogger/getObjectTableDistance:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- getSoundDirection -->
+
+<connection>
+  <from>/sensoryInterpretation/getSoundDirection:o</from>
+  <to>/childBehaviourClassification/getSoundDirection:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getSoundDirection:o</from>
+  <to>/sensoryInterpretationLogger/getSoundDirection:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/getSoundDirection:o</from>
+  <to>/cognitiveControl/getSoundDirection:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<!-- identifyFace           -->
+
+<connection>
+  <from>/sensoryInterpretation/identifyFace:o</from>
+  <to>/childBehaviourClassification/identifyFace:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/identifyFace:o</from>
+  <to>/cognitiveControl/identifyFace:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- identifyFaceExpression -->
+
+<connection>
+  <from>/sensoryInterpretation/identifyFaceExpression:o</from>
+  <to>/childBehaviourClassification/identifyFaceExpression:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<connection>
+  <from>/sensoryInterpretation/identifyFaceExpression:o</from>
+  <to>/cognitiveControl/identifyFaceExpression:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- identifyObject         -->
+
+<connection>
+  <from>/sensoryInterpretation/identifyObject:o</from>
+  <to>/childBehaviourClassification/identifyObject:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/identifyObject:o</from>
+  <to>/cognitiveControl/identifyObject:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- identifyTrajectory     -->
+
+<connection>
+  <from>/sensoryInterpretation/identifyTrajectory:o</from>
+  <to>/childBehaviourClassification/identifyTrajectory:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/identifyTrajectory:o</from>
+  <to>/cognitiveControl/identifyTrajectory:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- identifyVoice          -->
+
+<connection>
+  <from>/sensoryInterpretation/identifyVoice:o</from>
+  <to>/childBehaviourClassification/identifyVoice:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/identifyVoice:o</from>
+  <to>/cognitiveControl/identifyVoice:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+
+<!-- recognizeSpeech        -->
+
+<connection>
+  <from>/sensoryInterpretation/recognizeSpeech:o</from>
+  <to>/childBehaviourClassification/recognizeSpeech:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/recognizeSpeech:o</from>
+  <to>/cognitiveControl/recognizeSpeech:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+
+<!-- trackFace              -->
+
+<connection>
+  <from>/sensoryInterpretation/trackFace:o</from>
+  <to>/childBehaviourClassification/trackFace:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/trackFace:o</from>
+  <to>/cognitiveControl/trackFace:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- trackHand              -->
+
+<connection>
+  <from>/sensoryInterpretation/trackHand:o</from>
+  <to>/childBehaviourClassification/trackHand:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/trackHand:o</from>
+  <to>/cognitiveControl/trackHand:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- trackObject            -->
+
+<connection>
+  <from>/sensoryInterpretation/trackObject:o</from>
+  <to>/childBehaviourClassification/trackObject:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/sensoryInterpretation/trackObject:o</from>
+  <to>/cognitiveControl/trackObject:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+
+<!-- From childBehaviourClassification -->
+<!-- ================================= -->
+
+
+<!-- getChildBehaviour      -->
+
+<connection>
+  <from>/childBehaviourClassification/getChildBehaviour:o</from>
+  <to>/cognitiveControl/getChildBehaviour:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/childBehaviourClassification/getChildBehaviour:o</from>
+  <to>/systemArchitectureGUI/getChildBehaviour:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- getChildMotivation     -->
+
+<connection>
+  <from>/childBehaviourClassification/getChildMotivation:o</from>
+  <to>/cognitiveControl/getChildMotivation:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/childBehaviourClassification/getChildMotivation:o</from>
+  <to>/systemArchitectureGUI/getChildMotivation:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+<!-- getChildPerformance    -->
+
+<connection>
+  <from>/childBehaviourClassification/getChildPerformance:o</from>
+  <to>/cognitiveControl/getChildPerformance:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/childBehaviourClassification/getChildPerformance:o</from>
+  <to>/systemArchitectureGUI/getChildPerformance:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+
+<!-- From cognitiveControl -->
+<!-- ===================== -->
+
+
+<connection>
+  <from>/cognitiveControl/getEyeGaze:o</from>
+  <to>/sensoryInterpretation/getEyeGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+ 
+<connection>
+  <from>/cognitiveControl/getGripLocation:o</from>
+  <to>/sensoryInterpretation/getGripLocation:i</to>
+  <protocol>tcp</protocol>
+</connection>
+ 
+<connection>
+  <from>/cognitiveControl/getHeadGaze:o</from>
+  <to>/sensoryInterpretation/getHeadGaze:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/getObjects:o</from>
+  <to>/sensoryInterpretation/getObjects:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/getObjectTableDistance:o</from>
+  <to>/sensoryInterpretation/getObjectTableDistance:i</to>
+  <protocol>tcp</protocol>
+</connection>
+ 
+<connection>
+  <from>/cognitiveControl/getSoundDirection:o</from>
+  <to>/sensoryInterpretation/getSoundDirection:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/identifyFace:o</from>
+  <to>/sensoryInterpretation/identifyFace:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/identifyFaceExpression:o</from>
+  <to>/sensoryInterpretation/identifyFaceExpression:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/identifyObject:o</from>
+  <to>/sensoryInterpretation/identifyObject:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/identifyTrajectory:o</from>
+  <to>/sensoryInterpretation/identifyTrajectory:i</to>
+  <protocol>tcp</protocol>
+</connection>
+ 
+<connection>
+  <from>/cognitiveControl/trackFace:o</from>
+  <to>/sensoryInterpretation/trackFace:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/trackHand:o</from>
+  <to>/sensoryInterpretation/trackHand:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/trackObject:o</from>
+  <to>/sensoryInterpretation/trackObject:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/cognitiveControl/getInterventionState:o</from>
+  <to>/systemArchitectureGUI/getInterventionState:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+
+</application>

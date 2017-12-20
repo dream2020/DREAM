@@ -1,0 +1,61 @@
+<application>
+<name>systemGUI test</name>
+
+ <module>
+    <name>systemGUI</name>
+    <parameters>--context components/systemGUI/config</parameters>
+    <node>dream1</node>
+    <tag>systemGUI</tag>
+ </module>
+
+ <module>
+    <name>systemGUIDriver</name>
+    <parameters>--context test/systemGUIDriver/config</parameters>
+    <node>dream1</node>
+    <tag>systemGUIDriver</tag>
+</module>
+
+
+<connection>
+    <from>/systemGUIDriver/getChildBehaviour:o</from>
+    <to>/systemGUI/getChildBehaviour:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUIDriver/getChildPerformance:o</from>
+    <to>/systemGUI/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUIDriver/proposedToSupervisor:o</from>
+    <to>/systemGUI/proposedToSupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUIDriver/smsSummary:o</from>
+    <to>/systemGUI/smsSummary:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/selectedBySupervisor:o</from>
+    <to>/systemGUIDriver/selectedBySupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/therapistCommand:o</from>
+    <to>/systemGUIDriver/therapistCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/userID:o</from>
+    <to>/systemGUIDriver/userID:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

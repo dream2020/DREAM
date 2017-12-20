@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>DREAM</name>
+
+<module>
+    <name>naoInterface</name>
+    <parameters>--context components/naoInterface/config</parameters>
+    <node>dream1</node>
+    <tag>naoInterface</tag>
+</module>
+
+<module>
+    <name>sensoryAnalysis</name>
+    <parameters>--context components/sensoryAnalysis/config</parameters>
+    <node>dream1</node>
+    <tag>sensoryAnalysis</tag>
+</module>
+
+<module>
+    <name>assessChildPerformance</name>
+    <parameters>--context components/assessChildPerformance/config</parameters>
+    <node>dream1</node>
+    <tag>assessChildPerformance</tag>
+</module>
+
+<module>
+    <name>sandtrayEvent</name>
+    <parameters>--context components/sandtrayEvent/config</parameters>
+    <node>dream1</node>
+    <tag>sandtrayEvent</tag>
+</module>
+
+<module>
+    <name>userModel</name>
+    <parameters>--context components/userModel/config</parameters>
+    <node>dream1</node>
+    <tag>userModel</tag>
+</module>
+
+<module>
+    <name>sandtrayServer</name>
+    <parameters>--context components/sandtrayServer/config</parameters>
+    <node>dream1</node>
+    <tag>sandtrayServer</tag>
+</module>
+
+<module>
+    <name>systemGUI</name>
+    <parameters>--context components/systemGUI/config</parameters>
+    <node>dream1</node>
+    <tag>systemGUI</tag>
+</module>
+
+<module>
+    <name>attentionReactionSubsystem</name>
+    <parameters>--context components/attentionReactionSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>attentionReactionSubsystem</tag>
+</module>
+
+<module>
+    <name>selfMonitoringSubsystem</name>
+    <parameters>--context components/selfMonitoringSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>selfMonitoringSubsystem</tag>
+</module>
+
+<module>
+    <name>assessChildEngagement</name>
+    <parameters>--context components/assessChildEngagement/config</parameters>
+    <node>dream1</node>
+    <tag>assessChildEngagement</tag>
+</module>
+
+<module>
+    <name>actuationSubsystem</name>
+    <parameters>--context components/actuationSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>actuationSubsystem</tag>
+</module>
+
+<module>
+    <name>deliberativeSubsystem</name>
+    <parameters>--context components/deliberativeSubsystem/config</parameters>
+    <node>dream1</node>
+    <tag>deliberativeSubsystem</tag>
+</module>
+
+<module>
+    <name>sensoryInterpretationLogger</name>
+    <parameters>--context config</parameters>
+    <node>dream1</node>
+    <tag>sensoryInterpretationLogger</tag>
+</module>
+
+<connection>
+    <from>/actuationSubsystem/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/affectiveState:o</from>
+    <to>/attentionReactionSubsystem/affectiveState:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/interactionEvent:o</from>
+    <to>/assessChildPerformance/interactionEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/interactionEvent:o</from>
+    <to>/sensoryInterpretationLogger/interactionEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterface/sensorFeedback:o</from>
+    <to>/actuationSubsystem/sensorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformance/getChildBehaviour:o</from>
+    <to>/systemGUI/getChildBehaviour:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/userDelib:o</from>
+    <to>/deliberativeSubsystem/userDelib:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformance/getChildBehaviour:o</from>
+    <to>/selfMonitoringSubsystem/getChildBehaviour:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveSequence:o</from>
+    <to>/naoInterface/moveSequence:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/deliberativeFeedback:o</from>
+    <to>/selfMonitoringSubsystem/deliberativeFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/userModel/userData:o</from>
+    <to>/selfMonitoringSubsystem/userData:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getSoundDirection:o</from>
+    <to>/deliberativeSubsystem/getSoundDirection:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformance/getChildPerformance:o</from>
+    <to>/deliberativeSubsystem/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformance/getChildPerformance:o</from>
+    <to>/sensoryInterpretationLogger/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/disableRobot:o</from>
+    <to>/naoInterface/disableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildEngagement/engagementFlag:o</from>
+    <to>/selfMonitoringSubsystem/engagementFlag:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getFaces:o</from>
+    <to>/deliberativeSubsystem/getFaces:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/checkMutualGaze:o</from>
+    <to>/assessChildEngagement/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getObjects:o</from>
+    <to>/deliberativeSubsystem/getObjects:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/naoInterface/robotMotorFeedback:o</from>
+    <to>/actuationSubsystem/robotMotorFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/socialReactionSpeech:o</from>
+    <to>/actuationSubsystem/socialFacialExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/deliberativeSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/selectedAction:o</from>
+    <to>/deliberativeSubsystem/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/enableRobot:o</from>
+    <to>/naoInterface/enableRobot:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/reactionSwitchOff:o</from>
+    <to>/attentionReactionSubsystem/reactionSwitchOff:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/pointAt:o</from>
+    <to>/naoInterface/pointAt:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/attentionReactionSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getEyeGaze:o</from>
+    <to>/deliberativeSubsystem/getEyeGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/therapistGazeCommand:o</from>
+    <to>/attentionReactionSubsystem/therapistGazeCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayEvent/sandtrayEvent:o</from>
+    <to>/deliberativeSubsystem/sandtrayEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/fallingInterruption:o</from>
+    <to>/actuationSubsystem/fallingInterruption:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getHeadGaze:o</from>
+    <to>/deliberativeSubsystem/getHeadGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/recognizeSpeech:o</from>
+    <to>/deliberativeSubsystem/recognizeSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHand:o</from>
+    <to>/naoInterface/moveHand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/eyeBlinking:o</from>
+    <to>/actuationSubsystem/eyeBlinking:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/grip:o</from>
+    <to>/naoInterface/grip:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/elicitedAttention:o</from>
+    <to> /actuationSubsystem/elicitedAttention:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getBody:o</from>
+    <to>/deliberativeSubsystem/getBody:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/selectedBySupervisor:o</from>
+    <to>/selfMonitoringSubsystem/selectedBySupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyFaceExpression:o</from>
+    <to>/attentionReactionSubsystem/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getArmAngle:o</from>
+    <to>/deliberativeSubsystem/getArmAngle:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyTrajectory:o</from>
+    <to>/deliberativeSubsystem/identifyTrajectory:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/attentionSwitchOff:o</from>
+    <to>/attentionReactionSubsystem/attentionSwitchOff:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/attentionBias:o</from>
+    <to>/attentionReactionSubsystem/attentionBias:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformance/getChildPerformance:o</from>
+    <to>/selfMonitoringSubsystem/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/say:o</from>
+    <to>/naoInterface/say:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/fallingReaction:o</from>
+    <to>/actuationSubsystem/fallingReaction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/fallingInterruption:o</from>
+    <to>/selfMonitoringSubsystem/fallingInterruption:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/sensorySummary:o</from>
+    <to>/selfMonitoringSubsystem/sensorySummary:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/updatedData:o</from>
+    <to>/userModel/updatedData:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getBody:o</from>
+    <to>/assessChildEngagement/getBody:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getEyes:o</from>
+    <to>/deliberativeSubsystem/getEyes:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getGripLocation:o</from>
+    <to>/deliberativeSubsystem/getGripLocation:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/checkMutualGaze:o</from>
+    <to>/attentionReactionSubsystem/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/trackFace:o</from>
+    <to>/deliberativeSubsystem/trackFace:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/socialFacialExpression:o</from>
+    <to>/actuationSubsystem/socialReactionSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getBodyPose:o</from>
+    <to>/assessChildPerformance/getBodyPose:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/robotSensors:o</from>
+    <to>/attentionReactionSubsystem/robotSensors:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getHead:o</from>
+    <to>/deliberativeSubsystem/getHead:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyVoice:o</from>
+    <to>/deliberativeSubsystem/identifyVoice:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/robotSensors:o</from>
+    <to>/deliberativeSubsystem/robotSensors:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyFaceExpression:o</from>
+    <to>/deliberativeSubsystem/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyFace:o</from>
+    <to>/deliberativeSubsystem/identifyFace:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getBodyPose:o</from>
+    <to>/deliberativeSubsystem/getBodyPose:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getObjectTableDistance:o</from>
+    <to>/deliberativeSubsystem/getObjectTableDistance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyObject:o</from>
+    <to>/deliberativeSubsystem/identifyObject:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/userID:o</from>
+    <to>/userModel/userID:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformance/getChildBehaviour:o</from>
+    <to>/deliberativeSubsystem/getChildBehaviour:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/release:o</from>
+    <to>/naoInterface/release:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/checkMutualGaze:o</from>
+    <to>/deliberativeSubsystem/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/fallingReactionSpeech:o</from>
+    <to>/actuationSubsystem/fallingReactionSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/proposedToSupervisor:o</from>
+    <to>/systemGUI/proposedToSupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/proposedToSupervisor:o</from>
+    <to>/sensoryInterpretationLogger/proposedToSupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/attentionReactionSubsystem/socialReaction:o</from>
+    <to>/actuationSubsystem/socialReaction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/therapistCommand:o</from>
+    <to>/selfMonitoringSubsystem/therapistCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/deliberativeSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/actionFeedback:o</from>
+    <to>/selfMonitoringSubsystem/actionFeedback:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/trackObject:o</from>
+    <to>/deliberativeSubsystem/trackObject:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getFaces:o</from>
+    <to>/attentionReactionSubsystem/getFaces:i </to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/smsSummary:o</from>
+    <to>/systemGUI/smsSummary:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/selfMonitoringSubsystem/selectedAction:o</from>
+    <to>/actuationSubsystem/selectedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getInterventionStatus:o</from>
+    <to>/assessChildPerformance/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getInterventionStatus:o</from>
+    <to>/sensoryInterpretationLogger/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/actuationSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveTorso:o</from>
+    <to>/naoInterface/moveTorso:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+	<from>/systemGUI/interventionCommand:o</from>
+    <to>/deliberativeSubsystem/interventionCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+	<from>/systemGUI/interventionCommand:o</from>
+    <to>/selfMonitoringSubsystem/interventionCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/suggestedAction:o</from>
+    <to>/selfMonitoringSubsystem/suggestedAction:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getEyeGaze:o</from>
+    <to>/assessChildPerformance/getEyeGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/recognizeSpeech:o</from>
+    <to>/attentionReactionSubsystem/recognizeSpeech:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getSoundDirection:o</from>
+    <to>/attentionReactionSubsystem/getSoundDirection:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildPerformance/getChildPerformance:o</from>
+    <to>/systemGUI/getChildPerformance:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getHands:o</from>
+    <to>/deliberativeSubsystem/getHands:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/moveHead:o</from>
+    <to>/naoInterface/moveHead:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyTrajectory:o</from>
+    <to>/assessChildPerformance/identifyTrajectory:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/getInterventionStatus:o</from>
+    <to>/selfMonitoringSubsystem/getInterventionStatus:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyVoice:o</from>
+    <to>/assessChildPerformance/identifyVoice:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyFaceExpression:o</from>
+    <to>/assessChildEngagement/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/assessChildEngagement/engagementFlag:o</from>
+    <to>/sensoryInterpretationLogger/engagementFlag:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/checkMutualGaze:o</from>
+    <to>/sensoryInterpretationLogger/checkMutualGaze:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/getBody:o</from>
+    <to>/sensoryInterpretationLogger/getBody:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sensoryAnalysis/identifyFaceExpression:o</from>
+    <to>/sensoryInterpretationLogger/identifyFaceExpression:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/therapistCommand:o</from>
+    <to>/sensoryInterpretationLogger/therapistCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/systemGUI/selectedBySupervisor:o</from>
+    <to>/sensoryInterpretationLogger/selectedBySupervisor:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

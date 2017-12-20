@@ -1,0 +1,12 @@
+<application>
+
+<name>systemArchitectureGUI test</name>
+
+<module>
+   <name>systemArchitectureGUI</name>
+   <parameters>--context test/systemArchitectureGUI/config </parameters>
+   <node>dream1</node>
+   <tag>systemArchitectureGUI</tag>
+</module>
+
+</application>

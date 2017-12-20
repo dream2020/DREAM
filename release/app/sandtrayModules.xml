@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="application.xsl"?>
+<application>
+<name>sandtrayModules</name>
+
+<module>
+    <name>sandtrayEvent</name>
+    <parameters>--context components/sandtrayEvent/config</parameters>
+    <node>dream1</node>
+    <tag>sandtrayEvent</tag>
+</module>
+
+<module>
+    <name>sandtrayServer</name>
+    <parameters>--context components/sandtrayServer/config</parameters>
+    <node>dream1</node>
+    <tag>sandtrayServer</tag>
+</module>
+
+<connection>
+    <from>/sandtrayEvent/sandtrayEvent:o</from>
+    <to>/deliberativeSubsystem/sandtrayEvent:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/actuationSubsystem/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/deliberativeSubsystem/sandtrayCommand:o</from>
+    <to>/sandtrayServer/sandtrayCommand:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/deliberativeSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+<connection>
+    <from>/sandtrayServer/sandtrayReturn:o</from>
+    <to>/actuationSubsystem/sandtrayReturn:i</to>
+    <protocol>tcp</protocol>
+</connection>
+
+</application>

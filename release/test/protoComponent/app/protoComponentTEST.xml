@@ -1,0 +1,54 @@
+<application>
+<name>protoComponent test</name>
+
+<dependencies>
+   <port>/robot/cam/left</port>
+</dependencies>
+
+<module>
+   <name>protoComponent</name>
+   <parameters>--context test/protoComponent/config </parameters>
+   <node>dream1</node>
+   <tag>protoComponent</tag>
+</module>
+
+<module>
+   <name>imageSource</name>
+   <parameters>--context test/imageSource/config</parameters>
+   <node>dream1</node>
+   <tag>imageSource</tag>
+</module>
+
+<module>
+   <name>yarpview</name>
+   <parameters>--name /inputImage --x 000 --y 000 --w 320 --h 318 </parameters>
+   <node>dream1</node>
+   <tag>input_image</tag>
+</module>
+
+<module>
+   <name>yarpview</name>
+   <parameters>--name /binaryImage --x 320 --y 000 --w 320 --h 318 </parameters>
+   <node>dream1</node>
+   <tag>plot_image</tag>
+</module>
+
+<connection>
+  <from>/robot/cam/left</from>
+  <to>/inputImage</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/robot/cam/left</from>
+  <to>/protoComponent/image:i</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/protoComponent/image:o</from>
+  <to>/binaryImage</to>
+  <protocol>tcp</protocol>
+</connection>
+
+</application>

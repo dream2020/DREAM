@@ -1,0 +1,76 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+SET(MODULENAME sensoryAnalysis)
+PROJECT(${MODULENAME})
+
+FIND_PACKAGE(YARP)
+SET(CMAKE_MODULE_PATH ${YARP_MODULE_PATH} ${CMAKE_MODULE_PATH})
+
+FIND_PACKAGE(GUIUTILITIES REQUIRED)
+
+INCLUDE_DIRECTORIES(${YARP_INCLUDE_DIRS} ${GUIUTILITIES_INCLUDE_DIRS})
+
+FILE(GLOB folder_source src/sensoryAnalysisMain.cpp src/sensoryAnalysisConfiguration.cpp src/sensoryAnalysisComputation.cpp)
+FILE(GLOB folder_header src/sensoryAnalysis.h src/SensoryAnalysisShow.h src/AudioExplorer.h src/blob.h src/BlobContour.h  src/BlobLibraryConfiguration.h src/BlobOperators.h src/BlobResult.h src/ComponentLabeling.h src/DreamMotion.h src/DreamSave.h src/EyeLocalization.h src/KinectAudioStream.h src/Kinectsdk.h src/KinectSpeech.h src/MotionFeature.h src/ObjectDetection.h src/ResamplerUtil.h src/stdafx.h src/svm.h src/ViewGLC.h src/WASAPICapture.h)
+
+SOURCE_GROUP("Source Files" FILES ${folder_source})
+SOURCE_GROUP("Header Files" FILES ${folder_header})
+
+INCLUDE_DIRECTORIES("C:/Program Files/Microsoft SDKs/Kinect/v1.8/inc")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Microsoft SDKs/Speech/v11.0/Include")
+link_directories("C:/naoqi/lib")
+link_directories("C:/Program Files (x86)/Microsoft SDKs/Speech/v11.0/Lib")
+link_directories("C:/DREAM/release/lib")
+link_directories("C:/DREAM/release/lib/opencv2.49/lib")
+
+FIND_PACKAGE(YARP)
+SET(CMAKE_MODULE_PATH ${YARP_MODULE_PATH} ${CMAKE_MODULE_PATH})
+ 
+INCLUDE_DIRECTORIES(${YARP_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES("C:/DREAM/release/include/freeglut")
+INCLUDE_DIRECTORIES("C:/DREAM/release/include/opencv2.49/include")
+INCLUDE_DIRECTORIES("C:/DREAM/release/include/pthread")
+
+set(OPENCV_release_LIBS  opencv_calib3d249.lib opencv_contrib249.lib opencv_core249.lib opencv_features2d249.lib opencv_flann249.lib opencv_gpu249.lib opencv_highgui249.lib opencv_imgproc249.lib opencv_legacy249.lib opencv_ml249.lib opencv_objdetect249.lib opencv_ts249.lib opencv_video249.lib opencv_nonfree249.lib)
+
+
+#find_package( OpenCV REQUIRED )
+
+#target_link_libraries( ${MODULENAME} ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(${MODULENAME} ${folder_source} ${folder_header})
+
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files/Microsoft SDKs/Kinect/v1.8/lib/x86/Kinect10.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/Msdmo.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/dmoguids.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/amstrmid.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/kernel32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/user32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/winspool.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/comdlg32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/advapi32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/shell32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/ole32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/oleaut32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/uuid.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/odbc32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/odbccp32.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/avrt.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/mfuuid.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/mfplat.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/wmcodecdspuuid.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/gdi32.lib")
+
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/NaoQi/lib/pthreadVC2.lib")
+
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/DREAM/release/lib/DreamSave.lib")
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/DREAM/release/lib/IntraFaceDLL.lib")
+
+TARGET_LINK_LIBRARIES(${MODULENAME} "C:/DREAM/release/lib/freeglut.lib")
+
+
+
+TARGET_LINK_LIBRARIES(${MODULENAME} ${YARP_LIBRARIES} ${OPENCV_release_LIBS} ${GUIUTILITIES_LIBRARIES} ${FLTK_LIBRARIES})
+
+
+INSTALL(TARGETS ${MODULENAME} DESTINATION bin) 
