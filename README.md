@@ -1,9 +1,7 @@
 The DREAM Project
 =================
 
-Welcome! This wiki is devoted to the [DREAM] project. It is the place to
-come for the latest information on the DREAM project and the main source
-of documentation how to access and use DREAM resources.\
+Welcome to the DREAM Project!
 ![DREAM Logo]
 
 DREAM stands for Development of Robot-enhanced Therapy for Children with
