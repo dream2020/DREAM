@@ -1,5 +1,5 @@
-The DREAM Wiki
-==============
+The DREAM Project
+=================
 
 Welcome! This wiki is devoted to the [DREAM] project. It is the place to
 come for the latest information on the DREAM project and the main source
