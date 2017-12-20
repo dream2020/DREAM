@@ -38,7 +38,7 @@ Documentation
 -------------
 Project documentation can be found in this repository's wiki.
 
-Component documentation can be found in [DREAM/release/doc/component_doc/index.html](https://github.com/dream2020/DREAM/blob/master/release/doc/component_doc/index.html). This documentation has been generated using [Doxygen](http://www.stack.nl/~dimitri/doxygen/) and can be rebuilt to reflect changes made by modifying the included doxygen config file and re-running doxygen.
+Component documentation can be found in [DREAM/release/doc/component_doc/index.html](https://cdn.rawgit.com/dream2020/DREAM/3446299f/release/doc/component_doc/index.html). This documentation has been generated using [Doxygen](http://www.stack.nl/~dimitri/doxygen/) and can be rebuilt to reflect changes made by modifying the included doxygen config file and re-running doxygen.
  
 Licence
 -------
