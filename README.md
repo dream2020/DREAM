@@ -2,6 +2,7 @@ The DREAM Project
 =================
 
 Welcome to the DREAM Project!
+
 ![DREAM Logo]
 
 DREAM stands for Development of Robot-enhanced Therapy for Children with
