@@ -34,4 +34,4 @@ INCLUDE_DIRECTORIES("C:/FLTK" "${DREAM_DIR}/include")
 LINK_DIRECTORIES("C:/NaoQi/lib")
 SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
-SUBDIRS(components test tools)
+SUBDIRS(components test)
