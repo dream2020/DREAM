@@ -3,7 +3,7 @@ The DREAM RET System
 
 ![DREAM Logo]
 
-This repository covers a software system for Robot Enhanced Therapy (RET) aimed to treat children diagnosed with Autism Spectrum Disorders (ASD). This system was developed within the research project [DREAM: Development of Robot-enhanced Therapy for Children with Autism Spectrum Disorders](http://dream2020.eu), funded by the 7th Framework Programme (FP7) of the European Commission, grant 611391. The project started in April 2014 and finished March 2019. 
+This repository covers a software system for Robot Enhanced Therapy (RET) aimed to treat children diagnosed with Autism Spectrum Disorders (ASD). This system was developed within the research project [DREAM: Development of Robot-enhanced Therapy for Children with Autism Spectrum Disorders](https://dream2020.github.io/DREAM), funded by the 7th Framework Programme (FP7) of the European Commission, grant 611391. The project started in April 2014 and finished March 2019. 
 
 This software system is described in detail in [Cai et al. (2019)](doi.org/10.1109/JSEN.2018.2877662).
 See also [Esteban et al. (2017)](https://doi.org/10.1515/pjbr-2017-0002) and [Cao et al. (2019)](https://doi.org/10.1109/MRA.2019.2904121) for a broader presentation of this approach to autism therapy.
@@ -19,11 +19,11 @@ Software Resources
 Public Documents
 ----------------
 
-[Deliverables](https://github.com/dream2020/DREAM/wiki/Deliverables)
+[Deliverables](https://dream2020.github.io/DREAM/deliverables)
 
 Documentation
 -------------
-Component documentation can be found in [DREAM/release/doc/component_doc/index.html](https://cdn.rawgit.com/dream2020/DREAM/3446299f/release/doc/component_doc/index.html). This documentation has been generated using [Doxygen](http://www.stack.nl/~dimitri/doxygen/) and can be rebuilt to reflect changes made by modifying the included doxygen config file and re-running doxygen.
+Component documentation can be found in [DREAM/release/doc/component_doc/index.html](https://dream2020.github.io/DREAM/doc/component_doc/). This documentation has been generated using [Doxygen](http://www.stack.nl/~dimitri/doxygen/) and can be rebuilt to reflect changes made by modifying the included doxygen config file and re-running doxygen.
  
 Licence
 -------
@@ -32,18 +32,10 @@ Unless otherwise specified, all software created as Copyright &copy; DREAM is to
 
 ![GPLv3](https://dream2020.github.io/DREAM/images/gpl3.png)
 
-  [DREAM]: http://www.dream2020.eu
-  [DREAM Logo]: https://dream2020.github.io/DREAM/images/dream-eu-logo.png
-    "DREAM Logo"
-  [Guidelines for Naming Ports]: https://github.com/dream2020/DREAM/wiki/Guidelines-for-Naming-Ports
-  [Software Development Guide]: https://github.com/dream2020/DREAM/wiki/Software-Development-Guide
-  [Software Development Documentation]: https://github.com/dream2020/DREAM/wiki/Software-Development-Documentation
-  [Nao software]: https://github.com/dream2020/DREAM/wiki/Nao-software
- 
 Acknowledgment
 --------------
 
-This work is part of the [DREAM project](http://www.dream2020.eu) funded by the European Commission’s Seventh Framework Program (FP7), grant #611391.
+This work is part of the [DREAM project](https://dream2020.github.io/DREAM) funded by the European Commission’s Seventh Framework Program (FP7), grant #611391.
 
 References
 ----------
