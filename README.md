@@ -8,14 +8,6 @@ This repository covers a software system for Robot Enhanced Therapy (RET) aimed 
 This software system is described in detail in [Cai et al. (2019)](doi.org/10.1109/JSEN.2018.2877662).
 See also [Esteban et al. (2017)](https://doi.org/10.1515/pjbr-2017-0002) and [Cao et al. (2019)](https://doi.org/10.1109/MRA.2019.2904121) for a broader presentation of this approach to autism therapy.
 
-
-Software Resources
-------------------
-
-[Software Development Documentation]
-
-[Nao software]
-
 Public Documents
 ----------------
 
@@ -23,6 +15,9 @@ Public Documents
 
 Documentation
 -------------
+The main documentation is found in the [DREAM Wiki](wiki/). 
+
+The DREAM RET System is built on the robotic's middleware [YARP](https://www.yarp.it/), and is thus a component based system. 
 Component documentation can be found in [DREAM/release/doc/component_doc/index.html](https://dream2020.github.io/DREAM/doc/component_doc/). This documentation has been generated using [Doxygen](http://www.stack.nl/~dimitri/doxygen/) and can be rebuilt to reflect changes made by modifying the included doxygen config file and re-running doxygen.
  
 Licence
