@@ -15,7 +15,7 @@ Public Documents
 
 Documentation
 -------------
-The main documentation is found in the [DREAM Wiki](wiki/). 
+The main documentation is found in the [DREAM Wiki](https://github.com/dream2020/DREAM/wiki). 
 
 The DREAM RET System is built on the robotic's middleware [YARP](https://www.yarp.it/), and is thus a component based system. 
 Component documentation can be found in [DREAM/release/doc/component_doc/index.html](https://dream2020.github.io/DREAM/doc/component_doc/). This documentation has been generated using [Doxygen](http://www.stack.nl/~dimitri/doxygen/) and can be rebuilt to reflect changes made by modifying the included doxygen config file and re-running doxygen.
