@@ -1,7 +1,7 @@
 The DREAM RET System
 ====================
 
-![DREAM Logo]
+![DREAM Logo](docs/images/dream-eu-logo.png)
 
 This repository covers a software system for Robot Enhanced Therapy (RET) aimed to treat children diagnosed with Autism Spectrum Disorders (ASD). This system was developed within the research project [DREAM: Development of Robot-enhanced Therapy for Children with Autism Spectrum Disorders](https://dream2020.github.io/DREAM), funded by the 7th Framework Programme (FP7) of the European Commission, grant 611391. The project started in April 2014 and finished March 2019. 
 
